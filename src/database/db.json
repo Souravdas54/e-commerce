@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "id": "2ad6",
+      "fullname": "Jack Sparrow",
+      "email": "jacksparrow11511@gmail.com",
+      "phone": "01234567898",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "image": "blob:http://localhost:5173/c0c621b3-877a-499c-b4c1-c7f6113e65a2",
+      "token": "e94c0aad-a01f-4963-8f4a-f96d1413a0f0"
+    }
+  ]
+}
