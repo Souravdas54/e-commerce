@@ -9,6 +9,17 @@
       "confirmPassword": "123456",
       "image": "blob:http://localhost:5173/c0c621b3-877a-499c-b4c1-c7f6113e65a2",
       "token": "e94c0aad-a01f-4963-8f4a-f96d1413a0f0"
+    },
+    {
+      "id": "9964",
+      "fullname": "Sourav Das",
+      "email": "sourav460@gmail.com",
+      "phone": "23456789",
+      "gender": "male",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "image": "blob:http://localhost:5173/dfefa459-2d34-4b4f-a2ba-f2d57a106dce",
+      "token": "46bef727-5707-4e0f-9293-923b70921c79"
     }
   ]
 }

@@ -1,4 +1,4 @@
-import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { v4 as uuidv4 } from "uuid";
 import axios, { AxiosError } from "axios";
 
@@ -26,6 +26,7 @@ interface AuthState {
     token?: string | null;
     email?: string | null;
     name?: string | null;
+
 }
 
 const Api_URL = 'http://localhost:5000/users';
@@ -68,8 +69,8 @@ export const userSignup = createAsyncThunk<User, SignupData, { rejectValue: stri
             return userdata?.data;
         } catch (error) {
             // Type error as AxiosError for better handling
-            const axiosError = error as AxiosError;
-            return rejectWithValue(axiosError.response?.data?.message || "Signup failed");
+            const axiosError = error as AxiosError<{ message?: string }>;
+            return rejectWithValue(axiosError?.response?.data?.message || "Signup failed");
         }
     }
 );
@@ -102,10 +103,12 @@ export const userSignin = createAsyncThunk(
             };
         } catch (error) {
             console.error(error);
+            const axiosError = error as AxiosError<{ message?: string }>;
+            return rejectWithValue(axiosError?.response?.data?.message || "Signin failed");
 
             // Type error as AxiosError for better handling
             //   const axiosError = error as AxiosError;
-            return rejectWithValue("Something went wrong during login.");
+            // return rejectWithValue("Something went wrong during login.");
         }
     }
 );
@@ -115,7 +118,7 @@ export const authSlice = createSlice({
     name: 'authentication',
     initialState,
     reducers: {
-        loginSuccess: (state, action: PayloadAction<User>) => {
+        loginSuccess: (state, action) => {
             state.isLogin = true;
             state.Userdetails.push(action.payload);
         },
@@ -134,14 +137,14 @@ export const authSlice = createSlice({
                 state.isLoading = true;
                 state.isError = null;
             })
-            .addCase(userSignup.fulfilled, (state, action: PayloadAction<User>) => {
+            .addCase(userSignup.fulfilled, (state, action) => {
                 state.upload_status = "register successfully";
                 state.isLoading = false;
                 state.isRegistered = true;
                 state.Userdetails.push(action.payload);
                 localStorage.setItem("email", action.payload.email);
             })
-            .addCase(userSignup.rejected, (state, action: PayloadAction<string>) => {
+            .addCase(userSignup.rejected, (state, action) => {
                 state.upload_status = "failed to register";
                 state.isLoading = false;
                 state.isError = action.payload ?? "Unknown error";
@@ -160,10 +163,15 @@ export const authSlice = createSlice({
                 state.name = action.payload.fullname;
                 state.isLogin = true;
             })
-            .addCase(userSignin.rejected, (state, action: PayloadAction<string>) => {
+            .addCase(userSignin.rejected, (state, action) => {
                 state.upload_status = "Login failed";
                 state.isLoading = false;
-                state.isError = action.payload ?? "Unknown error";
+                // state.isError = action.payload ?? "Unknown error";
+                if (typeof action.payload === "string") {
+                    state.isError = action.payload;
+                } else {
+                    state.isError = "Unknown error";
+                }
             });
     },
 });

@@ -1,0 +1,145 @@
+/* Full Page Layout */
+.signup-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1rem;
+    background: linear-gradient(to right, #f8f9fa, #ffffff);
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Left Side - Image (Always Visible) */
+.signup-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.signup-image {
+    width: 100%;
+    max-width: 25rem;
+    min-width: 15rem;
+    border-radius: 0.625rem;
+    transition: all 0.3s ease;
+}
+
+/* Right Side - Form */
+.signup-box {
+    background: white;
+    padding: 2rem;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.625rem;
+    width: 100%;
+    max-width: 28rem;
+    box-sizing: border-box;
+}
+
+/* Title Styling */
+.signup-title {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #333;
+    font-size: clamp(1.25rem, 4vw, 1.5rem);
+}
+
+/* Gender Label Styling */
+.signup-gender-label {
+    display: block;
+    margin: 0.5rem 0;
+    font-weight: bold;
+    color: #555;
+    font-size: clamp(0.875rem, 3vw, 1rem);
+}
+
+/* Signup Button */
+.signup-button {
+    margin-top: 1rem !important;
+    font-size: clamp(0.875rem, 3vw, 1rem) !important;
+    padding: 0.75rem !important;
+}
+
+/* Image Upload Feedback */
+.upload-feedback {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: #4caf50;
+    display: block;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .signup-image {
+        max-width: 22rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .signup-image {
+        max-width: 20rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .signup-container {
+        flex-direction: column;
+        padding: 0.5rem;
+        margin-top: 0;
+    }
+
+    .signup-image-container {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .signup-image {
+        max-width: 18rem;
+        min-width: 12rem;
+    }
+
+    .signup-box {
+        padding: 1.5rem;
+        max-width: 24rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .signup-image {
+        max-width: 15rem;
+        min-width: 10rem;
+    }
+
+    .signup-box {
+        padding: 1.25rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .signup-image-container {
+        display: none;
+    }
+
+    .signup-box {
+        padding: 1rem;
+        max-width: 100%;
+    }
+
+    .signup-title {
+        font-size: 1.25rem;
+    }
+}
+
+/* For extra small screens (320px and below) */
+@media (max-width: 320px) {
+    .signup-box {
+        padding: 0.75rem;
+    }
+
+    .signup-title {
+        font-size: 1.1rem;
+    }
+}

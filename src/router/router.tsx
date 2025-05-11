@@ -2,10 +2,12 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 
 import Signup from '../auth/signup/register';
 import Signin from '../auth/signin/login';
+import Header from '../sharemodule/navbar/navbar';
 
 const Approuter = () => {
   return (
    <Router>
+    <Header/>
     <Routes>
       <Route path='/' element={<Signup/>}/>
       <Route path='/login' element={<Signin/>}/>

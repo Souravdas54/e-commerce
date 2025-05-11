@@ -1,5 +1,6 @@
-import { Typography, TextField, Button, Grid, Box, CircularProgress, } from "@mui/material";
-import { useForm, SubmitHandler, Controller } from "react-hook-form";
+import { Typography, TextField, Button, Box, CircularProgress, } from "@mui/material";
+
+import { useForm, SubmitHandler } from "react-hook-form";
 import "./login.css";
 import { useDispatch, useSelector } from "react-redux";
 import { userSignin } from "../../redux/authSlice";
@@ -15,7 +16,6 @@ type SigninFormInputs = {
 
 export default function Signin() {
     const {
-        control,
         register,
         handleSubmit,
         formState: { errors },
@@ -40,85 +40,57 @@ export default function Signin() {
     }, [isLogin, navigate]);
 
     return (
-        <Grid container className="login-container">
+        <Box className="login-container" display="flex" flexDirection={{ xs: "column", md: "row" }}>
             {/* Left Side - Image */}
-            <Grid item xs={12} md={6} className="login-image-container">
+            <Box className="login-image-container" flex={1}>
                 <img
-                    src={"/assets/login-image.jpg"}
+                    src="/assets/login-image.jpg"
                     alt="Login"
                     className="login-image"
                 />
-            </Grid>
+            </Box>
 
             {/* Right Side - Form */}
-            <Grid item xs={12} md={6} className="login-box">
+            <Box className="login-box" flex={1} p={4}>
                 <Typography variant="h5" className="login-title">
                     Login
                 </Typography>
 
                 <form onSubmit={handleSubmit(onSubmit)}>
                     {/* Email */}
-
-                    <Controller
-                        name="email"
-                        control={control}
-                        rules={{
+                    <TextField
+                        label="Email"
+                        fullWidth
+                        type="email"
+                        margin="normal"
+                        {...register("email", {
                             required: "Email is required",
                             pattern: {
                                 value: /^\S+@\S+$/,
                                 message: "Invalid email format",
                             },
-                        }}
-                        render={({ field }) => (
-                            <TextField
-                                {...field}
-                                fullWidth
-                                label="Email"
-                                type="email"
-                                {...register("email", {
-                                    required: "Email is required",
-                                    pattern: {
-                                        value: /^\S+@\S+$/,
-                                        message: "Invalid email format",
-                                    },
-                                })}
-                                error={!!errors.email}
-                                helperText={errors.email?.message}
-                                margin="normal"
-                            />
-                        )}
+                        })}
+                        error={!!errors.email}
+                        helperText={errors.email?.message}
                     />
 
                     {/* Password */}
-                    <Controller
-                        name="password"
-                        control={control}
-                        rules={{
+                    <TextField
+                        label="Password"
+                        fullWidth
+                        type="password"
+                        margin="normal"
+                        {...register("password", {
                             required: "Password is required",
                             minLength: {
                                 value: 6,
                                 message: "Password must be at least 6 characters",
                             },
-                        }}
-                        render={({ field }) => (
-                            <TextField
-                                {...field}
-                                fullWidth
-                                label="Password"
-                                type="password"
-                                {...register("password", {
-                                    required: "Password is required",
-                                    minLength: {
-                                        value: 6,
-                                        message: "Password must be at least 6 characters",
-                                    },
-                                })}
-                                error={!!errors.password}
-                                helperText={errors.password?.message}
-                                margin="normal"
-                            />
-                        )}
+                        })}
+                        error={!!errors.password}
+                        helperText={errors.password?.message}
                     />
+
                     <Button
                         type="submit"
                         variant="contained"
@@ -143,7 +115,7 @@ export default function Signin() {
 
                 {isError && <p style={{ color: "red" }}>{String(isError)}</p>}
                 {isLogin && <p style={{ color: "green" }}>Login Successful</p>}
-            </Grid>
-        </Grid>
+            </Box>
+        </Box>
     );
 }
