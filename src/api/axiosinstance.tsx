@@ -1,6 +1,6 @@
 // axiosInstance.ts
 
-import axios, { AxiosRequestConfig } from 'axios';
+import axios, { InternalAxiosRequestConfig } from 'axios';
 import { baseURL } from './endpoint';
 
 export const axiosInstance = axios.create({
@@ -8,10 +8,10 @@ export const axiosInstance = axios.create({
 });
 
 axiosInstance.interceptors.request.use(
-    (config: AxiosRequestConfig) => {
+    (config: InternalAxiosRequestConfig) => {
         const token = localStorage.getItem('token') || sessionStorage.getItem('token');
         if (token) {
-            if (!config.headers) config.headers = {};
+            // if (!config.headers) config.headers = {};
             config.headers['x-access-token'] = token;
         }
         return config;
