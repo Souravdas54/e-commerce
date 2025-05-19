@@ -1,0 +1,42 @@
+/* NavigationBar.css */
+.navbar-container {
+  width: 100%;
+  position: relative;
+}
+
+.mobile-menu-button {
+  display: none !important;
+}
+
+@media (max-width: 900px) {
+  .desktop-nav-items {
+    display: none !important;
+  }
+  
+  .mobile-menu-button {
+    display: block !important;
+  }
+  
+  .mobile-menu {
+    width: 100%;
+  }
+  
+  .mobile-menu .MuiPaper-root {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .mobile-menu .MuiList-root {
+    padding: 0;
+  }
+  
+  .mobile-menu .MuiButton-root {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .mobile-menu .MuiCollapse-root .MuiList-root {
+    padding-left: 16px;
+    background-color: #f5f5f5;
+  }
+}

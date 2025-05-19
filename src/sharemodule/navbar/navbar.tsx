@@ -13,10 +13,66 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 
+import { handlelogout } from '../../redux/authSlice';
+import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
 const pages = ['Products', 'Pricing', 'Blog'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+// const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function Header() {
+
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
+  const [isoptions, setIsOptions] = React.useState(false);
+
+
+    const { isLogin } = useSelector((state: any) => state.authKey)
+
+    React.useEffect(() => {
+        if (isLogin) {
+            //   dispatch(profiledatafetch());
+
+        }
+    }, [isLogin, dispatch])
+
+    const handelLogoutuser = () => {
+
+        dispatch(handlelogout());
+        localStorage.clear();
+        // localStorage.removeItem('token');
+        // localStorage.removeItem('first_name');
+
+        setIsOptions(false);
+        navigate('/login')
+        window.location.reload();
+    }
+
+    // FIRST NAME & LAST NAME SHOW STATE //
+  const [getFullName, setGetFullName] = React.useState('');
+
+  React.useEffect(() => {
+    const token = localStorage.getItem('token');
+    const fullName = localStorage.getItem('name');
+
+    setIsOptions(!!token);
+    if (token) {
+      setGetFullName(fullName || '');
+    
+    } else {
+      setGetFullName("");
+     
+
+    }
+    // DISPATCH isLogin
+  }, [isLogin])
+
+    // POPUP BAR PAGES // 
+    const settings = isoptions ? [{ name: 'Profile', path: '/profile' },
+    { name: 'Logout', action: handelLogoutuser }] : [{ name: 'Profile', path: '/profile' },
+    { name: 'Login', path: '/login' }];
+
     const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
     const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
 
@@ -144,10 +200,32 @@ function Header() {
                             open={Boolean(anchorElUser)}
                             onClose={handleCloseUserMenu}
                         >
+                            {
+                                isLogin && (
+                                    <MenuItem >
+                                        <Typography >{getFullName}</Typography>
+                                    </MenuItem>
+                                )
+                            }
                             {settings.map((setting) => (
-                                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                                    <Typography sx={{ textAlign: 'center' }}>{setting}</Typography>
+                                <MenuItem key={setting.name} onClick={() => {
+                                    if (setting.action) {
+                                        setting.action();
+                                    } else {
+                                        handleCloseUserMenu();
+                                    }
+                                }
+                                }>
+                                    {setting.path ? (
+                                        <Link to={setting.path} style={{ textDecoration: 'none' }}>
+                                    <Typography textDecoration='none' sx={{ textAlign: 'center', color: 'black' }}>{setting.name}</Typography>
+                                        </Link>
+                                    ) : (
+                                        <Typography sx={{ textAlign: 'center', color: 'black' }}>{setting.name}</Typography>
+                                    )}
+
                                 </MenuItem>
+
                             ))}
                         </Menu>
                     </Box>

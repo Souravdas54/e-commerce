@@ -1,0 +1,404 @@
+// {
+    // "dog_toys": [
+    //     {
+    //         "id": 1,
+    //         "name": "Durable Nylon Bone",
+    //         "image": "/images/nylon-bone.jpg",
+    //         "price": 12.99,
+    //         "description": "Extra tough nylon bone for aggressive chewers, helps clean teeth",
+    //         "category": "chew",
+    //         "rating": 4.5,
+    //         "inStock": true
+    //     },
+    //     {
+    //         "id": 2,
+    //         "name": "Squeaky Plush Squirrel",
+    //         "image": "/images/plush-squirrel.jpg",
+    //         "price": 9.99,
+    //         "description": "Soft plush toy with squeaker inside, great for fetch",
+    //         "category": "plush",
+    //         "rating": 4.2,
+    //         "inStock": true
+    //     },
+    //     {
+    //         "id": 3,
+    //         "name": "High-Bounce Rubber Ball",
+    //         "image": "/images/rubber-ball.jpg",
+    //         "price": 6.99,
+    //         "description": "Super bouncy ball made from natural rubber, floats in water",
+    //         "category": "fetch",
+    //         "rating": 4.7,
+    //         "inStock": true
+    //     },
+    //     {
+    //         "id": 4,
+    //         "name": "Cotton Rope Tug Toy",
+    //         "image": "/images/rope-tug.jpg",
+    //         "price": 10.99,
+    //         "description": "Braided cotton rope with knots for dental health",
+    //         "category": "tug",
+    //         "rating": 4.3,
+    //         "inStock": false
+    //     },
+    //     {
+    //         "id": 5,
+    //         "name": "Treat Puzzle Game",
+    //         "image": "/images/puzzle-toy.jpg",
+    //         "price": 19.99,
+    //         "description": "Interactive puzzle that dispenses treats when solved",
+    //         "category": "puzzle",
+    //         "rating": 4.8,
+    //         "inStock": true
+    //     },
+    //     {
+    //         "id": 6,
+    //         "name": "Antler Chew",
+    //         "image": "/images/antler-chew.jpg",
+    //         "price": 24.99,
+    //         "description": "Natural deer antler, long-lasting chew",
+    //         "category": "chew",
+    //         "rating": 4.6,
+    //         "inStock": true
+    //     },
+    //     {
+    //         "id": 7,
+    //         "name": "Plush Duck with Quacker",
+    //         "image": "/images/plush-duck.jpg",
+    //         "price": 8.49,
+    //         "description": "Adorable duck plush with duck-like squeaker",
+    //         "category": "plush",
+    //         "rating": 4.1,
+    //         "inStock": true
+    //     },
+    //     {
+    //         "id": 8,
+    //         "name": "Flying Disc",
+    //         "image": "/images/flying-disc.jpg",
+    //         "price": 11.99,
+    //         "description": "Durable frisbee designed for dog's teeth",
+    //         "category": "fetch",
+    //         "rating": 4.4,
+    //         "inStock": true
+    //     },
+    //     {
+    //         "id": 9,
+    //         "name": "Tug-of-War Ring",
+    //         "image": "/images/tug-ring.jpg",
+    //         "price": 14.99,
+    //         "description": "Durable rubber ring for two-way tug games",
+    //         "category": "tug",
+    //         "rating": 4.0,
+    //         "inStock": true
+    //     },
+    //     {
+    //         "id": 10,
+    //         "name": "Snuffle Mat",
+    //         "image": "/images/snuffle-mat.jpg",
+    //         "price": 22.99,
+    //         "description": "Forage for treats in this mental stimulation mat",
+    //         "category": "puzzle",
+    //         "rating": 4.9,
+    //         "inStock": true
+    //     },
+    //     {
+    //         "id": 11,
+    //         "name": "Dental Chew Stick",
+    //         "image": "/images/dental-chew.jpg",
+    //         "price": 7.99,
+    //         "description": "Textured chew helps reduce plaque and tartar",
+    //         "category": "chew",
+    //         "rating": 4.3,
+    //         "inStock": true
+    //     },
+    //     {
+    //         "id": 12,
+    //         "name": "Plush Fox with Tail",
+    //         "image": "/images/plush-fox.jpg",
+    //         "price": 10.99,
+    //         "description": "Fox plush with extra-long tail for shaking",
+    //         "category": "plush",
+    //         "rating": 4.2,
+    //         "inStock": false
+    //     },
+    //     {
+    //         "id": 13,
+    //         "name": "Glow-in-the-Dark Ball",
+    //         "image": "/images/glow-ball.jpg",
+    //         "price": 8.99,
+    //         "description": "Light-up ball for nighttime fetch",
+    //         "category": "fetch",
+    //         "rating": 4.5,
+    //         "inStock": true
+    //     },
+    //     {
+    //         "id": 14,
+    //         "name": "Tug Rope with Ball",
+    //         "image": "/images/rope-ball.jpg",
+    //         "price": 12.49,
+    //         "description": "Combination rope and ball for multiple play styles",
+    //         "category": "tug",
+    //         "rating": 4.4,
+    //         "inStock": true
+    //     },
+    //     {
+    //         "id": 15,
+    //         "name": "Interactive Feeder",
+    //         "image": "/images/interactive-feeder.jpg",
+    //         "price": 18.99,
+    //         "description": "Slow feeder that makes mealtime challenging",
+    //         "category": "puzzle",
+    //         "rating": 4.7,
+    //         "inStock": true
+    //     },
+    //     {
+    //         "id": 16,
+    //         "name": "Rubber Chew Ring",
+    //         "image": "/images/rubber-ring.jpg",
+    //         "price": 9.99,
+    //         "description": "Flexible rubber ring with textured surface",
+    //         "category": "chew",
+    //         "rating": 4.1,
+    //         "inStock": true
+    //     },
+    //     {
+    //         "id": 17,
+    //         "name": "Plush Lamb Chop",
+    //         "image": "/images/plush-lamb.jpg",
+    //         "price": 7.99,
+    //         "description": "Classic lamb plush with gentle squeaker",
+    //         "category": "plush",
+    //         "rating": 4.6,
+    //         "inStock": true
+    //     },
+    //     {
+    //         "id": 18,
+    //         "name": "Chuckit! Ultra Ball",
+    //         "image": "/images/ultra-ball.jpg",
+    //         "price": 9.49,
+    //         "description": "High-visibility orange ball for easy retrieval",
+    //         "category": "fetch",
+    //         "rating": 4.8,
+    //         "inStock": true
+    //     },
+    //     {
+    //         "id": 19,
+    //         "name": "Tug Rope with Handles",
+    //         "image": "/images/handle-rope.jpg",
+    //         "price": 15.99,
+    //         "description": "Extra-long rope with comfortable human handles",
+    //         "category": "tug",
+    //         "rating": 4.3,
+    //         "inStock": true
+    //     },
+    //     {
+    //         "id": 20,
+    //         "name": "Treat Dispensing Ball",
+    //         "image": "/images/treat-ball.jpg",
+    //         "price": 12.99,
+    //         "description": "Rolling ball that releases treats as it moves",
+    //         "category": "puzzle",
+    //         "rating": 4.5,
+    //         "inStock": false
+    //     },
+    //     {
+    //         "id": 21,
+    //         "name": "Buffalo Horn Chew",
+    //         "image": "/images/buffalo-horn.jpg",
+    //         "price": 16.99,
+    //         "description": "Natural buffalo horn, rich in minerals",
+    //         "category": "chew",
+    //         "rating": 4.4,
+    //         "inStock": true
+    //     },
+    //     {
+    //         "id": 22,
+    //         "name": "Plush Octopus",
+    //         "image": "/images/plush-octopus.jpg",
+    //         "price": 11.99,
+    //         "description": "Multi-legged plush with crinkle material in tentacles",
+    //         "category": "plush",
+    //         "rating": 4.0,
+    //         "inStock": true
+    //     },
+    //     {
+    //         "id": 23,
+    //         "name": "Water Floating Fetch Toy",
+    //         "image": "/images/water-fetch.jpg",
+    //         "price": 13.99,
+    //         "description": "Brightly colored floating fetch toy for pools",
+    //         "category": "fetch",
+    //         "rating": 4.6,
+    //         "inStock": true
+    //     },
+    //     {
+    //         "id": 24,
+    //         "name": "Tug-of-War Rope with Knots",
+    //         "image": "/images/knot-rope.jpg",
+    //         "price": 8.99,
+    //         "description": "Classic knotted rope for tugging and chewing",
+    //         "category": "tug",
+    //         "rating": 4.2,
+    //         "inStock": true
+    //     },
+    //     {
+    //         "id": 25,
+    //         "name": "Flip Board Puzzle",
+    //         "image": "/images/flip-board.jpg",
+    //         "price": 24.99,
+    //         "description": "Advanced puzzle with multiple compartments to flip open",
+    //         "category": "puzzle",
+    //         "rating": 4.9,
+    //         "inStock": true
+    //     },
+    //     {
+    //         "id": 26,
+    //         "name": "Dental Chew Roll",
+    //         "image": "/images/dental-roll.jpg",
+    //         "price": 6.99,
+    //         "description": "Ridged design helps clean teeth as they chew",
+    //         "category": "chew",
+    //         "rating": 4.3,
+    //         "inStock": true
+    //     },
+    //     {
+    //         "id": 27,
+    //         "name": "Plush Hedgehog",
+    //         "image": "/images/plush-hedgehog.jpg",
+    //         "price": 9.49,
+    //         "description": "Spiky-textured plush with squeaker inside",
+    //         "category": "plush",
+    //         "rating": 4.5,
+    //         "inStock": true
+    //     },
+    //     {
+    //         "id": 28,
+    //         "name": "Fetch Stick",
+    //         "image": "/images/fetch-stick.jpg",
+    //         "price": 7.99,
+    //         "description": "Durable stick-shaped fetch toy for dogs who love branches",
+    //         "category": "fetch",
+    //         "rating": 4.1,
+    //         "inStock": false
+    //     },
+    //     {
+    //         "id": 29,
+    //         "name": "Tug Jute Toy",
+    //         "image": "/images/jute-toy.jpg",
+    //         "price": 11.49,
+    //         "description": "Natural jute material, great for teething puppies",
+    //         "category": "tug",
+    //         "rating": 4.4,
+    //         "inStock": true
+    //     },
+    //     {
+    //         "id": 30,
+    //         "name": "Lick Mat",
+    //         "image": "/images/lick-mat.jpg",
+    //         "price": 9.99,
+    //         "description": "Textured silicone mat for spreading treats or peanut butter",
+    //         "category": "puzzle",
+    //         "rating": 4.7,
+    //         "inStock": true
+    //     },
+    //     {
+    //         "id": 31,
+    //         "name": "Yak Cheese Chew",
+    //         "image": "/images/yak-cheese.jpg",
+    //         "price": 14.99,
+    //         "description": "Hardened yak milk chew that lasts for days",
+    //         "category": "chew",
+    //         "rating": 4.8,
+    //         "inStock": true
+    //     },
+    //     {
+    //         "id": 32,
+    //         "name": "Plush Bunny",
+    //         "image": "/images/plush-bunny.jpg",
+    //         "price": 8.99,
+    //         "description": "Floppy-eared bunny with crinkle ears",
+    //         "category": "plush",
+    //         "rating": 4.3,
+    //         "inStock": true
+    //     },
+    //     {
+    //         "id": 33,
+    //         "name": "Chuckit! Flying Squirrel",
+    //         "image": "/images/flying-squirrel.jpg",
+    //         "price": 12.99,
+    //         "description": "Gliding fetch toy that flies through the air",
+    //         "category": "fetch",
+    //         "rating": 4.6,
+    //         "inStock": true
+    //     },
+    //     {
+    //         "id": 34,
+    //         "name": "Tug Rope with Rubber Center",
+    //         "image": "/images/rubber-rope.jpg",
+    //         "price": 13.99,
+    //         "description": "Combination rope and rubber for varied textures",
+    //         "category": "tug",
+    //         "rating": 4.5,
+    //         "inStock": true
+    //     },
+    //     {
+    //         "id": 35,
+    //         "name": "Hide & Seek Puzzle",
+    //         "image": "/images/hide-seek.jpg",
+    //         "price": 21.99,
+    //         "description": "Find the hidden treats under moving parts",
+    //         "category": "puzzle",
+    //         "rating": 4.9,
+    //         "inStock": true
+    //     },
+    //     {
+    //         "id": 36,
+    //         "name": "Bully Stick",
+    //         "image": "/images/bully-stick.jpg",
+    //         "price": 17.99,
+    //         "description": "Single-ingredient beef chew, highly digestible",
+    //         "category": "chew",
+    //         "rating": 4.7,
+    //         "inStock": false
+    //     },
+    //     {
+    //         "id": 37,
+    //         "name": "Plush Dinosaur",
+    //         "image": "/images/plush-dino.jpg",
+    //         "price": 10.99,
+    //         "description": "Prehistoric plush with multiple squeakers",
+    //         "category": "plush",
+    //         "rating": 4.4,
+    //         "inStock": true
+    //     },
+    //     {
+    //         "id": 38,
+    //         "name": "Fetch Launcher",
+    //         "image": "/images/fetch-launcher.jpg",
+    //         "price": 24.99,
+    //         "description": "Ball launcher for long-distance fetch",
+    //         "category": "fetch",
+    //         "rating": 4.8,
+    //         "inStock": true
+    //     },
+    //     {
+    //         "id": 39,
+    //         "name": "Tug Rope with Bungee",
+    //         "image": "/images/bungee-rope.jpg",
+    //         "price": 16.99,
+    //         "description": "Elastic center reduces impact on joints during play",
+    //         "category": "tug",
+    //         "rating": 4.6,
+    //         "inStock": true
+    //     },
+    //     {
+    //         "id": 40,
+    //         "name": "Interactive Flip Box",
+    //         "image": "/images/flip-box.jpg",
+    //         "price": 19.99,
+    //         "description": "Multiple compartments and flaps to discover treats",
+    //         "category": "puzzle",
+    //         "rating": 4.7,
+    //         "inStock": true
+    //     }
+//     ]
+// }
