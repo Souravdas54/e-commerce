@@ -1,0 +1,256 @@
+/* catstyle.css */
+
+/* Base styles - applies to XS and up */
+.cat-page {
+  padding: 0.75rem;
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.cat-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #1976d2;
+  line-height: 1.2;
+}
+
+/* Category & Sort Section - XS */
+.cat-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.cat-category-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.cat-category-buttons button {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+}
+
+/* Card Grid - XS */
+.cat-products-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  width: 100%;
+}
+
+/* Card Styles - XS */
+.cat-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  background: #fff;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  height: 100%;
+}
+
+.cat-card-img-wrapper {
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafafa;
+  padding: 0.5rem;
+}
+
+.cat-card-body {
+  padding: 0.75rem;
+  flex-grow: 1;
+}
+
+.cat-card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.cat-card-description {
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.cat-card-footer {
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.cat-card-price {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.cat-add-btn {
+  font-size: 0.85rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+/* SM (576px and up) */
+@media (min-width: 576px) {
+  .cat-page {
+    padding: 1rem;
+  }
+  
+  .cat-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .cat-card-img-wrapper {
+    height: 12rem;
+  }
+  
+  .cat-card-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .cat-add-btn {
+    width: auto;
+  }
+}
+
+/* MD (768px and up) */
+@media (min-width: 768px) {
+  .cat-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .cat-controls {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .cat-products-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+  
+  .cat-card-img-wrapper {
+    height: 14rem;
+  }
+  
+  .cat-card-title {
+    font-size: 1.1rem;
+  }
+  
+  .cat-card-price {
+    font-size: 1.1rem;
+  }
+}
+
+/* LG (992px and up) */
+@media (min-width: 992px) {
+  .cat-page {
+    padding: 1.5rem;
+  }
+  
+  .cat-products-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .cat-card-img-wrapper {
+    height: 16rem;
+  }
+  
+  .cat-card-title {
+    font-size: 1.25rem;
+  }
+  
+  .cat-card-description {
+    font-size: 0.9rem;
+  }
+  
+  .cat-card-price {
+    font-size: 1.25rem;
+  }
+  
+  .cat-add-btn {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* XL (1200px and up) */
+@media (min-width: 1200px) {
+  .cat-title {
+    font-size: 2.5rem;
+  }
+  
+  .cat-products-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+  
+  .cat-card-img-wrapper {
+    height: 18rem;
+  }
+  
+  .cat-card-body {
+    padding: 1rem;
+  }
+  
+  .cat-card-footer {
+    padding: 1rem;
+  }
+}
+
+/* XXL (1400px and up) */
+@media (min-width: 1400px) {
+  .cat-title {
+    font-size: 3rem;
+  }
+  
+  .cat-products-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  
+  .cat-card-img-wrapper {
+    height: 20rem;
+  }
+}
+
+/* Hover effects (not on touch devices) */
+@media (hover: hover) {
+  .cat-card:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+  
+  .cat-card:hover .cat-card-img-wrapper img {
+    transform: scale(1.05);
+  }
+}
+
+/* Accessibility improvements */
+.cat-card:focus-within {
+  box-shadow: 0 0 0 2px #1976d2;
+}
+
+.cat-add-btn:focus {
+  outline: 2px solid #1976d2;
+  outline-offset: 2px;
+}

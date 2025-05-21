@@ -1,7 +1,6 @@
-//DogProductsPage
 import React, { useState, useEffect } from 'react';
 import { CircularProgress, Alert, Select, MenuItem, FormControl, InputLabel, Rating, Button, Box, Typography } from '@mui/material';
-// import './catstyle.css';
+import './catstyle.css';
 
 interface CatProduct {
   id: number;
@@ -26,10 +25,10 @@ interface NestedCatProducts {
   litter: Omit<CatProduct, 'category'>[];
 }
 
-import rawData from '../../database/dog/dogtoys.json';
+import rawData from '../../database/cat/cat.json';
 
-const DogProductsPage: React.FC = () => {
-  const [dogProducts, dogCatProducts] = useState<CatProduct[]>([]);
+const CatProductsPage: React.FC = () => {
+  const [catProducts, setCatProducts] = useState<CatProduct[]>([]);
   const [filteredProducts, setFilteredProducts] = useState<CatProduct[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
@@ -39,31 +38,33 @@ const DogProductsPage: React.FC = () => {
 
   const categories: CatCategory[] = [
     { name: 'All', value: 'all' },
-    { name: 'Food', value: 'food' },
-    { name: 'Collars', value: 'collars' },
+    { name: 'Poles', value: 'poles' },
+    { name: 'Tools', value: 'tools' },
     { name: 'Toys', value: 'toys' },
+    { name: 'Food', value: 'food' },
+    { name: 'Litter & Accessories', value: 'litter' },
     { name: 'Beds', value: 'beds' }
   ];
 
   useEffect(() => {
     const loadData = async () => {
       try {
-        if (rawData && rawData.dog_products) {
+        if (rawData && rawData.cat_products) {
           let products: CatProduct[] = [];
 
-          if ('food' in rawData.dog_products) {
-            const nestedData = rawData.dog_products as NestedCatProducts;
+          if ('poles' in rawData.cat_products) {
+            const nestedData = rawData.cat_products as NestedCatProducts;
             products = [
-              ...nestedData.food.map(p => ({ ...p, category: 'food' })),
-              ...nestedData.collars.map(p => ({ ...p, category: 'collars' })),
+              ...nestedData.poles.map(p => ({ ...p, category: 'poles' })),
+              ...nestedData.tools.map(p => ({ ...p, category: 'tools' })),
               ...nestedData.toys.map(p => ({ ...p, category: 'toys' })),
-              ...nestedData.beds.map(p => ({ ...p, category: 'beds' })),
+              ...(nestedData.litter ? nestedData.litter.map(p => ({ ...p, category: 'litter' })) : []),
             ];
           } else {
-            products = rawData.dog_products as CatProduct[];
+            products = rawData.cat_products as CatProduct[];
           }
 
-          dogCatProducts(products);
+          setCatProducts(products);
           setFilteredProducts(products);
           setLoading(false);
           return;
@@ -75,7 +76,7 @@ const DogProductsPage: React.FC = () => {
         const fetchedProducts = Array.isArray(data.cat_products)
           ? data.cat_products
           : [];
-        dogCatProducts(fetchedProducts);
+        setCatProducts(fetchedProducts);
         setFilteredProducts(fetchedProducts);
         setLoading(false);
       } catch (err) {
@@ -145,13 +146,13 @@ const DogProductsPage: React.FC = () => {
   }
 
   return (
-    <Box  className="cat-page">
+    <Box className="cat-page">
       <Typography variant="h3" component="h1" gutterBottom className="cat-title">
         {currentCategoryName}
       </Typography>
 
       {/* Rest of the component remains exactly the same */}
-      <Box  className="cat-controls">
+      <Box className="cat-controls">
         <Box className="cat-category-buttons">
           {categories.map(category => (
             <Button
@@ -169,7 +170,7 @@ const DogProductsPage: React.FC = () => {
           ))}
         </Box>
 
-        <FormControl sx={{ minWidth: 180 }} size="small">
+        {/* <FormControl sx={{ minWidth: 180 }} size="small">
           <InputLabel id="sort-label">Sort By</InputLabel>
           <Select
             labelId="sort-label"
@@ -181,6 +182,52 @@ const DogProductsPage: React.FC = () => {
             <MenuItem value="price-low">Price: Low to High</MenuItem>
             <MenuItem value="price-high">Price: High to Low</MenuItem>
             <MenuItem value="rating">Highest Rated</MenuItem>
+          </Select>
+        </FormControl> */}
+        <FormControl
+          sx={{
+            minWidth: { xs: '100%', sm: 180 },
+            maxWidth: { xs: '100%',sm: '100%', md: 120 },
+            marginBottom: { xs: 1, sm: 0 }
+          }}
+          size="small"
+        >
+          <Select
+            labelId="sort-label"
+            value={sortOption}
+            label="Sort By"
+            onChange={(e) => setSortOption(e.target.value as string)}
+            sx={{
+              fontSize: { xs: '0.875rem', sm: '0.9375rem', md: '1rem' },
+              '& .MuiSelect-select': {
+                padding: { xs: '8px 32px 8px 12px', sm: '8px 32px 8px 16px' }
+              }
+            }}
+          >
+            <MenuItem
+              value="featured"
+              sx={{ fontSize: { xs: '0.875rem', sm: '0.9375rem', md: '1rem' } }}
+            >
+              Featured
+            </MenuItem>
+            <MenuItem
+              value="price-low"
+              sx={{ fontSize: { xs: '0.875rem', sm: '0.9375rem', md: '1rem' } }}
+            >
+              Price: Low to High
+            </MenuItem>
+            <MenuItem
+              value="price-high"
+              sx={{ fontSize: { xs: '0.875rem', sm: '0.9375rem', md: '1rem' } }}
+            >
+              Price: High to Low
+            </MenuItem>
+            <MenuItem
+              value="rating"
+              sx={{ fontSize: { xs: '0.875rem', sm: '0.9375rem', md: '1rem' } }}
+            >
+              Highest Rated
+            </MenuItem>
           </Select>
         </FormControl>
       </Box>
@@ -195,8 +242,8 @@ const DogProductsPage: React.FC = () => {
                   alt={product.name}
                   style={{
                     maxWidth: '100%',
-                    maxHeight: '100%',
-                    objectFit: 'contain'
+                    // maxHeight: '100%',
+                    objectFit: 'cover'
                   }}
                   onError={handleImageError}
                 />
@@ -251,4 +298,4 @@ const DogProductsPage: React.FC = () => {
   );
 };
 
-export default DogProductsPage;
+export default CatProductsPage;

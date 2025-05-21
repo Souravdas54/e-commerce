@@ -1,0 +1,64 @@
+{
+  "bird_products": {
+    "food": [
+      {
+        "id": 1,
+        "name": "Premium Seed Mix",
+        "image": "/images/birds/food/seed-mix.jpg",
+        "price": 12.99,
+        "description": "Nutritionally balanced seed mix for all types of birds.",
+        "rating": 4.5,
+        "inStock": true
+      },
+      {
+        "id": 2,
+        "name": "Fruit Blend Pellets",
+        "image": "/images/birds/food/fruit-pellets.jpg",
+        "price": 15.49,
+        "description": "Delicious fruit-flavored pellets with essential nutrients.",
+        "rating": 4.7,
+        "inStock": true
+      }
+    ],
+    "house": [
+      {
+        "id": 21,
+        "name": "Wooden Bird Cage",
+        "image": "/images/birds/house/wooden-cage.jpg",
+        "price": 89.99,
+        "description": "Spacious wooden cage with multiple perches.",
+        "rating": 4.8,
+        "inStock": true
+      },
+      {
+        "id": 22,
+        "name": "Metal Flight Cage",
+        "image": "/images/birds/house/metal-cage.jpg",
+        "price": 129.99,
+        "description": "Large metal cage perfect for birds that need flying space.",
+        "rating": 4.9,
+        "inStock": true
+      }
+    ],
+    "toys": [
+      {
+        "id": 41,
+        "name": "Colorful Bird Swing",
+        "image": "/images/birds/toys/swing.jpg",
+        "price": 8.99,
+        "description": "Vibrant swing to keep your bird entertained.",
+        "rating": 4.6,
+        "inStock": true
+      },
+      {
+        "id": 42,
+        "name": "Chewable Wood Toy",
+        "image": "/images/birds/toys/chew-toy.jpg",
+        "price": 6.49,
+        "description": "Natural wood toy for beak exercise and play.",
+        "rating": 4.4,
+        "inStock": true
+      }
+    ]
+  }
+}

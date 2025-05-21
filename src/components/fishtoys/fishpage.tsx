@@ -1,9 +1,8 @@
-//DogProductsPage
 import React, { useState, useEffect } from 'react';
-import { CircularProgress, Alert, Select, MenuItem, FormControl, InputLabel, Rating, Button, Box, Typography } from '@mui/material';
-// import './catstyle.css';
+import { CircularProgress, Alert, Select, MenuItem, FormControl, Rating, Button, Box, Typography } from '@mui/material';
+import './fishstyle.css';
 
-interface CatProduct {
+interface FishProduct {
   id: number;
   name: string;
   image: string;
@@ -14,68 +13,71 @@ interface CatProduct {
   inStock: boolean;
 }
 
-interface CatCategory {
+interface FishCategory {
   name: string;
   value: string;
 }
 
-interface NestedCatProducts {
-  poles: Omit<CatProduct, 'category'>[];
-  tools: Omit<CatProduct, 'category'>[];
-  toys: Omit<CatProduct, 'category'>[];
-  litter: Omit<CatProduct, 'category'>[];
+interface NestedFishProducts {
+  aquariums: Omit<FishProduct, 'category'>[];
+  cleaning: Omit<FishProduct, 'category'>[];
+  decoration: Omit<FishProduct, 'category'>[];
+  food: Omit<FishProduct, 'category'>[];
+  filters: Omit<FishProduct, 'category'>[];
 }
 
-import rawData from '../../database/dog/dogtoys.json';
+import rawData from '../../database/fish/fish.json';
 
-const DogProductsPage: React.FC = () => {
-  const [dogProducts, dogCatProducts] = useState<CatProduct[]>([]);
-  const [filteredProducts, setFilteredProducts] = useState<CatProduct[]>([]);
+const FishProductsPage: React.FC = () => {
+  const [fishProducts, setFishProducts] = useState<FishProduct[]>([]);
+  const [filteredProducts, setFilteredProducts] = useState<FishProduct[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [sortOption, setSortOption] = useState<string>('featured');
   const [currentCategoryName, setCurrentCategoryName] = useState<string>('Products');
 
-  const categories: CatCategory[] = [
+  const categories: FishCategory[] = [
     { name: 'All', value: 'all' },
+    { name: 'Aquariums', value: 'aquariums' },
+    { name: 'Cleaning', value: 'cleaning' },
+    { name: 'Decoration', value: 'decoration' },
     { name: 'Food', value: 'food' },
-    { name: 'Collars', value: 'collars' },
-    { name: 'Toys', value: 'toys' },
-    { name: 'Beds', value: 'beds' }
+    { name: 'Filters', value: 'filters' }
   ];
 
   useEffect(() => {
     const loadData = async () => {
       try {
-        if (rawData && rawData.dog_products) {
-          let products: CatProduct[] = [];
+        if (rawData && rawData.fish_products) {
+          let products: FishProduct[] = [];
 
-          if ('food' in rawData.dog_products) {
-            const nestedData = rawData.dog_products as NestedCatProducts;
+          if ('aquariums' in rawData.fish_products) {
+            const nestedData = rawData.fish_products as NestedFishProducts;
             products = [
-              ...nestedData.food.map(p => ({ ...p, category: 'food' })),
-              ...nestedData.collars.map(p => ({ ...p, category: 'collars' })),
-              ...nestedData.toys.map(p => ({ ...p, category: 'toys' })),
-              ...nestedData.beds.map(p => ({ ...p, category: 'beds' })),
+              ...nestedData.aquariums.map(p => ({ ...p, category: 'aquariums' })),
+              ...nestedData.cleaning.map(p => ({ ...p, category: 'cleaning' })),
+              ...nestedData.decoration.map(p => ({ ...p, category: 'decoration' })),
+              ...(nestedData.food ? nestedData.food.map(p => ({ ...p, category: 'food' })) : []),
+              ...(nestedData.filters ? nestedData.filters.map(p => ({ ...p, category: 'filters' })) : []),
             ];
           } else {
-            products = rawData.dog_products as CatProduct[];
+            products = rawData.fish_products as FishProduct[];
           }
 
-          dogCatProducts(products);
+          setFishProducts(products);
           setFilteredProducts(products);
           setLoading(false);
           return;
         }
 
         const response = await fetch('/db.json');
-        if (!response.ok) throw new Error('Failed to fetch cat products');
+        if (!response.ok) throw new Error('Failed to fetch fish products');
         const data = await response.json();
-        const fetchedProducts = Array.isArray(data.cat_products)
-          ? data.cat_products
+        const fetchedProducts = Array.isArray(data.fish_products)
+          ? data.fish_products
           : [];
-        dogCatProducts(fetchedProducts);
+        setFishProducts(fetchedProducts);
         setFilteredProducts(fetchedProducts);
         setLoading(false);
       } catch (err) {
@@ -88,15 +90,15 @@ const DogProductsPage: React.FC = () => {
   }, []);
 
   useEffect(() => {
-    let filtered = [...catProducts];
+    let filtered = [...fishProducts];
 
     if (selectedCategory !== 'all') {
       filtered = filtered.filter(product => product.category === selectedCategory);
       // Update the current category name for display
       const categoryObj = categories.find(c => c.value === selectedCategory);
-      setCurrentCategoryName(categoryObj ? `Cat ${categoryObj.name}` : 'Cat Products');
+      setCurrentCategoryName(categoryObj ? `Fish ${categoryObj.name}` : 'Fish Products');
     } else {
-      setCurrentCategoryName('Cat Products');
+      setCurrentCategoryName('Fish Products');
     }
 
     switch (sortOption) {
@@ -114,7 +116,7 @@ const DogProductsPage: React.FC = () => {
     }
 
     setFilteredProducts(filtered);
-  }, [selectedCategory, sortOption, catProducts]);
+  }, [selectedCategory, sortOption, fishProducts]);
 
   const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
     const target = e.target as HTMLImageElement;
@@ -145,14 +147,13 @@ const DogProductsPage: React.FC = () => {
   }
 
   return (
-    <Box  className="cat-page">
-      <Typography variant="h3" component="h1" gutterBottom className="cat-title">
+    <Box className="fish-page">
+      <Typography variant="h3" component="h1" gutterBottom className="fish-title">
         {currentCategoryName}
       </Typography>
 
-      {/* Rest of the component remains exactly the same */}
-      <Box  className="cat-controls">
-        <Box className="cat-category-buttons">
+      <Box className="fish-controls">
+        <Box className="fish-category-buttons">
           {categories.map(category => (
             <Button
               key={category.value}
@@ -170,7 +171,6 @@ const DogProductsPage: React.FC = () => {
         </Box>
 
         <FormControl sx={{ minWidth: 180 }} size="small">
-          <InputLabel id="sort-label">Sort By</InputLabel>
           <Select
             labelId="sort-label"
             value={sortOption}
@@ -185,11 +185,11 @@ const DogProductsPage: React.FC = () => {
         </FormControl>
       </Box>
 
-      <Box className="cat-products-grid">
+      <Box className="fish-products-grid">
         {filteredProducts.length > 0 ? (
           filteredProducts.map(product => (
-            <Box key={product.id} className="cat-card">
-              <Box className="cat-card-img-wrapper">
+            <Box key={product.id} className="fish-card">
+              <Box className="fish-card-img-wrapper">
                 <img
                   src={product.image.startsWith('http') ? product.image : product.image.startsWith('/') ? product.image : `/${product.image}`}
                   alt={product.name}
@@ -201,32 +201,32 @@ const DogProductsPage: React.FC = () => {
                   onError={handleImageError}
                 />
               </Box>
-              <Box className="cat-card-body">
-                <Typography variant="h6" component="h3" gutterBottom className="cat-card-title">
+              <Box className="fish-card-body">
+                <Typography variant="h6" component="h3" gutterBottom className="fish-card-title">
                   {product.name}
                 </Typography>
-                <Box className="cat-card-rating">
+                <Box className="fish-card-rating">
                   <Rating value={product.rating} precision={0.5} readOnly />
                   <Typography variant="body2" sx={{ ml: 1 }}>
                     {product.rating.toFixed(1)}
                   </Typography>
                 </Box>
-                <Typography className="cat-card-description">
+                <Typography className="fish-card-description">
                   {product.description}
                 </Typography>
-                <Typography className="cat-card-category">
+                <Typography className="fish-card-category">
                   {product.category.toUpperCase()}
                 </Typography>
               </Box>
-              <Box className="cat-card-footer">
-                <Typography className="cat-card-price">
+              <Box className="fish-card-footer">
+                <Typography className="fish-card-price">
                   ${product.price.toFixed(2)}
                 </Typography>
                 <Button
                   variant="contained"
                   disabled={!product.inStock}
                   size="small"
-                  className="cat-add-btn">
+                  className="fish-add-btn">
                   {product.inStock ? 'Add to Cart' : 'Out of Stock'}
                 </Button>
               </Box>
@@ -251,4 +251,4 @@ const DogProductsPage: React.FC = () => {
   );
 };
 
-export default DogProductsPage;
+export default FishProductsPage;

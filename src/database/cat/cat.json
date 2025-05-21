@@ -1,0 +1,732 @@
+{
+    "cat_products": {
+        "litters": [
+            {
+                "id": 1,
+                "name": "Fresh Step Clumping Clay Litter",
+                "image": "/images/litters/clay-clumping.jpg",
+                "price": 12.99,
+                "description": "Premium clumping clay litter with odor control",
+                "rating": 4.8,
+                "inStock": true
+            },
+            {
+                "id": 2,
+                "name": "Arm & Hammer Slide Multi-Cat",
+                "image": "/images/litters/arm-hammer.jpg",
+                "price": 14.49,
+                "description": "Low-tracking clumping litter with baking soda",
+                "rating": 4.7,
+                "inStock": true
+            },
+            {
+                "id": 3,
+                "name": "World's Best Cat Litter",
+                "image": "/images/litters/corn-clumping.jpg",
+                "price": 16.99,
+                "description": "Natural corn-based clumping litter",
+                "rating": 4.9,
+                "inStock": true
+            },
+            {
+                "id": 4,
+                "name": "PrettyLitter Health Monitoring",
+                "image": "/images/litters/health-monitor.jpg",
+                "price": 24.99,
+                "description": "Silica gel litter that changes color for health alerts",
+                "rating": 4.6,
+                "inStock": true
+            },
+            {
+                "id": 5,
+                "name": "Dr. Elsey's Ultra Premium",
+                "image": "/images/litters/dr-elseys.jpg",
+                "price": 18.99,
+                "description": "99% dust-free clumping clay litter",
+                "rating": 4.8,
+                "inStock": true
+            },
+            {
+                "id": 6,
+                "name": "Tidy Cats LightWeight",
+                "image": "/images/litters/lightweight.jpg",
+                "price": 11.29,
+                "description": "50% lighter clumping litter",
+                "rating": 4.5,
+                "inStock": true
+            },
+            {
+                "id": 7,
+                "name": "Okocat Super Soft Wood",
+                "image": "/images/litters/wood-clumping.jpg",
+                "price": 15.99,
+                "description": "Natural wood clumping litter",
+                "rating": 4.7,
+                "inStock": true
+            },
+            {
+                "id": 8,
+                "name": "Purina Yesterday's News",
+                "image": "/images/litters/paper-litter.jpg",
+                "price": 12.99,
+                "description": "Recycled paper pellet litter",
+                "rating": 4.4,
+                "inStock": true
+            },
+            {
+                "id": 9,
+                "name": "Blue Buffalo Naturally Fresh",
+                "image": "/images/litters/walnut-litter.jpg",
+                "price": 14.99,
+                "description": "Walnut shell based clumping litter",
+                "rating": 4.6,
+                "inStock": true
+            },
+            {
+                "id": 10,
+                "name": "Feline Pine Original",
+                "image": "/images/litters/pine-litter.jpg",
+                "price": 13.99,
+                "description": "Natural pine pellet litter",
+                "rating": 4.5,
+                "inStock": true
+            },
+            {
+                "id": 11,
+                "name": "Sustainably Yours Cassava",
+                "image": "/images/litters/cassava-litter.jpg",
+                "price": 17.49,
+                "description": "Plant-based clumping litter",
+                "rating": 4.7,
+                "inStock": true
+            },
+            {
+                "id": 12,
+                "name": "SmartCat Grass Litter",
+                "image": "/images/litters/grass-litter.jpg",
+                "price": 16.49,
+                "description": "Clumping litter made from grass",
+                "rating": 4.8,
+                "inStock": true
+            },
+            {
+                "id": 13,
+                "name": "Ever Clean Extra Strength",
+                "image": "/images/litters/ever-clean.jpg",
+                "price": 17.99,
+                "description": "Carbon-infused odor control litter",
+                "rating": 4.7,
+                "inStock": true
+            },
+            {
+                "id": 14,
+                "name": "PetSafe ScoopFree Crystal",
+                "image": "/images/litters/crystal-litter.jpg",
+                "price": 21.99,
+                "description": "Self-cleaning system crystal litter",
+                "rating": 4.5,
+                "inStock": true
+            },
+            {
+                "id": 15,
+                "name": "Nature's Miracle Clumping",
+                "image": "/images/litters/corn-clumping2.jpg",
+                "price": 13.49,
+                "description": "Corn-based clumping litter with odor control",
+                "rating": 4.6,
+                "inStock": true
+            },
+            {
+                "id": 16,
+                "name": "Boxiecat Premium Clay",
+                "image": "/images/litters/boxiecat.jpg",
+                "price": 19.99,
+                "description": "Proprietary clay blend with antimicrobial protection",
+                "rating": 4.8,
+                "inStock": true
+            },
+            {
+                "id": 17,
+                "name": "Frisco Multi-Cat Clay",
+                "image": "/images/litters/frisco.jpg",
+                "price": 15.99,
+                "description": "High-performance clumping litter for multiple cats",
+                "rating": 4.6,
+                "inStock": true
+            },
+            {
+                "id": 18,
+                "name": "So Phresh Grass Seed",
+                "image": "/images/litters/grass-seed.jpg",
+                "price": 15.49,
+                "description": "Eco-friendly grass seed clumping litter",
+                "rating": 4.5,
+                "inStock": true
+            },
+            {
+                "id": 19,
+                "name": "Breeze Cat Litter Pellets",
+                "image": "/images/litters/pellet-system.jpg",
+                "price": 12.49,
+                "description": "Pellet system with separate waste collection",
+                "rating": 4.4,
+                "inStock": true
+            },
+            {
+                "id": 20,
+                "name": "Cat's Pride Total Odor Control",
+                "image": "/images/litters/cats-pride.jpg",
+                "price": 10.99,
+                "description": "Affordable clumping litter with odor elimination",
+                "rating": 4.3,
+                "inStock": true
+            }
+        ],
+        "poles": [
+            {
+                "id": 21,
+                "name": "Premium Cat Tree",
+                "image": "https://cattitud.com/wp-content/uploads/ex-xl-275.png",
+                "price": 129.99,
+                "description": "72-inch multi-level cat tree with sisal posts",
+                "rating": 4.8,
+                "inStock": true
+            },
+            {
+                "id": 22,
+                "name": "Wall-Mounted Perch",
+                "image": "/images/poles/wall-perch.jpg",
+                "price": 49.99,
+                "description": "Space-saving wall climbing system",
+                "rating": 4.6,
+                "inStock": true
+            },
+            {
+                "id": 23,
+                "name": "Corner Scratching Post",
+                "image": "/images/poles/corner-post.jpg",
+                "price": 34.99,
+                "description": "Fits neatly in room corners",
+                "rating": 4.4,
+                "inStock": true
+            },
+            {
+                "id": 24,
+                "name": "Cat Condo Tower",
+                "image": "/images/poles/condo-tower.jpg",
+                "price": 89.99,
+                "description": "3-level tower with hideaway boxes",
+                "rating": 4.7,
+                "inStock": false
+            },
+            {
+                "id": 25,
+                "name": "Modern Cat Pole",
+                "image": "/images/poles/modern-pole.jpg",
+                "price": 75.99,
+                "description": "Sleek contemporary design with neutral colors",
+                "rating": 4.5,
+                "inStock": true
+            },
+            {
+                "id": 26,
+                "name": "Extra Tall Scratching Post",
+                "image": "/images/poles/tall-post.jpg",
+                "price": 59.99,
+                "description": "36-inch height for full stretch",
+                "rating": 4.9,
+                "inStock": true
+            },
+            {
+                "id": 27,
+                "name": "Cat Gym Complex",
+                "image": "/images/poles/gym-complex.jpg",
+                "price": 159.99,
+                "description": "Complete activity center with poles, perches and toys",
+                "rating": 4.8,
+                "inStock": true
+            },
+            {
+                "id": 28,
+                "name": "Basic Scratching Pole",
+                "image": "/images/poles/basic-pole.jpg",
+                "price": 24.99,
+                "description": "Simple 24-inch sisal-wrapped post",
+                "rating": 4.2,
+                "inStock": true
+            },
+            {
+                "id": 29,
+                "name": "Window Perch Pole",
+                "image": "/images/poles/window-pole.jpg",
+                "price": 44.99,
+                "description": "Mounts to window frame for bird watching",
+                "rating": 4.6,
+                "inStock": true
+            },
+            {
+                "id": 30,
+                "name": "Cat Walk System",
+                "image": "/images/poles/walk-system.jpg",
+                "price": 199.99,
+                "description": "Modular wall walkways with multiple poles",
+                "rating": 4.7,
+                "inStock": true
+            },
+            {
+                "id": 31,
+                "name": "Carpet-Covered Pole",
+                "image": "/images/poles/carpet-pole.jpg",
+                "price": 39.99,
+                "description": "Soft carpet surface for scratching",
+                "rating": 4.3,
+                "inStock": true
+            },
+            {
+                "id": 32,
+                "name": "Cat Tower with Hammock",
+                "image": "/images/poles/hammock-tower.jpg",
+                "price": 109.99,
+                "description": "Includes comfortable hanging bed",
+                "rating": 4.8,
+                "inStock": true
+            },
+            {
+                "id": 33,
+                "name": "Spiral Scratching Pole",
+                "image": "/images/poles/spiral-pole.jpg",
+                "price": 49.99,
+                "description": "Unique spiral design for vertical scratching",
+                "rating": 4.5,
+                "inStock": false
+            },
+            {
+                "id": 34,
+                "name": "Cat Activity Pole",
+                "image": "/images/poles/activity-pole.jpg",
+                "price": 79.99,
+                "description": "With dangling toys and scratching surfaces",
+                "rating": 4.6,
+                "inStock": true
+            },
+            {
+                "id": 35,
+                "name": "Corner Climbing Poles",
+                "image": "/images/poles/corner-climber.jpg",
+                "price": 64.99,
+                "description": "Set of two poles for corner installation",
+                "rating": 4.4,
+                "inStock": true
+            },
+            {
+                "id": 36,
+                "name": "Cat Tree with Bridge",
+                "image": "/images/poles/bridge-tree.jpg",
+                "price": 139.99,
+                "description": "Includes suspension bridge between platforms",
+                "rating": 4.7,
+                "inStock": true
+            },
+            {
+                "id": 37,
+                "name": "Minimalist Scratching Pole",
+                "image": "/images/poles/minimalist.jpg",
+                "price": 54.99,
+                "description": "Simple design with natural wood finish",
+                "rating": 4.3,
+                "inStock": true
+            },
+            {
+                "id": 38,
+                "name": "Cat Tower with Cave",
+                "image": "/images/poles/cave-tower.jpg",
+                "price": 119.99,
+                "description": "Includes enclosed hiding space",
+                "rating": 4.9,
+                "inStock": true
+            },
+            {
+                "id": 39,
+                "name": "Double Scratching Poles",
+                "image": "/images/poles/double-poles.jpg",
+                "price": 69.99,
+                "description": "Set of two matching poles",
+                "rating": 4.5,
+                "inStock": true
+            },
+            {
+                "id": 40,
+                "name": "Cat Climber with Perches",
+                "image": "/images/poles/climber-perches.jpg",
+                "price": 149.99,
+                "description": "Multiple levels for climbing and resting",
+                "rating": 4.8,
+                "inStock": true
+            }
+        ],
+        "tools": [
+            {
+                "id": 41,
+                "name": "Professional Grooming Brush",
+                "image": "/images/tools/grooming-brush.jpg",
+                "price": 14.99,
+                "description": "Removes loose hair and prevents matting",
+                "rating": 4.7,
+                "inStock": true
+            },
+            {
+                "id": 42,
+                "name": "Cat Nail Clippers",
+                "image": "/images/tools/nail-clippers.jpg",
+                "price": 8.99,
+                "description": "Sharp stainless steel with safety guard",
+                "rating": 4.5,
+                "inStock": true
+            },
+            {
+                "id": 43,
+                "name": "Slicker Brush",
+                "image": "/images/tools/slicker.jpg",
+                "price": 12.99,
+                "description": "Fine wire pins for removing tangles",
+                "rating": 4.6,
+                "inStock": true
+            },
+            {
+                "id": 44,
+                "name": "Furminator Deshedding Tool",
+                "image": "/images/tools/furminator.jpg",
+                "price": 29.99,
+                "description": "Reduces shedding by up to 90%",
+                "rating": 4.9,
+                "inStock": true
+            },
+            {
+                "id": 45,
+                "name": "Cat Toothbrush Kit",
+                "image": "/images/tools/toothbrush.jpg",
+                "price": 9.99,
+                "description": "Includes finger brush and poultry toothpaste",
+                "rating": 4.3,
+                "inStock": true
+            },
+            {
+                "id": 46,
+                "name": "Ear Cleaning Solution",
+                "image": "/images/tools/ear-cleaner.jpg",
+                "price": 11.99,
+                "description": "Gentle formula for regular ear care",
+                "rating": 4.4,
+                "inStock": true
+            },
+            {
+                "id": 47,
+                "name": "Mat Remover Comb",
+                "image": "/images/tools/mat-remover.jpg",
+                "price": 15.99,
+                "description": "Safely removes tough mats without hurting skin",
+                "rating": 4.7,
+                "inStock": false
+            },
+            {
+                "id": 48,
+                "name": "Grooming Glove",
+                "image": "/images/tools/grooming-glove.jpg",
+                "price": 7.99,
+                "description": "Gentle massage while removing loose hair",
+                "rating": 4.2,
+                "inStock": true
+            },
+            {
+                "id": 49,
+                "name": "Undercoat Rake",
+                "image": "/images/tools/undercoat-rake.jpg",
+                "price": 13.99,
+                "description": "Reaches deep to remove dead undercoat",
+                "rating": 4.6,
+                "inStock": true
+            },
+            {
+                "id": 50,
+                "name": "Nail Grinder",
+                "image": "/images/tools/nail-grinder.jpg",
+                "price": 19.99,
+                "description": "Electric file for smooth nail edges",
+                "rating": 4.5,
+                "inStock": true
+            },
+            {
+                "id": 51,
+                "name": "Grooming Scissors",
+                "image": "/images/tools/grooming-scissors.jpg",
+                "price": 16.99,
+                "description": "Round-tip safety scissors for trimming",
+                "rating": 4.4,
+                "inStock": true
+            },
+            {
+                "id": 52,
+                "name": "Flea Comb",
+                "image": "/images/tools/flea-comb.jpg",
+                "price": 5.99,
+                "description": "Fine teeth for detecting and removing fleas",
+                "rating": 4.3,
+                "inStock": true
+            },
+            {
+                "id": 53,
+                "name": "Waterless Shampoo",
+                "image": "/images/tools/waterless-shampoo.jpg",
+                "price": 12.99,
+                "description": "Foam cleanser for between baths",
+                "rating": 4.2,
+                "inStock": true
+            },
+            {
+                "id": 54,
+                "name": "Pet Hair Remover",
+                "image": "/images/tools/hair-remover.jpg",
+                "price": 9.99,
+                "description": "Rubber brush for furniture and clothing",
+                "rating": 4.6,
+                "inStock": true
+            },
+            {
+                "id": 55,
+                "name": "Grooming Table",
+                "image": "/images/tools/grooming-table.jpg",
+                "price": 89.99,
+                "description": "Adjustable height with non-slip surface",
+                "rating": 4.7,
+                "inStock": true
+            },
+            {
+                "id": 56,
+                "name": "Cat Wipes",
+                "image": "/images/tools/cat-wipes.jpg",
+                "price": 6.99,
+                "description": "Gentle cleansing wipes for quick cleanups",
+                "rating": 4.1,
+                "inStock": true
+            },
+            {
+                "id": 57,
+                "name": "Deodorizing Spray",
+                "image": "/images/tools/deodorizer.jpg",
+                "price": 10.99,
+                "description": "Neutralizes odors between baths",
+                "rating": 4.3,
+                "inStock": true
+            },
+            {
+                "id": 58,
+                "name": "Grooming Kit",
+                "image": "/images/tools/grooming-kit.jpg",
+                "price": 24.99,
+                "description": "Complete set with all essential tools",
+                "rating": 4.8,
+                "inStock": true
+            },
+            {
+                "id": 59,
+                "name": "Pet Hair Vacuum Attachment",
+                "image": "/images/tools/vacuum-attachment.jpg",
+                "price": 14.99,
+                "description": "Specialized tool for removing pet hair",
+                "rating": 4.5,
+                "inStock": false
+            },
+            {
+                "id": 60,
+                "name": "Detangling Spray",
+                "image": "/images/tools/detangler.jpg",
+                "price": 11.99,
+                "description": "Makes brushing easier and more comfortable",
+                "rating": 4.4,
+                "inStock": true
+            }
+        ],
+        "toys": [
+            {
+                "id": 61,
+                "name": "Interactive Laser Toy",
+                "image": "/images/toys/laser-toy.jpg",
+                "price": 14.99,
+                "description": "Automatic laser with multiple patterns",
+                "rating": 4.8,
+                "inStock": true
+            },
+            {
+                "id": 62,
+                "name": "Feather Teaser Wand",
+                "image": "/images/toys/feather-wand.jpg",
+                "price": 9.99,
+                "description": "Long wand with colorful feathers",
+                "rating": 4.9,
+                "inStock": true
+            },
+            {
+                "id": 63,
+                "name": "Catnip Mice (3-pack)",
+                "image": "/images/toys/catnip-mice.jpg",
+                "price": 5.99,
+                "description": "Small plush mice filled with organic catnip",
+                "rating": 4.6,
+                "inStock": true
+            },
+            {
+                "id": 64,
+                "name": "Electronic Motion Toy",
+                "image": "/images/toys/motion-toy.jpg",
+                "price": 19.99,
+                "description": "Moves unpredictably to engage your cat",
+                "rating": 4.7,
+                "inStock": true
+            },
+            {
+                "id": 65,
+                "name": "Crinkle Ball Set",
+                "image": "/images/toys/crinkle-balls.jpg",
+                "price": 4.99,
+                "description": "6-pack of noise-making crinkle balls",
+                "rating": 4.3,
+                "inStock": true
+            },
+            {
+                "id": 66,
+                "name": "Puzzle Feeder",
+                "image": "/images/toys/puzzle-feeder.jpg",
+                "price": 16.99,
+                "description": "Stimulates natural foraging behavior",
+                "rating": 4.5,
+                "inStock": true
+            },
+            {
+                "id": 67,
+                "name": "Automatic Rotating Toy",
+                "image": "/images/toys/rotating-toy.jpg",
+                "price": 24.99,
+                "description": "Battery-operated with random movements",
+                "rating": 4.4,
+                "inStock": false
+            },
+            {
+                "id": 68,
+                "name": "Tunnel System",
+                "image": "/images/toys/tunnel.jpg",
+                "price": 29.99,
+                "description": "Collapsible tunnel with peek holes",
+                "rating": 4.8,
+                "inStock": true
+            },
+            {
+                "id": 69,
+                "name": "Kicker Toy",
+                "image": "/images/toys/kicker.jpg",
+                "price": 8.99,
+                "description": "Long plush toy for bunny-kicking",
+                "rating": 4.6,
+                "inStock": true
+            },
+            {
+                "id": 70,
+                "name": "Ball Track Toy",
+                "image": "/images/toys/ball-track.jpg",
+                "price": 22.99,
+                "description": "Multi-level track with rolling balls",
+                "rating": 4.7,
+                "inStock": true
+            },
+            {
+                "id": 71,
+                "name": "Catnip Banana",
+                "image": "/images/toys/catnip-banana.jpg",
+                "price": 6.99,
+                "description": "Organic catnip-filled banana shape",
+                "rating": 4.9,
+                "inStock": true
+            },
+            {
+                "id": 72,
+                "name": "Flopping Fish Toy",
+                "image": "/images/toys/flopping-fish.jpg",
+                "price": 12.99,
+                "description": "Realistic movements and catnip filling",
+                "rating": 4.5,
+                "inStock": true
+            },
+            {
+                "id": 73,
+                "name": "Interactive Treat Dispenser",
+                "image": "/images/toys/treat-dispenser.jpg",
+                "price": 18.99,
+                "description": "Rewards play with treats",
+                "rating": 4.6,
+                "inStock": true
+            },
+            {
+                "id": 74,
+                "name": "Spring Toy (10-pack)",
+                "image": "/images/toys/springs.jpg",
+                "price": 7.99,
+                "description": "Colorful coiled springs for batting",
+                "rating": 4.7,
+                "inStock": true
+            },
+            {
+                "id": 75,
+                "name": "Remote Control Mouse",
+                "image": "/images/toys/rc-mouse.jpg",
+                "price": 21.99,
+                "description": "Controllable mouse with realistic movements",
+                "rating": 4.3,
+                "inStock": true
+            },
+            {
+                "id": 76,
+                "name": "Cat Charmer Wand",
+                "image": "/images/toys/cat-charmer.jpg",
+                "price": 11.99,
+                "description": "Wand with crinkly ribbon attachment",
+                "rating": 4.8,
+                "inStock": true
+            },
+            {
+                "id": 77,
+                "name": "Plush Kickeroo",
+                "image": "/images/toys/kickeroo.jpg",
+                "price": 14.99,
+                "description": "Extra large kicker toy with catnip",
+                "rating": 4.6,
+                "inStock": true
+            },
+            {
+                "id": 78,
+                "name": "Floating Feather Toy",
+                "image": "/images/toys/floating-feather.jpg",
+                "price": 16.99,
+                "description": "Air-powered floating feathers",
+                "rating": 4.4,
+                "inStock": false
+            },
+            {
+                "id": 79,
+                "name": "LED Light Chaser",
+                "image": "/images/toys/led-chaser.jpg",
+                "price": 19.99,
+                "description": "Random LED light patterns on floor",
+                "rating": 4.7,
+                "inStock": true
+            },
+            {
+                "id": 80,
+                "name": "Cat Activity Center",
+                "image": "/images/toys/activity-center.jpg",
+                "price": 34.99,
+                "description": "Multiple toys on rotating base",
+                "rating": 4.9,
+                "inStock": true
+            }
+        ]
+    }
+}

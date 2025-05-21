@@ -1,0 +1,872 @@
+{
+  "dog_products": {
+    "dog_food": [
+      {
+        "id": 1,
+        "name": "Blue Buffalo Life Protection Chicken",
+        "price": 54.99,
+        "size": "30 lb",
+        "life_stage": "Adult",
+        "flavor": "Chicken & Brown Rice",
+        "rating": 4.8,
+        "inStock": true,
+        "image": "/images/dog_food/blue_buffalo.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Purina Pro Plan Sensitive Skin",
+        "price": 49.99,
+        "size": "24 lb",
+        "life_stage": "Adult",
+        "flavor": "Salmon & Rice",
+        "rating": 4.7,
+        "inStock": true,
+        "image": "/images/dog_food/purina_pro.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Royal Canin Small Breed",
+        "price": 62.99,
+        "size": "14 lb",
+        "life_stage": "Adult",
+        "flavor": "Chicken",
+        "rating": 4.9,
+        "inStock": true,
+        "image": "/images/dog_food/royal_canin.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Hill's Science Diet Puppy",
+        "price": 58.49,
+        "size": "15.5 lb",
+        "life_stage": "Puppy",
+        "flavor": "Chicken & Barley",
+        "rating": 4.8,
+        "inStock": true,
+        "image": "/images/dog_food/hills_puppy.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Merrick Grain Free Real Texas Beef",
+        "price": 64.99,
+        "size": "22 lb",
+        "life_stage": "Adult",
+        "flavor": "Beef & Sweet Potato",
+        "rating": 4.7,
+        "inStock": true,
+        "image": "/images/dog_food/merrick.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Iams Proactive Health Minichunks",
+        "price": 29.99,
+        "size": "30 lb",
+        "life_stage": "Adult",
+        "flavor": "Chicken",
+        "rating": 4.5,
+        "inStock": true,
+        "image": "/images/dog_food/iams.jpg"
+      },
+      {
+        "id": 7,
+        "name": "Nutro Wholesome Essentials Senior",
+        "price": 52.99,
+        "size": "30 lb",
+        "life_stage": "Senior",
+        "flavor": "Chicken & Brown Rice",
+        "rating": 4.6,
+        "inStock": true,
+        "image": "/images/dog_food/nutro.jpg"
+      },
+      {
+        "id": 8,
+        "name": "Wellness Complete Health Puppy",
+        "price": 59.99,
+        "size": "15 lb",
+        "life_stage": "Puppy",
+        "flavor": "Deboned Chicken & Oatmeal",
+        "rating": 4.8,
+        "inStock": true,
+        "image": "/images/dog_food/wellness.jpg"
+      },
+      {
+        "id": 9,
+        "name": "Taste of the Wild High Prairie",
+        "price": 51.99,
+        "size": "28 lb",
+        "life_stage": "Adult",
+        "flavor": "Roasted Bison & Venison",
+        "rating": 4.7,
+        "inStock": true,
+        "image": "/images/dog_food/taste_wild.jpg"
+      },
+      {
+        "id": 10,
+        "name": "Canidae Grain-Free Pure",
+        "price": 67.99,
+        "size": "22 lb",
+        "life_stage": "Adult",
+        "flavor": "Salmon & Sweet Potato",
+        "rating": 4.9,
+        "inStock": true,
+        "image": "/images/dog_food/canidae.jpg"
+      },
+      {
+        "id": 11,
+        "name": "Diamond Naturals Skin & Coat",
+        "price": 39.99,
+        "size": "40 lb",
+        "life_stage": "Adult",
+        "flavor": "Salmon & Potato",
+        "rating": 4.6,
+        "inStock": true,
+        "image": "/images/dog_food/diamond.jpg"
+      },
+      {
+        "id": 12,
+        "name": "Victor Purpose Nutra Pro",
+        "price": 59.99,
+        "size": "40 lb",
+        "life_stage": "Adult",
+        "flavor": "Beef & Pork",
+        "rating": 4.8,
+        "inStock": true,
+        "image": "/images/dog_food/victor.jpg"
+      },
+      {
+        "id": 13,
+        "name": "Fromm Gold Nutritionals",
+        "price": 62.99,
+        "size": "33 lb",
+        "life_stage": "Adult",
+        "flavor": "Chicken & Vegetables",
+        "rating": 4.9,
+        "inStock": true,
+        "image": "/images/dog_food/fromm.jpg"
+      },
+      {
+        "id": 14,
+        "name": "Orijen Original Grain-Free",
+        "price": 89.99,
+        "size": "25 lb",
+        "life_stage": "Adult",
+        "flavor": "Free-Run Chicken & Turkey",
+        "rating": 4.9,
+        "inStock": true,
+        "image": "/images/dog_food/orijen.jpg"
+      },
+      {
+        "id": 15,
+        "name": "Acana Singles Limited Ingredient",
+        "price": 74.99,
+        "size": "25 lb",
+        "life_stage": "Adult",
+        "flavor": "Duck & Pear",
+        "rating": 4.8,
+        "inStock": true,
+        "image": "/images/dog_food/acana.jpg"
+      },
+      {
+        "id": 16,
+        "name": "Natural Balance L.I.D. Limited Ingredient",
+        "price": 69.99,
+        "size": "24 lb",
+        "life_stage": "Adult",
+        "flavor": "Salmon & Sweet Potato",
+        "rating": 4.7,
+        "inStock": true,
+        "image": "/images/dog_food/natural_balance.jpg"
+      },
+      {
+        "id": 17,
+        "name": "Instinct Raw Boost Grain-Free",
+        "price": 64.99,
+        "size": "25 lb",
+        "life_stage": "Adult",
+        "flavor": "Chicken",
+        "rating": 4.8,
+        "inStock": true,
+        "image": "/images/dog_food/instinct.jpg"
+      },
+      {
+        "id": 18,
+        "name": "Zignature Trout & Salmon Meal",
+        "price": 59.99,
+        "size": "25 lb",
+        "life_stage": "Adult",
+        "flavor": "Trout & Salmon",
+        "rating": 4.7,
+        "inStock": true,
+        "image": "/images/dog_food/zignature.jpg"
+      },
+      {
+        "id": 19,
+        "name": "Earthborn Holistic Venture",
+        "price": 67.99,
+        "size": "25 lb",
+        "life_stage": "Adult",
+        "flavor": "Bison Meal",
+        "rating": 4.6,
+        "inStock": true,
+        "image": "/images/dog_food/earthborn.jpg"
+      },
+      {
+        "id": 20,
+        "name": "Nulo Freestyle Grain-Free",
+        "price": 59.99,
+        "size": "24 lb",
+        "life_stage": "Adult",
+        "flavor": "Salmon & Peas",
+        "rating": 4.7,
+        "inStock": true,
+        "image": "/images/dog_food/nulo.jpg"
+      }
+    ],
+    "dog_toys": [
+      {
+        "id": 21,
+        "name": "Durable Nylon Bone",
+        "image": "https://www.hugglepets.co.uk/wp-content/uploads/2018/04/Rosewood-Beef-Nylon-Bone-Chew.jpg",
+        "price": 12.99,
+        "description": "Extra tough nylon bone for aggressive chewers, helps clean teeth",
+        "category": "chew",
+        "rating": 4.5,
+        "inStock": true
+      },
+      {
+        "id": 22,
+        "name": "Squeaky Plush Squirrel",
+        "image": "/images/plush-squirrel.jpg",
+        "price": 9.99,
+        "description": "Soft plush toy with squeaker inside, great for fetch",
+        "category": "plush",
+        "rating": 4.2,
+        "inStock": true
+      },
+      {
+        "id": 23,
+        "name": "High-Bounce Rubber Ball",
+        "image": "https://www.sportspet.com.au/cdn/shop/files/71WpA8Yp7IL._AC_SL1381.jpg?v=1737096630",
+        "price": 6.99,
+        "description": "Super bouncy ball made from natural rubber, floats in water",
+        "category": "fetch",
+        "rating": 4.7,
+        "inStock": true
+      },
+      {
+        "id": 24,
+        "name": "Cotton Rope Tug Toy",
+        "image": "https://5.imimg.com/data5/SELLER/Default/2020/10/AW/BX/PH/77740774/paaltu-cotton-2-knots-durable-dog-chew-rope-toy-500x500.jpg",
+        "price": 10.99,
+        "description": "Braided cotton rope with knots for dental health",
+        "category": "tug",
+        "rating": 4.3,
+        "inStock": false
+      },
+      {
+        "id": 25,
+        "name": "Treat Puzzle Game",
+        "image": "https://m.media-amazon.com/images/I/71cmtvbZ59L._AC_SL1500_.jpg",
+        "price": 19.99,
+        "description": "Interactive puzzle that dispenses treats when solved",
+        "category": "puzzle",
+        "rating": 4.8,
+        "inStock": true
+      },
+      {
+        "id": 26,
+        "name": "Antler Chew",
+        "image": "https://media.istockphoto.com/id/463600377/photo/dog-chewing-on-an-antler.jpg?s=612x612&w=0&k=20&c=7-_1iG4NpkickxZdOI_dmeiiALlExRSTm6emufW8teY=",
+        "price": 24.99,
+        "description": "Natural deer antler, long-lasting chew",
+        "category": "chew",
+        "rating": 4.6,
+        "inStock": true
+      },
+      {
+        "id": 27,
+        "name": "Plush Duck with Quacker",
+        "image": "/images/plush-duck.jpg",
+        "price": 8.49,
+        "description": "Adorable duck plush with duck-like squeaker",
+        "category": "plush",
+        "rating": 4.1,
+        "inStock": true
+      },
+      {
+        "id": 28,
+        "name": "Flying Disc",
+        "image": "/images/flying-disc.jpg",
+        "price": 11.99,
+        "description": "Durable frisbee designed for dog's teeth",
+        "category": "fetch",
+        "rating": 4.4,
+        "inStock": true
+      },
+      {
+        "id": 29,
+        "name": "Tug-of-War Ring",
+        "image": "/images/tug-ring.jpg",
+        "price": 14.99,
+        "description": "Durable rubber ring for two-way tug games",
+        "category": "tug",
+        "rating": 4,
+        "inStock": true
+      },
+      {
+        "id": 30,
+        "name": "Snuffle Mat",
+        "image": "/images/snuffle-mat.jpg",
+        "price": 22.99,
+        "description": "Forage for treats in this mental stimulation mat",
+        "category": "puzzle",
+        "rating": 4.9,
+        "inStock": true
+      },
+      {
+        "id": 31,
+        "name": "Dental Chew Stick",
+        "image": "/images/dental-chew.jpg",
+        "price": 7.99,
+        "description": "Textured chew helps reduce plaque and tartar",
+        "category": "chew",
+        "rating": 4.3,
+        "inStock": true
+      },
+      {
+        "id": 32,
+        "name": "Plush Fox with Tail",
+        "image": "/images/plush-fox.jpg",
+        "price": 10.99,
+        "description": "Fox plush with extra-long tail for shaking",
+        "category": "plush",
+        "rating": 4.2,
+        "inStock": false
+      },
+      {
+        "id": 33,
+        "name": "Glow-in-the-Dark Ball",
+        "image": "/images/glow-ball.jpg",
+        "price": 8.99,
+        "description": "Light-up ball for nighttime fetch",
+        "category": "fetch",
+        "rating": 4.5,
+        "inStock": true
+      },
+      {
+        "id": 34,
+        "name": "Tug Rope with Ball",
+        "image": "/images/rope-ball.jpg",
+        "price": 12.49,
+        "description": "Combination rope and ball for multiple play styles",
+        "category": "tug",
+        "rating": 4.4,
+        "inStock": true
+      },
+      {
+        "id": 35,
+        "name": "Interactive Feeder",
+        "image": "/images/interactive-feeder.jpg",
+        "price": 18.99,
+        "description": "Slow feeder that makes mealtime challenging",
+        "category": "puzzle",
+        "rating": 4.7,
+        "inStock": true
+      },
+      {
+        "id": 36,
+        "name": "Rubber Chew Ring",
+        "image": "/images/rubber-ring.jpg",
+        "price": 9.99,
+        "description": "Flexible rubber ring with textured surface",
+        "category": "chew",
+        "rating": 4.1,
+        "inStock": true
+      },
+      {
+        "id": 37,
+        "name": "Plush Lamb Chop",
+        "image": "/images/plush-lamb.jpg",
+        "price": 7.99,
+        "description": "Classic lamb plush with gentle squeaker",
+        "category": "plush",
+        "rating": 4.6,
+        "inStock": true
+      },
+      {
+        "id": 38,
+        "name": "Chuckit! Ultra Ball",
+        "image": "/images/ultra-ball.jpg",
+        "price": 9.49,
+        "description": "High-visibility orange ball for easy retrieval",
+        "category": "fetch",
+        "rating": 4.8,
+        "inStock": true
+      },
+      {
+        "id": 39,
+        "name": "Tug Rope with Handles",
+        "image": "/images/handle-rope.jpg",
+        "price": 15.99,
+        "description": "Extra-long rope with comfortable human handles",
+        "category": "tug",
+        "rating": 4.3,
+        "inStock": true
+      },
+      {
+        "id": 40,
+        "name": "Treat Dispensing Ball",
+        "image": "/images/treat-ball.jpg",
+        "price": 12.99,
+        "description": "Rolling ball that releases treats as it moves",
+        "category": "puzzle",
+        "rating": 4.5,
+        "inStock": false
+      }
+    ],
+    "dog_collars": [
+      {
+        "id": 41,
+        "name": "Blueberry Pet Classic Solid Color",
+        "price": 9.99,
+        "size": "Medium (14-20\")",
+        "material": "Polyester",
+        "color": "Red",
+        "rating": 4.7,
+        "inStock": true,
+        "image": "/images/dog_collars/blueberry.jpg"
+      },
+      {
+        "id": 42,
+        "name": "Max and Neo Reflective Nylon",
+        "price": 14.99,
+        "size": "Large (18-26\")",
+        "material": "Nylon",
+        "color": "Black",
+        "rating": 4.8,
+        "inStock": true,
+        "image": "/images/dog_collars/max_neo.jpg"
+      },
+      {
+        "id": 43,
+        "name": "LupinePet Original Adjustable",
+        "price": 19.99,
+        "size": "Small (10-14\")",
+        "material": "Nylon",
+        "color": "Purple",
+        "rating": 4.9,
+        "inStock": true,
+        "image": "/images/dog_collars/lupine.jpg"
+      },
+      {
+        "id": 44,
+        "name": "PetSafe Gentle Leader Headcollar",
+        "price": 16.95,
+        "size": "Medium",
+        "material": "Nylon",
+        "color": "Teal",
+        "rating": 4.6,
+        "inStock": true,
+        "image": "/images/dog_collars/petsafe.jpg"
+      },
+      {
+        "id": 45,
+        "name": "RC Pet Products Breakaway Collar",
+        "price": 12.99,
+        "size": "Small (8-12\")",
+        "material": "Polyester",
+        "color": "Pink",
+        "rating": 4.7,
+        "inStock": true,
+        "image": "/images/dog_collars/rc_pet.jpg"
+      },
+      {
+        "id": 46,
+        "name": "Rogz Utility Dog Collar",
+        "price": 14.95,
+        "size": "Medium (14-20\")",
+        "material": "Nylon",
+        "color": "Orange",
+        "rating": 4.8,
+        "inStock": true,
+        "image": "/images/dog_collars/rogz.jpg"
+      },
+      {
+        "id": 47,
+        "name": "Mighty Paw Sport Reflective",
+        "price": 17.99,
+        "size": "Large (18-26\")",
+        "material": "Nylon",
+        "color": "Neon Green",
+        "rating": 4.7,
+        "inStock": true,
+        "image": "/images/dog_collars/mighty_paw.jpg"
+      },
+      {
+        "id": 48,
+        "name": "Pawtitas Rhinestone Sparkle",
+        "price": 15.99,
+        "size": "X-Small (6-10\")",
+        "material": "Nylon",
+        "color": "Silver",
+        "rating": 4.6,
+        "inStock": true,
+        "image": "/images/dog_collars/pawtitas.jpg"
+      },
+      {
+        "id": 49,
+        "name": "EzyDog Quick Fit Adjustable",
+        "price": 21.99,
+        "size": "Medium (14-20\")",
+        "material": "Neoprene",
+        "color": "Blue",
+        "rating": 4.9,
+        "inStock": true,
+        "image": "/images/dog_collars/ezydog.jpg"
+      },
+      {
+        "id": 50,
+        "name": "Frisco Solid Nylon Martingale",
+        "price": 11.99,
+        "size": "Medium (14-20\")",
+        "material": "Nylon",
+        "color": "Navy",
+        "rating": 4.7,
+        "inStock": true,
+        "image": "/images/dog_collars/frisco.jpg"
+      },
+      {
+        "id": 51,
+        "name": "OneTigris Tactical Nylon",
+        "price": 24.99,
+        "size": "Large (18-26\")",
+        "material": "Nylon",
+        "color": "Coyote Brown",
+        "rating": 4.8,
+        "inStock": true,
+        "image": "/images/dog_collars/onetigris.jpg"
+      },
+      {
+        "id": 52,
+        "name": "Petmate Lupine Eco Collar",
+        "price": 16.99,
+        "size": "Small (10-14\")",
+        "material": "Recycled Materials",
+        "color": "Green",
+        "rating": 4.6,
+        "inStock": true,
+        "image": "/images/dog_collars/lupine_eco.jpg"
+      },
+      {
+        "id": 53,
+        "name": "Kurgo Journey Reflective",
+        "price": 19.99,
+        "size": "Medium (14-20\")",
+        "material": "Polyester",
+        "color": "Gray",
+        "rating": 4.7,
+        "inStock": true,
+        "image": "/images/dog_collars/kurgo.jpg"
+      },
+      {
+        "id": 54,
+        "name": "Chai's Choice Organic Cotton",
+        "price": 18.99,
+        "size": "Small (10-14\")",
+        "material": "Organic Cotton",
+        "color": "Natural",
+        "rating": 4.8,
+        "inStock": true,
+        "image": "/images/dog_collars/chais.jpg"
+      },
+      {
+        "id": 55,
+        "name": "DoggieDesigns Handmade Leather",
+        "price": 34.99,
+        "size": "Medium (14-20\")",
+        "material": "Genuine Leather",
+        "color": "Brown",
+        "rating": 4.9,
+        "inStock": true,
+        "image": "/images/dog_collars/doggiedesigns.jpg"
+      },
+      {
+        "id": 56,
+        "name": "Illumiseen LED Safety Collar",
+        "price": 22.99,
+        "size": "Adjustable",
+        "material": "Silicone",
+        "color": "Multi-Color",
+        "rating": 4.7,
+        "inStock": true,
+        "image": "/images/dog_collars/illumiseen.jpg"
+      },
+      {
+        "id": 57,
+        "name": "Pawz Road Reflective Martingale",
+        "price": 17.99,
+        "size": "Medium (14-20\")",
+        "material": "Nylon",
+        "color": "Red/Black",
+        "rating": 4.6,
+        "inStock": true,
+        "image": "/images/dog_collars/pawz.jpg"
+      },
+      {
+        "id": 58,
+        "name": "Wild One Quick-Release Collar",
+        "price": 28.00,
+        "size": "Small (10-14\")",
+        "material": "TPU-Coated Webbing",
+        "color": "Sage",
+        "rating": 4.8,
+        "inStock": true,
+        "image": "/images/dog_collars/wild_one.jpg"
+      },
+      {
+        "id": 59,
+        "name": "HDP Big Dog Heavy Duty",
+        "price": 29.99,
+        "size": "X-Large (24-34\")",
+        "material": "Nylon",
+        "color": "Black",
+        "rating": 4.9,
+        "inStock": true,
+        "image": "/images/dog_collars/hdp.jpg"
+      },
+      {
+        "id": 60,
+        "name": "Fi Smart Dog Collar",
+        "price": 149.00,
+        "size": "Adjustable",
+        "material": "Silicone/Nylon",
+        "color": "Black",
+        "rating": 4.7,
+        "inStock": true,
+        "image": "/images/dog_collars/fi.jpg"
+      }
+    ],
+    "dog_beds": [
+      {
+        "id": 61,
+        "name": "Furhaven Plush Orthopedic Sofa",
+        "price": 49.99,
+        "size": "Large (35\" x 27\")",
+        "material": "Faux Fur",
+        "color": "Gray",
+        "rating": 4.8,
+        "inStock": true,
+        "image": "/images/dog_beds/furhaven.jpg"
+      },
+      {
+        "id": 62,
+        "name": "BarksBar Orthopedic Memory Foam",
+        "price": 59.99,
+        "size": "Medium (30\" x 20\")",
+        "material": "Polyester",
+        "color": "Brown",
+        "rating": 4.9,
+        "inStock": true,
+        "image": "/images/dog_beds/barksbar.jpg"
+      },
+      {
+        "id": 63,
+        "name": "PetFusion Ultimate Dog Bed",
+        "price": 99.99,
+        "size": "Large (40\" x 30\")",
+        "material": "Memory Foam",
+        "color": "Charcoal",
+        "rating": 4.8,
+        "inStock": true,
+        "image": "/images/dog_beds/petfusion.jpg"
+      },
+      {
+        "id": 64,
+        "name": "Best Friends by Sheri Donut Cuddler",
+        "price": 39.99,
+        "size": "Medium (25\" diameter)",
+        "material": "Shag Fur",
+        "color": "Navy",
+        "rating": 4.7,
+        "inStock": true,
+        "image": "/images/dog_beds/sheri.jpg"
+      },
+      {
+        "id": 65,
+        "name": "Big Barker Orthopedic Bed",
+        "price": 249.00,
+        "size": "Large (42\" x 32\")",
+        "material": "Microfiber",
+        "color": "Brown",
+        "rating": 4.9,
+        "inStock": true,
+        "image": "/images/dog_beds/big_barker.jpg"
+      },
+      {
+        "id": 66,
+        "name": "MidWest Bolster Pet Bed",
+        "price": 34.99,
+        "size": "Medium (30\" x 20\")",
+        "material": "Polyester",
+        "color": "Tan",
+        "rating": 4.6,
+        "inStock": true,
+        "image": "/images/dog_beds/midwest.jpg"
+      },
+      {
+        "id": 67,
+        "name": "K&H Pet Products Orthopedic Bolster",
+        "price": 69.99,
+        "size": "Large (36\" x 23\")",
+        "material": "Microfleece",
+        "color": "Gray",
+        "rating": 4.7,
+        "inStock": true,
+        "image": "/images/dog_beds/kh.jpg"
+      },
+      {
+        "id": 68,
+        "name": "Snoozer Luxury Cozy Cave",
+        "price": 79.99,
+        "size": "Large (33\" x 25\")",
+        "material": "Microplush",
+        "color": "Red",
+        "rating": 4.8,
+        "inStock": true,
+        "image": "/images/dog_beds/snoozer.jpg"
+      },
+      {
+        "id": 69,
+        "name": "Coolaroo Elevated Pet Bed",
+        "price": 49.99,
+        "size": "Large (42\" x 25\")",
+        "material": "Mesh Fabric",
+        "color": "Gray",
+        "rating": 4.7,
+        "inStock": true,
+        "image": "/images/dog_beds/coolaroo.jpg"
+      },
+      {
+        "id": 70,
+        "name": "Bedsure Orthopedic Memory Foam",
+        "price": 44.99,
+        "size": "Medium (30\" x 20\")",
+        "material": "Oxford Fabric",
+        "color": "Beige",
+        "rating": 4.8,
+        "inStock": true,
+        "image": "/images/dog_beds/bedsure.jpg"
+      },
+      {
+        "id": 71,
+        "name": "Petmate Aspen Pet Round Bed",
+        "price": 29.99,
+        "size": "Medium (24\" diameter)",
+        "material": "Polyester",
+        "color": "Taupe",
+        "rating": 4.6,
+        "inStock": true,
+        "image": "/images/dog_beds/petmate.jpg"
+      },
+      {
+        "id": 72,
+        "name": "Majestic Pet Suede Bagel Bed",
+        "price": 39.99,
+        "size": "Large (36\" x 36\")",
+        "material": "Suede",
+        "color": "Chocolate",
+        "rating": 4.7,
+        "inStock": true,
+        "image": "/images/dog_beds/majestic.jpg"
+      },
+      {
+        "id": 73,
+        "name": "Frisco Waterproof Orthopedic",
+        "price": 54.99,
+        "size": "Large (36\" x 23\")",
+        "material": "Polyester",
+        "color": "Gray",
+        "rating": 4.7,
+        "inStock": true,
+        "image": "/images/dog_beds/frisco_bed.jpg"
+      },
+      {
+        "id": 74,
+        "name": "Petmaker Self-Warming Lounge Sleeper",
+        "price": 24.99,
+        "size": "Medium (24\" x 20\")",
+        "material": "Fleece",
+        "color": "Cream",
+        "rating": 4.5,
+        "inStock": true,
+        "image": "/images/dog_beds/petmaker.jpg"
+      },
+      {
+        "id": 75,
+        "name": "Friends Forever Orthopedic Memory Foam",
+        "price": 59.99,
+        "size": "Jumbo (45\" x 35\")",
+        "material": "Velvet",
+        "color": "Charcoal",
+        "rating": 4.8,
+        "inStock": true,
+        "image": "/images/dog_beds/friends_forever.jpg"
+      },
+      {
+        "id": 76,
+        "name": "Armarkat Pet Bed Cave",
+        "price": 49.99,
+        "size": "Large (35\" x 25\")",
+        "material": "Faux Fur",
+        "color": "Ivory",
+        "rating": 4.6,
+        "inStock": true,
+        "image": "/images/dog_beds/armarkat.jpg"
+      },
+      {
+        "id": 77,
+        "name": "The Dog's Bed Orthopedic Memory Foam",
+        "price": 89.99,
+        "size": "Large (40\" x 30\")",
+        "material": "Microfiber",
+        "color": "Navy",
+        "rating": 4.9,
+        "inStock": true,
+        "image": "/images/dog_beds/dogs_bed.jpg"
+      },
+      {
+        "id": 78,
+        "name": "AmazonBasics Round Bolster Pet Bed",
+        "price": 27.99,
+        "size": "Medium (30\" diameter)",
+        "material": "Polyester",
+        "color": "Dark Gray",
+        "rating": 4.6,
+        "inStock": true,
+        "image": "/images/dog_beds/amazonbasics.jpg"
+      },
+      {
+        "id": 79,
+        "name": "Pet Life Cozy Calming Donut Bed",
+        "price": 34.99,
+        "size": "Large (35\" diameter)",
+        "material": "Shag Fur",
+        "color": "Light Gray",
+        "rating": 4.7,
+        "inStock": true,
+        "image": "/images/dog_beds/pet_life.jpg"
+      },
+      {
+        "id": 80,
+        "name": "Lay Lo Pet Cot Elevated Bed",
+        "price": 39.99,
+        "size": "Large (42\" x 25\")",
+        "material": "Mesh Fabric",
+        "color": "Blue",
+        "rating": 4.7,
+        "inStock": true,
+        "image": "/images/dog_beds/lay_lo.jpg"
+      }
+    ]
+  }
+}

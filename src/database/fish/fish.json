@@ -1,0 +1,914 @@
+{
+  "fish_products": {
+    "aquariums": [
+      {
+        "id": 1,
+        "name": "Premium Glass Aquarium 10 Gallon",
+        "image": "https://cdn.britannica.com/29/121829-050-911F77EC/freshwater-aquarium.jpg",
+        "price": 59.99,
+        "description": "High clarity glass aquarium perfect for small fish. Includes LED hood.",
+        "rating": 4.5,
+        "inStock": true
+      },
+      {
+        "id": 2,
+        "name": "Marine Expert 30 Gallon Tank Kit",
+        "image": "/images/aquariums/aquarium2.jpg",
+        "price": 199.99,
+        "description": "Complete saltwater ready aquarium with filtration system and lighting.",
+        "rating": 4.8,
+        "inStock": true
+      },
+      {
+        "id": 3,
+        "name": "Nano Cube 5 Gallon Aquarium",
+        "image": "/images/aquariums/aquarium3.jpg",
+        "price": 79.95,
+        "description": "Compact all-in-one aquarium ideal for bettas or shrimp.",
+        "rating": 4.3,
+        "inStock": true
+      },
+      {
+        "id": 4,
+        "name": "Bow Front 20 Gallon Aquarium",
+        "image": "/images/aquariums/aquarium4.jpg",
+        "price": 129.99,
+        "description": "Elegant curved front glass design with black trim.",
+        "rating": 4.6,
+        "inStock": true
+      },
+      {
+        "id": 5,
+        "name": "Large 75 Gallon Aquarium Set",
+        "image": "/images/aquariums/aquarium5.jpg",
+        "price": 349.99,
+        "description": "Complete setup with stand, filter, and heater included.",
+        "rating": 4.7,
+        "inStock": true
+      },
+      {
+        "id": 6,
+        "name": "Acrylic Hexagon Aquarium 15 Gallon",
+        "image": "/images/aquariums/aquarium6.jpg",
+        "price": 149.95,
+        "description": "Lightweight acrylic construction with unique hexagonal shape.",
+        "rating": 4.4,
+        "inStock": true
+      },
+      {
+        "id": 7,
+        "name": "BiOrb Flow 30L Aquarium",
+        "image": "/images/aquariums/aquarium7.jpg",
+        "price": 229.99,
+        "description": "Modern cylindrical aquarium with 360° viewing.",
+        "rating": 4.9,
+        "inStock": true
+      },
+      {
+        "id": 8,
+        "name": "Kids First Aquarium Kit 3 Gallon",
+        "image": "/images/aquariums/aquarium8.jpg",
+        "price": 39.99,
+        "description": "Perfect starter aquarium for children with safety features.",
+        "rating": 4.2,
+        "inStock": true
+      },
+      {
+        "id": 9,
+        "name": "Reef Ready 40 Gallon Breeder Tank",
+        "image": "/images/aquariums/aquarium9.jpg",
+        "price": 179.99,
+        "description": "Pre-drilled for sump with overflow box included.",
+        "rating": 4.7,
+        "inStock": true
+      },
+      {
+        "id": 10,
+        "name": "Extra Tall 29 Gallon Aquarium",
+        "image": "/images/aquariums/aquarium10.jpg",
+        "price": 139.99,
+        "description": "Increased height perfect for angelfish and other tall-bodied species.",
+        "rating": 4.5,
+        "inStock": true
+      },
+      {
+        "id": 11,
+        "name": "Frameless Rimless 12 Gallon Aquarium",
+        "image": "/images/aquariums/aquarium11.jpg",
+        "price": 159.99,
+        "description": "Sleek modern design with ultra-clear low-iron glass.",
+        "rating": 4.8,
+        "inStock": true
+      },
+      {
+        "id": 12,
+        "name": "Turtle Habitat 40 Gallon Long",
+        "image": "/images/aquariums/aquarium12.jpg",
+        "price": 169.99,
+        "description": "Special design with basking area and ramp included.",
+        "rating": 4.6,
+        "inStock": true
+      },
+      {
+        "id": 13,
+        "name": "Plant Pro 20 Gallon High-Tech Aquarium",
+        "image": "/images/aquariums/aquarium13.jpg",
+        "price": 249.99,
+        "description": "Complete planted tank setup with CO2 system and high-power lighting.",
+        "rating": 4.9,
+        "inStock": true
+      },
+      {
+        "id": 14,
+        "name": "Corner Flow 35 Gallon Aquarium",
+        "image": "/images/aquariums/aquarium14.jpg",
+        "price": 199.99,
+        "description": "Space-saving corner design with built-in filtration.",
+        "rating": 4.4,
+        "inStock": true
+      },
+      {
+        "id": 15,
+        "name": "View 360 7 Gallon Sphere Aquarium",
+        "image": "/images/aquariums/aquarium15.jpg",
+        "price": 119.99,
+        "description": "Unique spherical design with crystal clear acrylic construction.",
+        "rating": 4.3,
+        "inStock": true
+      },
+      {
+        "id": 16,
+        "name": "Professional Series 125 Gallon Tank",
+        "image": "/images/aquariums/aquarium16.jpg",
+        "price": 599.99,
+        "description": "Commercial grade aquarium with reinforced seams and tempered glass.",
+        "rating": 4.8,
+        "inStock": true
+      },
+      {
+        "id": 17,
+        "name": "Desktop 2.5 Gallon Aquarium Kit",
+        "image": "/images/aquariums/aquarium17.jpg",
+        "price": 29.99,
+        "description": "Compact aquarium perfect for office or dorm room.",
+        "rating": 4.1,
+        "inStock": true
+      },
+      {
+        "id": 18,
+        "name": "Shallow Reef 50 Gallon Frag Tank",
+        "image": "/images/aquariums/aquarium18.jpg",
+        "price": 279.99,
+        "description": "Low-height aquarium ideal for coral propagation.",
+        "rating": 4.7,
+        "inStock": true
+      },
+      {
+        "id": 19,
+        "name": "All-in-One 14 Gallon Cube Aquarium",
+        "image": "/images/aquariums/aquarium19.jpg",
+        "price": 169.99,
+        "description": "Complete system with hidden rear filtration compartment.",
+        "rating": 4.6,
+        "inStock": true
+      },
+      {
+        "id": 20,
+        "name": "Jumbo 180 Gallon Aquarium Package",
+        "image": "/images/aquariums/aquarium20.jpg",
+        "price": 1299.99,
+        "description": "Massive display tank with heavy-duty stand and canopy.",
+        "rating": 4.9,
+        "inStock": true
+      }
+    ],
+    "cleaning": [
+      {
+        "id": 21,
+        "name": "Magnetic Aquarium Glass Cleaner",
+        "image": "/images/cleaning/cleaner1.jpg",
+        "price": 19.99,
+        "description": "Powerful dual-sided magnet cleaner for algae removal.",
+        "rating": 4.7,
+        "inStock": true
+      },
+      {
+        "id": 22,
+        "name": "Pro Gravel Vacuum Kit",
+        "image": "/images/cleaning/cleaner2.jpg",
+        "price": 29.95,
+        "description": "Complete water changing and substrate cleaning system.",
+        "rating": 4.8,
+        "inStock": true
+      },
+      {
+        "id": 23,
+        "name": "Algae Scraper with Extendable Handle",
+        "image": "/images/cleaning/cleaner3.jpg",
+        "price": 15.99,
+        "description": "Adjustable length from 12\" to 36\" for deep tanks.",
+        "rating": 4.5,
+        "inStock": true
+      },
+      {
+        "id": 24,
+        "name": "Aquarium Surface Skimmer",
+        "image": "/images/cleaning/cleaner4.jpg",
+        "price": 24.99,
+        "description": "Removes protein film and debris from water surface.",
+        "rating": 4.6,
+        "inStock": true
+      },
+      {
+        "id": 25,
+        "name": "Nano Tank Cleaning Kit",
+        "image": "/images/cleaning/cleaner5.jpg",
+        "price": 18.99,
+        "description": "Special small tools for cleaning 2-10 gallon aquariums.",
+        "rating": 4.4,
+        "inStock": true
+      },
+      {
+        "id": 26,
+        "name": "Battery Powered Gravel Cleaner",
+        "image": "/images/cleaning/cleaner6.jpg",
+        "price": 39.99,
+        "description": "No faucet needed - automatic water changing system.",
+        "rating": 4.3,
+        "inStock": true
+      },
+      {
+        "id": 27,
+        "name": "Corner Algae Brush Set",
+        "image": "/images/cleaning/cleaner7.jpg",
+        "price": 12.99,
+        "description": "Special angled brushes for hard-to-reach tank corners.",
+        "rating": 4.2,
+        "inStock": true
+      },
+      {
+        "id": 28,
+        "name": "Glass Cleaning Blade Set",
+        "image": "/images/cleaning/cleaner8.jpg",
+        "price": 14.95,
+        "description": "Razor blades with safety holder for tough algae spots.",
+        "rating": 4.7,
+        "inStock": true
+      },
+      {
+        "id": 29,
+        "name": "Aquarium Water Polishing Cloth",
+        "image": "/images/cleaning/cleaner9.jpg",
+        "price": 9.99,
+        "description": "Microfiber cloth that removes water spots without chemicals.",
+        "rating": 4.1,
+        "inStock": true
+      },
+      {
+        "id": 30,
+        "name": "Automatic Glass Cleaner",
+        "image": "/images/cleaning/cleaner10.jpg",
+        "price": 59.99,
+        "description": "Programmable cleaner that moves around tank automatically.",
+        "rating": 4.0,
+        "inStock": true
+      },
+      {
+        "id": 31,
+        "name": "Filter Media Cleaning Basket",
+        "image": "/images/cleaning/cleaner11.jpg",
+        "price": 16.99,
+        "description": "Wash media without losing beneficial bacteria.",
+        "rating": 4.5,
+        "inStock": true
+      },
+      {
+        "id": 32,
+        "name": "Long-Reach Sponge Scrubber",
+        "image": "/images/cleaning/cleaner12.jpg",
+        "price": 11.99,
+        "description": "18\" handle with replaceable sponge head.",
+        "rating": 4.3,
+        "inStock": true
+      },
+      {
+        "id": 33,
+        "name": "Aquarium Cleaning Gloves",
+        "image": "/images/cleaning/cleaner13.jpg",
+        "price": 12.95,
+        "description": "Waterproof gloves that protect your hands and arms.",
+        "rating": 4.2,
+        "inStock": true
+      },
+      {
+        "id": 34,
+        "name": "Algae Magnet for Acrylic Tanks",
+        "image": "/images/cleaning/cleaner14.jpg",
+        "price": 22.99,
+        "description": "Special non-scratch design safe for acrylic surfaces.",
+        "rating": 4.6,
+        "inStock": true
+      },
+      {
+        "id": 35,
+        "name": "Aquarium Cleaning Tool Set",
+        "image": "/images/cleaning/cleaner15.jpg",
+        "price": 34.99,
+        "description": "Complete 8-piece cleaning kit for all aquarium types.",
+        "rating": 4.7,
+        "inStock": true
+      },
+      {
+        "id": 36,
+        "name": "Siphon Starter with Check Valve",
+        "image": "/images/cleaning/cleaner16.jpg",
+        "price": 17.99,
+        "description": "Easy one-pump start gravel vacuum with safety features.",
+        "rating": 4.8,
+        "inStock": true
+      },
+      {
+        "id": 37,
+        "name": "Tank Background Cleaner",
+        "image": "/images/cleaning/cleaner17.jpg",
+        "price": 8.99,
+        "description": "Special tool for cleaning behind installed backgrounds.",
+        "rating": 4.0,
+        "inStock": true
+      },
+      {
+        "id": 38,
+        "name": "Powerful Algae Pad",
+        "image": "/images/cleaning/cleaner18.jpg",
+        "price": 7.99,
+        "description": "Dual-sided scrubber for glass and decorations.",
+        "rating": 4.4,
+        "inStock": true
+      },
+      {
+        "id": 39,
+        "name": "Aquarium Cleaning Cart",
+        "image": "/images/cleaning/cleaner19.jpg",
+        "price": 49.99,
+        "description": "Mobile workstation with holders for all cleaning tools.",
+        "rating": 4.3,
+        "inStock": true
+      },
+      {
+        "id": 40,
+        "name": "Ultimate Cleaning System Deluxe",
+        "image": "/images/cleaning/cleaner20.jpg",
+        "price": 89.99,
+        "description": "Complete professional cleaning system with carrying case.",
+        "rating": 4.9,
+        "inStock": true
+      }
+    ],
+    "decoration": [
+      {
+        "id": 41,
+        "name": "Natural Driftwood Centerpiece",
+        "image": "/images/decorations/decor1.jpg",
+        "price": 24.99,
+        "description": "Beautiful Malaysian driftwood perfect for aquascaping.",
+        "rating": 4.8,
+        "inStock": true
+      },
+      {
+        "id": 42,
+        "name": "Ancient Ruins Aquarium Ornament",
+        "image": "/images/decorations/decor2.jpg",
+        "price": 19.99,
+        "description": "Detailed resin castle ruins with hiding spots for fish.",
+        "rating": 4.5,
+        "inStock": true
+      },
+      {
+        "id": 43,
+        "name": "Assorted River Rocks (5 lb)",
+        "image": "/images/decorations/decor3.jpg",
+        "price": 14.95,
+        "description": "Naturally smooth stones in various sizes and colors.",
+        "rating": 4.6,
+        "inStock": true
+      },
+      {
+        "id": 44,
+        "name": "LED Coral Reef Ornament",
+        "image": "/images/decorations/decor4.jpg",
+        "price": 34.99,
+        "description": "Color-changing LED illuminated reef decoration.",
+        "rating": 4.7,
+        "inStock": true
+      },
+      {
+        "id": 45,
+        "name": "Bamboo Forest Background",
+        "image": "/images/decorations/decor5.jpg",
+        "price": 29.99,
+        "description": "3D textured background creates depth illusion.",
+        "rating": 4.4,
+        "inStock": true
+      },
+      {
+        "id": 46,
+        "name": "Shipwreck Aquarium Decoration",
+        "image": "/images/decorations/decor6.jpg",
+        "price": 27.99,
+        "description": "Detailed sunken ship with multiple entrance points.",
+        "rating": 4.9,
+        "inStock": true
+      },
+      {
+        "id": 47,
+        "name": "Natural Coconut Cave",
+        "image": "/images/decorations/decor7.jpg",
+        "price": 12.99,
+        "description": "Real coconut shell turned into fish hideout.",
+        "rating": 4.3,
+        "inStock": true
+      },
+      {
+        "id": 48,
+        "name": "Volcano Bubble Ornament",
+        "image": "/images/decorations/decor8.jpg",
+        "price": 22.99,
+        "description": "Erupting volcano that creates streams of bubbles.",
+        "rating": 4.5,
+        "inStock": true
+      },
+      {
+        "id": 49,
+        "name": "Aquarium Plant Bundle (12 stems)",
+        "image": "/images/decorations/decor9.jpg",
+        "price": 18.99,
+        "description": "Assorted high-quality silk plants for instant aquascaping.",
+        "rating": 4.6,
+        "inStock": true
+      },
+      {
+        "id": 50,
+        "name": "Zen Garden Ornament Set",
+        "image": "/images/decorations/decor10.jpg",
+        "price": 39.99,
+        "description": "Complete Japanese garden theme with bridge and lanterns.",
+        "rating": 4.8,
+        "inStock": true
+      },
+      {
+        "id": 51,
+        "name": "Dragon Stone (5 pieces)",
+        "image": "/images/decorations/decor11.jpg",
+        "price": 29.95,
+        "description": "Popular aquascaping rock with unique texture and holes.",
+        "rating": 4.7,
+        "inStock": true
+      },
+      {
+        "id": 52,
+        "name": "Sunken Treasure Chest",
+        "image": "/images/decorations/decor12.jpg",
+        "price": 16.99,
+        "description": "Classic treasure chest that opens to release bubbles.",
+        "rating": 4.2,
+        "inStock": true
+      },
+      {
+        "id": 53,
+        "name": "Artificial Coral Reef Set",
+        "image": "/images/decorations/decor13.jpg",
+        "price": 44.99,
+        "description": "Realistic coral formations in vibrant colors.",
+        "rating": 4.9,
+        "inStock": true
+      },
+      {
+        "id": 54,
+        "name": "Pagoda Temple Ornament",
+        "image": "/images/decorations/decor14.jpg",
+        "price": 31.99,
+        "description": "Multi-level Asian temple with intricate details.",
+        "rating": 4.5,
+        "inStock": true
+      },
+      {
+        "id": 55,
+        "name": "Aquarium Background LED Panel",
+        "image": "/images/decorations/decor15.jpg",
+        "price": 49.99,
+        "description": "Programmable color-changing backdrop with remote.",
+        "rating": 4.6,
+        "inStock": true
+      },
+      {
+        "id": 56,
+        "name": "Mermaid Statue Ornament",
+        "image": "/images/decorations/decor16.jpg",
+        "price": 19.99,
+        "description": "Whimsical mermaid sculpture that bubbles.",
+        "rating": 4.3,
+        "inStock": true
+      },
+      {
+        "id": 57,
+        "name": "Natural Sandstone Slate",
+        "image": "/images/decorations/decor17.jpg",
+        "price": 17.95,
+        "description": "Flat stones perfect for creating ledges and caves.",
+        "rating": 4.4,
+        "inStock": true
+      },
+      {
+        "id": 58,
+        "name": "Floating Moonlight Ornament",
+        "image": "/images/decorations/decor18.jpg",
+        "price": 26.99,
+        "description": "LED moon that slowly rises and falls in tank.",
+        "rating": 4.7,
+        "inStock": true
+      },
+      {
+        "id": 59,
+        "name": "Ancient Amphora Set (3 pieces)",
+        "image": "/images/decorations/decor19.jpg",
+        "price": 22.99,
+        "description": "Authentic-looking Greek vase replicas in varying sizes.",
+        "rating": 4.5,
+        "inStock": true
+      },
+      {
+        "id": 60,
+        "name": "Rainbow Gravel Substrate (10 lb)",
+        "image": "/images/decorations/decor20.jpg",
+        "price": 14.99,
+        "description": "Vibrant colored gravel that's safe for all fish.",
+        "rating": 4.1,
+        "inStock": true
+      }
+    ],
+    "food": [
+      {
+        "id": 61,
+        "name": "Tropical Fish Flakes",
+        "image": "/images/food/food1.jpg",
+        "price": 8.99,
+        "description": "Complete nutrition for all tropical fish in easy-to-feed flakes.",
+        "rating": 4.6,
+        "inStock": true
+      },
+      {
+        "id": 62,
+        "name": "Goldfish Premium Pellets",
+        "image": "/images/food/food2.jpg",
+        "price": 7.99,
+        "description": "Floating pellets formulated specifically for goldfish digestion.",
+        "rating": 4.7,
+        "inStock": true
+      },
+      {
+        "id": 63,
+        "name": "Marine Algae Wafers",
+        "image": "/images/food/food3.jpg",
+        "price": 9.95,
+        "description": "Sinking wafers for herbivorous fish and bottom feeders.",
+        "rating": 4.8,
+        "inStock": true
+      },
+      {
+        "id": 64,
+        "name": "Freeze-Dried Bloodworms",
+        "image": "/images/food/food4.jpg",
+        "price": 12.99,
+        "description": "Protein-rich treat that fish go crazy for.",
+        "rating": 4.9,
+        "inStock": true
+      },
+      {
+        "id": 65,
+        "name": "Betta Bio-Gold Pellets",
+        "image": "/images/food/food5.jpg",
+        "price": 6.99,
+        "description": "Small, nutrient-dense pellets perfect for betta fish.",
+        "rating": 4.5,
+        "inStock": true
+      },
+      {
+        "id": 66,
+        "name": "Community Fish Micro Pellets",
+        "image": "/images/food/food6.jpg",
+        "price": 8.49,
+        "description": "Tiny pellets suitable for small community fish and fry.",
+        "rating": 4.4,
+        "inStock": true
+      },
+      {
+        "id": 67,
+        "name": "Spirulina Flakes",
+        "image": "/images/food/food7.jpg",
+        "price": 10.99,
+        "description": "High in vegetable matter for herbivorous fish species.",
+        "rating": 4.7,
+        "inStock": true
+      },
+      {
+        "id": 68,
+        "name": "Cichlid Sticks",
+        "image": "/images/food/food8.jpg",
+        "price": 11.99,
+        "description": "Floating sticks formulated for aggressive eaters.",
+        "rating": 4.6,
+        "inStock": true
+      },
+      {
+        "id": 69,
+        "name": "Shrimp Pellets",
+        "image": "/images/food/food9.jpg",
+        "price": 7.49,
+        "description": "Sinking pellets perfect for shrimp and bottom dwellers.",
+        "rating": 4.8,
+        "inStock": true
+      },
+      {
+        "id": 70,
+        "name": "Color Enhancing Flakes",
+        "image": "/images/food/food10.jpg",
+        "price": 9.99,
+        "description": "Formulated to bring out vibrant colors in tropical fish.",
+        "rating": 4.5,
+        "inStock": true
+      },
+      {
+        "id": 71,
+        "name": "Live Brine Shrimp Eggs",
+        "image": "/images/food/food11.jpg",
+        "price": 14.95,
+        "description": "Hatch your own nutritious live food at home.",
+        "rating": 4.9,
+        "inStock": true
+      },
+      {
+        "id": 72,
+        "name": "Plankton Cubes",
+        "image": "/images/food/food12.jpg",
+        "price": 12.49,
+        "description": "Frozen nutrition cubes packed with marine plankton.",
+        "rating": 4.7,
+        "inStock": true
+      },
+      {
+        "id": 73,
+        "name": "Algae Discs",
+        "image": "/images/food/food13.jpg",
+        "price": 5.99,
+        "description": "Perfect for plecos and other algae eaters.",
+        "rating": 4.3,
+        "inStock": true
+      },
+      {
+        "id": 74,
+        "name": "Multi-Crustacean Pellets",
+        "image": "/images/food/food14.jpg",
+        "price": 13.99,
+        "description": "Contains shrimp, krill and other crustaceans for protein.",
+        "rating": 4.6,
+        "inStock": true
+      },
+      {
+        "id": 75,
+        "name": "Fry Starter Powder",
+        "image": "/images/food/food15.jpg",
+        "price": 8.95,
+        "description": "Ultra-fine powder food for newly hatched fry.",
+        "rating": 4.8,
+        "inStock": true
+      },
+      {
+        "id": 76,
+        "name": "Krill Flakes",
+        "image": "/images/food/food16.jpg",
+        "price": 11.49,
+        "description": "High-protein flakes with whole krill for marine fish.",
+        "rating": 4.5,
+        "inStock": true
+      },
+      {
+        "id": 77,
+        "name": "Veggie Rounds",
+        "image": "/images/food/food17.jpg",
+        "price": 7.99,
+        "description": "Slow-sinking vegetable-based discs for herbivores.",
+        "rating": 4.4,
+        "inStock": true
+      },
+      {
+        "id": 78,
+        "name": "Carnivore Sticks",
+        "image": "/images/food/food18.jpg",
+        "price": 14.99,
+        "description": "Meat-based food for predatory fish species.",
+        "rating": 4.7,
+        "inStock": true
+      },
+      {
+        "id": 79,
+        "name": "Multi-Vitamin Supplement",
+        "image": "/images/food/food19.jpg",
+        "price": 9.95,
+        "description": "Liquid vitamin boost to add to regular food.",
+        "rating": 4.6,
+        "inStock": true
+      },
+      {
+        "id": 80,
+        "name": "Weekend Feeder Blocks",
+        "image": "/images/food/food20.jpg",
+        "price": 5.99,
+        "description": "Slow-release food blocks for when you're away.",
+        "rating": 4.2,
+        "inStock": true
+      }
+    ],
+    "filters": [
+      {
+        "id": 81,
+        "name": "Hang-On-Back Power Filter",
+        "image": "/images/filters/filter1.jpg",
+        "price": 39.99,
+        "description": "Quiet, efficient filtration for tanks up to 50 gallons.",
+        "rating": 4.7,
+        "inStock": true
+      },
+      {
+        "id": 82,
+        "name": "Canister Filter Pro 200",
+        "image": "/images/filters/filter2.jpg",
+        "price": 149.99,
+        "description": "High-capacity filtration system for large aquariums.",
+        "rating": 4.9,
+        "inStock": true
+      },
+      {
+        "id": 83,
+        "name": "Sponge Filter Kit",
+        "image": "/images/filters/filter3.jpg",
+        "price": 19.99,
+        "description": "Ideal for breeding tanks and gentle filtration.",
+        "rating": 4.5,
+        "inStock": true
+      },
+      {
+        "id": 84,
+        "name": "Internal Power Filter",
+        "image": "/images/filters/filter4.jpg",
+        "price": 29.95,
+        "description": "Compact submersible filter with adjustable flow.",
+        "rating": 4.6,
+        "inStock": true
+      },
+      {
+        "id": 85,
+        "name": "UV Sterilizer Filter",
+        "image": "/images/filters/filter5.jpg",
+        "price": 89.99,
+        "description": "Eliminates algae and harmful microorganisms with UV light.",
+        "rating": 4.8,
+        "inStock": true
+      },
+      {
+        "id": 86,
+        "name": "Nano Tank Filter",
+        "image": "/images/filters/filter6.jpg",
+        "price": 24.99,
+        "description": "Small but powerful filter for tanks under 10 gallons.",
+        "rating": 4.4,
+        "inStock": true
+      },
+      {
+        "id": 87,
+        "name": "Wet/Dry Trickle Filter",
+        "image": "/images/filters/filter7.jpg",
+        "price": 199.99,
+        "description": "Professional grade biological filtration system.",
+        "rating": 4.9,
+        "inStock": true
+      },
+      {
+        "id": 88,
+        "name": "Corner Filter Box",
+        "image": "/images/filters/filter8.jpg",
+        "price": 17.99,
+        "description": "Discreet filtration that fits in tank corners.",
+        "rating": 4.3,
+        "inStock": true
+      },
+      {
+        "id": 89,
+        "name": "Bio-Wheel Power Filter",
+        "image": "/images/filters/filter9.jpg",
+        "price": 49.99,
+        "description": "Patented rotating bio-wheel for superior biological filtration.",
+        "rating": 4.7,
+        "inStock": true
+      },
+      {
+        "id": 90,
+        "name": "Dual Intake Canister Filter",
+        "image": "/images/filters/filter10.jpg",
+        "price": 179.99,
+        "description": "High-performance filter with dual water intake.",
+        "rating": 4.8,
+        "inStock": true
+      },
+      {
+        "id": 91,
+        "name": "Air Pump Driven Sponge Filter",
+        "image": "/images/filters/filter11.jpg",
+        "price": 14.99,
+        "description": "Simple, effective filtration powered by air pump.",
+        "rating": 4.5,
+        "inStock": true
+      },
+      {
+        "id": 92,
+        "name": "Filter Media Variety Pack",
+        "image": "/images/filters/filter12.jpg",
+        "price": 22.99,
+        "description": "Assorted mechanical, chemical and biological media.",
+        "rating": 4.6,
+        "inStock": true
+      },
+      {
+        "id": 93,
+        "name": "Surface Skimming Filter",
+        "image": "/images/filters/filter13.jpg",
+        "price": 34.99,
+        "description": "Specialized filter that removes surface film.",
+        "rating": 4.4,
+        "inStock": true
+      },
+      {
+        "id": 94,
+        "name": "Replacement Filter Cartridges (6-pack)",
+        "image": "/images/filters/filter14.jpg",
+        "price": 19.99,
+        "description": "Standard size cartridges for most HOB filters.",
+        "rating": 4.3,
+        "inStock": true
+      },
+      {
+        "id": 95,
+        "name": "Aquarium Filter Carbon",
+        "image": "/images/filters/filter15.jpg",
+        "price": 12.99,
+        "description": "Activated carbon for chemical filtration.",
+        "rating": 4.5,
+        "inStock": true
+      },
+      {
+        "id": 96,
+        "name": "Pre-Filter Sponge",
+        "image": "/images/filters/filter16.jpg",
+        "price": 8.99,
+        "description": "Protects intake tubes and provides additional bio filtration.",
+        "rating": 4.7,
+        "inStock": true
+      },
+      {
+        "id": 97,
+        "name": "Filter Floss Roll",
+        "image": "/images/filters/filter17.jpg",
+        "price": 14.95,
+        "description": "Fine mechanical filtration media for crystal clear water.",
+        "rating": 4.6,
+        "inStock": true
+      },
+      {
+        "id": 98,
+        "name": "Ceramic Bio Rings",
+        "image": "/images/filters/filter18.jpg",
+        "price": 16.99,
+        "description": "Porous media for maximum beneficial bacteria growth.",
+        "rating": 4.8,
+        "inStock": true
+      },
+      {
+        "id": 99,
+        "name": "Adjustable Flow Powerhead",
+        "image": "/images/filters/filter19.jpg",
+        "price": 39.99,
+        "description": "Creates water movement and can be used with sponge filters.",
+        "rating": 4.5,
+        "inStock": true
+      },
+      {
+        "id": 100,
+        "name": "Smart Filter with WiFi Control",
+        "image": "/images/filters/filter20.jpg",
+        "price": 129.99,
+        "description": "Monitor and control your filter from your smartphone.",
+        "rating": 4.9,
+        "inStock": true
+      }
+    ]
+  }
+}

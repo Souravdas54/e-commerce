@@ -13,12 +13,17 @@ const dealItems = [
   {
     name: 'Fish',
     image: 'https://images.unsplash.com/photo-1578507065211-1c4e99a5fd24?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZmlzaHxlbnwwfHwwfHx8MA%3D%3D',
-    link: '/fishtoys'
+    link: '/fishpage'
+  },
+  {
+    name: 'Cat',
+    image: 'https://images.unsplash.com/photo-1677126573075-8a15fcd0f51a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    link: '/cattyos'
   },
   {
     name: 'Birds',
     image: 'https://images.unsplash.com/photo-1560813562-fd09315f5ce8?q=80&w=1432&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    link: '/birdtoys'
+    link: '/bird'
   },
   {
     name: 'Small Animals',

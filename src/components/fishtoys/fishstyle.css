@@ -1,0 +1,222 @@
+/* fishstyle.css */
+
+.fish-page {
+  padding: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.fish-title {
+  text-align: center;
+  margin-bottom: 24px !important;
+  color: #1976d2;
+  font-weight: 600 !important;
+}
+
+.fish-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.fish-category-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.fish-products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+  padding: 8px;
+}
+
+.fish-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  background-color: white;
+}
+
+.fish-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.fish-card-img-wrapper {
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #eee;
+}
+
+.fish-card-body {
+  padding: 14px;
+  flex-grow: 1;
+}
+
+.fish-card-title {
+  font-size: 1rem !important;
+  margin-bottom: 8px !important;
+  color: #333;
+}
+
+.fish-card-rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.fish-card-description {
+  color: #666;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.fish-card-category {
+  font-size: 0.7rem;
+  color: #888;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.fish-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px;
+  border-top: 1px solid #eee;
+}
+
+.fish-card-price {
+  font-weight: bold;
+  color: #1976d2;
+  font-size: 1rem;
+}
+
+.fish-add-btn {
+  text-transform: none !important;
+  font-weight: 500 !important;
+}
+
+/* Extra Small (xs) - <600px */
+@media (max-width: 599px) {
+  .fish-page {
+    padding: 12px;
+  }
+
+  .fish-title {
+    font-size: 1.5rem !important;
+    margin-bottom: 16px !important;
+  }
+
+  .fish-controls {
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .fish-category-buttons {
+    justify-content: center;
+  }
+
+  .fish-products-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .fish-card-img-wrapper {
+    height: 160px;
+  }
+}
+
+/* Small (sm) - 600px to 899px */
+@media (min-width: 600px) and (max-width: 899px) {
+  .fish-products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 18px;
+  }
+
+  .fish-card-img-wrapper {
+    height: 170px;
+  }
+}
+
+/* Medium (md) - 900px to 1199px */
+@media (min-width: 900px) and (max-width: 1199px) {
+  .fish-products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+  }
+
+  .fish-card-img-wrapper {
+    height: 180px;
+  }
+}
+
+/* Large (lg) - 1200px to 1535px */
+@media (min-width: 1200px) and (max-width: 1535px) {
+  .fish-products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 22px;
+  }
+
+  .fish-card-img-wrapper {
+    height: 190px;
+  }
+}
+
+/* Extra Large (xl) - 1536px and up */
+@media (min-width: 1536px) {
+  .fish-page {
+    padding: 24px;
+  }
+
+  .fish-products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 24px;
+  }
+
+  .fish-card-img-wrapper {
+    height: 200px;
+  }
+
+  .fish-card-body {
+    padding: 16px;
+  }
+
+  .fish-card-title {
+    font-size: 1.1rem !important;
+  }
+
+  .fish-card-price {
+    font-size: 1.1rem;
+  }
+}
+
+/* Additional responsive tweaks for very large screens */
+@media (min-width: 1800px) {
+  .fish-page {
+    max-width: 1600px;
+  }
+
+  .fish-products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+}
