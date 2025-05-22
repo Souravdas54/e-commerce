@@ -17,18 +17,18 @@ import { handlelogout } from '../../redux/authSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-
-const pages = ['Products', 'Pricing', 'Blog'];
+import { RootState } from '../../redux/store';
+// const pages = ['Products', 'Pricing', 'Blog'];
 // const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function Header() {
 
     const dispatch = useDispatch();
     const navigate = useNavigate();
-  const [isoptions, setIsOptions] = React.useState(false);
+    const [isoptions, setIsOptions] = React.useState(false);
 
 
-    const { isLogin } = useSelector((state: any) => state.authKey)
+    const { isLogin } = useSelector((state:RootState) => state.authKey)
 
     React.useEffect(() => {
         if (isLogin) {
@@ -50,24 +50,42 @@ function Header() {
     }
 
     // FIRST NAME & LAST NAME SHOW STATE //
-  const [getFullName, setGetFullName] = React.useState('');
+    const [getFullName, setGetFullName] = React.useState('');
 
-  React.useEffect(() => {
-    const token = localStorage.getItem('token');
-    const fullName = localStorage.getItem('name');
+    React.useEffect(() => {
+        const token = localStorage.getItem('token');
+        const fullName = localStorage.getItem('name');
 
-    setIsOptions(!!token);
-    if (token) {
-      setGetFullName(fullName || '');
-    
-    } else {
-      setGetFullName("");
-     
+        setIsOptions(!!token);
+        if (token) {
+            setGetFullName(fullName || '');
 
-    }
-    // DISPATCH isLogin
-  }, [isLogin])
+        } else {
+            setGetFullName("");
 
+
+        }
+        // DISPATCH isLogin
+    }, [isLogin])
+// APPBAR //
+  const pages = isLogin ? [
+    { name: "Home", path: '/' },
+    { name: 'About', path: '/about' },
+    { name: 'Contact', path: '/contact' },
+    { name: 'Service', path: '/service' },
+    { name: 'Create', path: '/create' },
+    { name: "List", path: '/list' },
+  ] : [
+    { name: "Home", path: '/' },
+    { name: 'About', path: '/about' },
+    { name: 'Contact', path: '/contact' },
+    { name: 'Register', path: "/register" },
+    { name: 'Create', path: '/create' },
+    { name: "List", path: '/list' },
+    { name: 'Service', path: '/service' },
+
+
+  ];
     // POPUP BAR PAGES // 
     const settings = isoptions ? [{ name: 'Profile', path: '/profile' },
     { name: 'Logout', action: handelLogoutuser }] : [{ name: 'Profile', path: '/profile' },
@@ -142,8 +160,11 @@ function Header() {
                             sx={{ display: { xs: 'block', md: 'none' } }}
                         >
                             {pages.map((page) => (
-                                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                    <Typography sx={{ textAlign: 'center' }}>{page}</Typography>
+                                <MenuItem key={page.path} onClick={handleCloseNavMenu} >
+                                    <Link to={page.path} key={page.path} style={{ textDecoration: 'none' }}>
+                                        <Typography InputProps={{ disableUnderline: true }}
+                                            sx={{ textAlign: 'center', color: 'black', letterSpacing: '0.0625rem' }}>{page.name}</Typography>
+                                    </Link>
                                 </MenuItem>
                             ))}
                         </Menu>
@@ -169,13 +190,19 @@ function Header() {
                     </Typography>
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                         {pages.map((page) => (
-                            <Button
-                                key={page}
-                                onClick={handleCloseNavMenu}
-                                sx={{ my: 2, color: 'white', display: 'block' }}
-                            >
-                                {page}
-                            </Button>
+                            <Link to={page.path} key={page.path} underline="none" style={{ textDecoration: 'none', }}>
+                                <Button onClick={() => handlePageNavigation(page)}
+                                    key={page.path}
+                                    // onClick={handleCloseNavMenu}
+                                    sx={{
+                                        my: 2, color: 'black', display: 'block',
+                                        letterSpacing: '0.0625rem',
+                                        gap: 1, justifyContent: 'center', alignItems: 'center'
+                                    }}
+                                >
+                                    {page.name}
+                                </Button>
+                            </Link>
                         ))}
                     </Box>
                     <Box sx={{ flexGrow: 0 }}>
@@ -218,7 +245,7 @@ function Header() {
                                 }>
                                     {setting.path ? (
                                         <Link to={setting.path} style={{ textDecoration: 'none' }}>
-                                    <Typography textDecoration='none' sx={{ textAlign: 'center', color: 'black' }}>{setting.name}</Typography>
+                                            <Typography textDecoration='none' sx={{ textAlign: 'center', color: 'black' }}>{setting.name}</Typography>
                                         </Link>
                                     ) : (
                                         <Typography sx={{ textAlign: 'center', color: 'black' }}>{setting.name}</Typography>

@@ -113,7 +113,7 @@ const BirdProductsPage: React.FC = () => {
 
   const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
     const target = e.target as HTMLImageElement;
-    target.src = 'https://via.placeholder.com/300x300?text=Image+Not+Available';
+    target.src = "/assets/no-image.png";
   };
 
   if (loading) {

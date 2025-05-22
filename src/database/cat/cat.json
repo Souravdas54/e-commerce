@@ -195,7 +195,7 @@
             {
                 "id": 22,
                 "name": "Wall-Mounted Perch",
-                "image": "/images/poles/wall-perch.jpg",
+                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIEcHPldM7kwgJpzRRwyUthwjKlElTlpYyUjvBVvr_gDqrmUaI7WXPM47aYNfQlCfi6MY&usqp=CAU",
                 "price": 49.99,
                 "description": "Space-saving wall climbing system",
                 "rating": 4.6,
@@ -204,7 +204,7 @@
             {
                 "id": 23,
                 "name": "Corner Scratching Post",
-                "image": "/images/poles/corner-post.jpg",
+                "image": "https://www.waybasics.com/cdn/shop/products/Cat-Scratcher-Corner_Scene03_v2-grey_2000x.jpg?v=1657858703",
                 "price": 34.99,
                 "description": "Fits neatly in room corners",
                 "rating": 4.4,
@@ -213,7 +213,7 @@
             {
                 "id": 24,
                 "name": "Cat Condo Tower",
-                "image": "/images/poles/condo-tower.jpg",
+                "image": "https://m.media-amazon.com/images/I/611nlp-jPUL._AC_UF1000,1000_QL80_.jpg",
                 "price": 89.99,
                 "description": "3-level tower with hideaway boxes",
                 "rating": 4.7,
@@ -222,7 +222,7 @@
             {
                 "id": 25,
                 "name": "Modern Cat Pole",
-                "image": "/images/poles/modern-pole.jpg",
+                "image": "https://i.pinimg.com/236x/df/0a/50/df0a50aa519a4971a73a3043a5aa93d2.jpg",
                 "price": 75.99,
                 "description": "Sleek contemporary design with neutral colors",
                 "rating": 4.5,
@@ -231,7 +231,7 @@
             {
                 "id": 26,
                 "name": "Extra Tall Scratching Post",
-                "image": "/images/poles/tall-post.jpg",
+                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9uAzLGBe7jFbNvRFXpMo_12A04zZooKedGrD0rDFUJ9IF4ViwPRp1txSBJqALo1ZWiJg&usqp=CAU",
                 "price": 59.99,
                 "description": "36-inch height for full stretch",
                 "rating": 4.9,
@@ -240,7 +240,7 @@
             {
                 "id": 27,
                 "name": "Cat Gym Complex",
-                "image": "/images/poles/gym-complex.jpg",
+                "image": "https://assets.wfcdn.com/im/24117585/resize-h600-w600%5Ecompr-r85/2388/238877856/Damyanti+Wall-mounted+Cat+Tree+Shelved+6+Pcs+Climbing+Center.jpg",
                 "price": 159.99,
                 "description": "Complete activity center with poles, perches and toys",
                 "rating": 4.8,
@@ -249,7 +249,7 @@
             {
                 "id": 28,
                 "name": "Basic Scratching Pole",
-                "image": "/images/poles/basic-pole.jpg",
+                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-_p8BuSlsvSKl2WmEN0mTxm5HUOySrY2vGg&s",
                 "price": 24.99,
                 "description": "Simple 24-inch sisal-wrapped post",
                 "rating": 4.2,
@@ -258,7 +258,7 @@
             {
                 "id": 29,
                 "name": "Window Perch Pole",
-                "image": "/images/poles/window-pole.jpg",
+                "image": "https://m.media-amazon.com/images/I/81yDhWsLsfL._AC_UF1000,1000_QL80_.jpg",
                 "price": 44.99,
                 "description": "Mounts to window frame for bird watching",
                 "rating": 4.6,
@@ -267,7 +267,7 @@
             {
                 "id": 30,
                 "name": "Cat Walk System",
-                "image": "/images/poles/walk-system.jpg",
+                "image": "https://i.pinimg.com/originals/4f/93/01/4f93012d3c4e136ac4382136e1e06fa2.jpg",
                 "price": 199.99,
                 "description": "Modular wall walkways with multiple poles",
                 "rating": 4.7,
@@ -276,7 +276,7 @@
             {
                 "id": 31,
                 "name": "Carpet-Covered Pole",
-                "image": "/images/poles/carpet-pole.jpg",
+                "image": "https://image.chewy.com/catalog/general/images/frisco-36in-real-carpet-wooden-cat-tree-with-condo-gray/img-497287._AC_SL600_V1_.jpg",
                 "price": 39.99,
                 "description": "Soft carpet surface for scratching",
                 "rating": 4.3,
@@ -285,7 +285,7 @@
             {
                 "id": 32,
                 "name": "Cat Tower with Hammock",
-                "image": "/images/poles/hammock-tower.jpg",
+                "image": "https://i.ebayimg.com/images/g/wOAAAOSwQ3NnUTgV/s-l400.jpg",
                 "price": 109.99,
                 "description": "Includes comfortable hanging bed",
                 "rating": 4.8,
@@ -294,7 +294,7 @@
             {
                 "id": 33,
                 "name": "Spiral Scratching Pole",
-                "image": "/images/poles/spiral-pole.jpg",
+                "image": "https://static.wixstatic.com/media/32d447_7a50f2b5edbb46298ddccf1af9afdb36~mv2.jpg/v1/fill/w_960,h_960,al_c,q_85,enc_avif,quality_auto/32d447_7a50f2b5edbb46298ddccf1af9afdb36~mv2.jpg",
                 "price": 49.99,
                 "description": "Unique spiral design for vertical scratching",
                 "rating": 4.5,
@@ -303,7 +303,7 @@
             {
                 "id": 34,
                 "name": "Cat Activity Pole",
-                "image": "/images/poles/activity-pole.jpg",
+                "image": "https://media.diy.com/is/image/KingfisherDigital/petlicity-indoor-cat-play-activity-center-for-indoor-cats-durable-sisal-tree-house-scratching-posts-with-a-kitten-playhouse~5060497647831_09c_MP?$MOB_PREV$&$width=600&$height=600",
                 "price": 79.99,
                 "description": "With dangling toys and scratching surfaces",
                 "rating": 4.6,
@@ -312,7 +312,7 @@
             {
                 "id": 35,
                 "name": "Corner Climbing Poles",
-                "image": "/images/poles/corner-climber.jpg",
+                "image": "https://i.pinimg.com/564x/d8/61/09/d8610945283825e8fd06561abdac8841.jpg",
                 "price": 64.99,
                 "description": "Set of two poles for corner installation",
                 "rating": 4.4,
@@ -321,7 +321,7 @@
             {
                 "id": 36,
                 "name": "Cat Tree with Bridge",
-                "image": "/images/poles/bridge-tree.jpg",
+                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEPYxD2CRQ0HsEnsoy33xBWiZDhuJtnym5DA&s",
                 "price": 139.99,
                 "description": "Includes suspension bridge between platforms",
                 "rating": 4.7,
@@ -330,7 +330,7 @@
             {
                 "id": 37,
                 "name": "Minimalist Scratching Pole",
-                "image": "/images/poles/minimalist.jpg",
+                "image": "https://cdn.shopify.com/s/files/1/0550/0633/1131/files/6_773129ec-d9e5-4a9b-939b-170fc0c2bb12.png?v=1716497671",
                 "price": 54.99,
                 "description": "Simple design with natural wood finish",
                 "rating": 4.3,
@@ -339,7 +339,7 @@
             {
                 "id": 38,
                 "name": "Cat Tower with Cave",
-                "image": "/images/poles/cave-tower.jpg",
+                "image": "https://www.maupets.com/cdn/shop/files/Lua_Modern_Cat_Tree_Cave_for_Large_Cats_Sandstone_02_600x.webp?v=1741113420",
                 "price": 119.99,
                 "description": "Includes enclosed hiding space",
                 "rating": 4.9,
@@ -348,7 +348,7 @@
             {
                 "id": 39,
                 "name": "Double Scratching Poles",
-                "image": "/images/poles/double-poles.jpg",
+                "image": "https://m.media-amazon.com/images/I/711jzJztdfL._AC_UF350,350_QL80_.jpg",
                 "price": 69.99,
                 "description": "Set of two matching poles",
                 "rating": 4.5,
@@ -357,7 +357,7 @@
             {
                 "id": 40,
                 "name": "Cat Climber with Perches",
-                "image": "/images/poles/climber-perches.jpg",
+                "image": "https://m.media-amazon.com/images/I/61UxPyW2rSL.jpg",
                 "price": 149.99,
                 "description": "Multiple levels for climbing and resting",
                 "rating": 4.8,

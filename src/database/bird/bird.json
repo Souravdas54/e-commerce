@@ -18,6 +18,168 @@
         "description": "Delicious fruit-flavored pellets with essential nutrients.",
         "rating": 4.7,
         "inStock": true
+      },
+      {
+        "id": 3,
+        "name": "Nutri-Berries Treat",
+        "image": "/images/birds/food/nutri-berries.jpg",
+        "price": 9.99,
+        "description": "Wholesome berries packed with vitamins for your feathered friend.",
+        "rating": 4.8,
+        "inStock": true
+      },
+      {
+        "id": 4,
+        "name": "Organic Sprout Mix",
+        "image": "/images/birds/food/sprout-mix.jpg",
+        "price": 14.99,
+        "description": "Certified organic sprouted seeds for optimal digestion.",
+        "rating": 4.6,
+        "inStock": true
+      },
+      {
+        "id": 5,
+        "name": "Calcium Fortified Cuttlebone",
+        "image": "/images/birds/food/cuttlebone.jpg",
+        "price": 5.49,
+        "description": "Natural calcium supplement for beak health and strong bones.",
+        "rating": 4.3,
+        "inStock": true
+      },
+      {
+        "id": 6,
+        "name": "Tropical Fruit Medley",
+        "image": "/images/birds/food/tropical-fruit.jpg",
+        "price": 11.99,
+        "description": "Dehydrated tropical fruits for a flavorful snack.",
+        "rating": 4.7,
+        "inStock": true
+      },
+      {
+        "id": 7,
+        "name": "Protein Power Pellets",
+        "image": "/images/birds/food/protein-pellets.jpg",
+        "price": 16.99,
+        "description": "High-protein formula for molting and breeding birds.",
+        "rating": 4.5,
+        "inStock": true
+      },
+      {
+        "id": 8,
+        "name": "Herbal Forage Mix",
+        "image": "/images/birds/food/herbal-mix.jpg",
+        "price": 13.49,
+        "description": "Blend of seeds, herbs and flowers for natural foraging.",
+        "rating": 4.8,
+        "inStock": true
+      },
+      {
+        "id": 9,
+        "name": "Baby Bird Formula",
+        "image": "/images/birds/food/baby-formula.jpg",
+        "price": 22.99,
+        "description": "Complete nutrition for hand-feeding baby birds.",
+        "rating": 4.9,
+        "inStock": true
+      },
+      {
+        "id": 10,
+        "name": "Omega-3 Seed Cakes",
+        "image": "/images/birds/food/seed-cakes.jpg",
+        "price": 7.99,
+        "description": "Seed cakes enriched with omega fatty acids for feather health.",
+        "rating": 4.4,
+        "inStock": true
+      },
+      {
+        "id": 11,
+        "name": "Mineral Grit Supplement",
+        "image": "/images/birds/food/mineral-grit.jpg",
+        "price": 6.99,
+        "description": "Essential minerals to aid digestion and beak maintenance.",
+        "rating": 4.2,
+        "inStock": true
+      },
+      {
+        "id": 12,
+        "name": "Honey Sticks Variety Pack",
+        "image": "/images/birds/food/honey-sticks.jpg",
+        "price": 8.49,
+        "description": "Assorted honey-coated seed sticks for a sweet treat.",
+        "rating": 4.6,
+        "inStock": true
+      },
+      {
+        "id": 13,
+        "name": "Insectivore Diet",
+        "image": "/images/birds/food/insect-diet.jpg",
+        "price": 18.99,
+        "description": "Protein-rich diet for insect-eating bird species.",
+        "rating": 4.7,
+        "inStock": true
+      },
+      {
+        "id": 14,
+        "name": "Organic Millet Sprays",
+        "image": "/images/birds/food/millet-sprays.jpg",
+        "price": 9.49,
+        "description": "Certified organic millet sprays for training and treats.",
+        "rating": 4.9,
+        "inStock": true
+      },
+      {
+        "id": 15,
+        "name": "Digestive Enzyme Supplement",
+        "image": "/images/birds/food/enzyme-supplement.jpg",
+        "price": 12.49,
+        "description": "Supports healthy digestion and nutrient absorption.",
+        "rating": 4.3,
+        "inStock": true
+      },
+      {
+        "id": 16,
+        "name": "Floral Nectar Powder",
+        "image": "/images/birds/food/nectar-powder.jpg",
+        "price": 14.99,
+        "description": "Complete nectar replacement for nectar-feeding birds.",
+        "rating": 4.8,
+        "inStock": true
+      },
+      {
+        "id": 17,
+        "name": "Antioxidant Berry Blend",
+        "image": "/images/birds/food/berry-blend.jpg",
+        "price": 11.49,
+        "description": "Dried berry mix packed with antioxidants for immune support.",
+        "rating": 4.5,
+        "inStock": true
+      },
+      {
+        "id": 18,
+        "name": "Sprouting Seed Kit",
+        "image": "/images/birds/food/sprouting-kit.jpg",
+        "price": 19.99,
+        "description": "Everything needed to grow fresh sprouts for your birds.",
+        "rating": 4.7,
+        "inStock": true
+      },
+      {
+        "id": 19,
+        "name": "Herbal Tea for Birds",
+        "image": "/images/birds/food/bird-tea.jpg",
+        "price": 7.99,
+        "description": "Calming herbal tea blend to add to drinking water.",
+        "rating": 4.2,
+        "inStock": true
+      },
+      {
+        "id": 20,
+        "name": "Complete Pellet Diet",
+        "image": "/images/birds/food/complete-pellets.jpg",
+        "price": 24.99,
+        "description": "Veterinary-formulated complete nutrition in pellet form.",
+        "rating": 4.9,
+        "inStock": true
       }
     ],
     "house": [
@@ -38,6 +200,168 @@
         "description": "Large metal cage perfect for birds that need flying space.",
         "rating": 4.9,
         "inStock": true
+      },
+      {
+        "id": 23,
+        "name": "Corner Bird Cage",
+        "image": "/images/birds/house/corner-cage.jpg",
+        "price": 149.99,
+        "description": "Space-saving corner design with 360° visibility.",
+        "rating": 4.7,
+        "inStock": true
+      },
+      {
+        "id": 24,
+        "name": "Portable Travel Cage",
+        "image": "/images/birds/house/travel-cage.jpg",
+        "price": 49.99,
+        "description": "Lightweight cage with handle for vet visits or travel.",
+        "rating": 4.5,
+        "inStock": true
+      },
+      {
+        "id": 25,
+        "name": "Bamboo Playtop Mansion",
+        "image": "/images/birds/house/bamboo-mansion.jpg",
+        "price": 199.99,
+        "description": "Eco-friendly bamboo cage with play area on top.",
+        "rating": 4.9,
+        "inStock": true
+      },
+      {
+        "id": 26,
+        "name": "Decorative Wrought Iron Cage",
+        "image": "/images/birds/house/wrought-iron.jpg",
+        "price": 179.99,
+        "description": "Elegant ornamental cage with scrollwork details.",
+        "rating": 4.6,
+        "inStock": true
+      },
+      {
+        "id": 27,
+        "name": "Outdoor Aviary",
+        "image": "/images/birds/house/outdoor-aviary.jpg",
+        "price": 349.99,
+        "description": "Weather-resistant outdoor flight enclosure.",
+        "rating": 4.8,
+        "inStock": true
+      },
+      {
+        "id": 28,
+        "name": "Stackable Breeding Cages",
+        "image": "/images/birds/house/breeding-cages.jpg",
+        "price": 229.99,
+        "description": "Set of three stackable cages with divider panels.",
+        "rating": 4.7,
+        "inStock": true
+      },
+      {
+        "id": 29,
+        "name": "Modern Acrylic Cage",
+        "image": "/images/birds/house/acrylic-cage.jpg",
+        "price": 159.99,
+        "description": "Sleek transparent design with excellent visibility.",
+        "rating": 4.4,
+        "inStock": true
+      },
+      {
+        "id": 30,
+        "name": "Rolling Bird Mansion",
+        "image": "/images/birds/house/rolling-mansion.jpg",
+        "price": 279.99,
+        "description": "Extra large cage with wheels for easy mobility.",
+        "rating": 4.9,
+        "inStock": true
+      },
+      {
+        "id": 31,
+        "name": "Victorian Style Bird House",
+        "image": "/images/birds/house/victorian-house.jpg",
+        "price": 189.99,
+        "description": "Ornate Victorian-inspired cage with peaked roof.",
+        "rating": 4.5,
+        "inStock": true
+      },
+      {
+        "id": 32,
+        "name": "Modular Cage System",
+        "image": "/images/birds/house/modular-cage.jpg",
+        "price": 249.99,
+        "description": "Customizable panels to create your perfect setup.",
+        "rating": 4.8,
+        "inStock": true
+      },
+      {
+        "id": 33,
+        "name": "Hanging Bamboo Cage",
+        "image": "/images/birds/house/hanging-bamboo.jpg",
+        "price": 79.99,
+        "description": "Compact hanging cage ideal for small birds.",
+        "rating": 4.3,
+        "inStock": true
+      },
+      {
+        "id": 34,
+        "name": "Convertible Playpen Cage",
+        "image": "/images/birds/house/playpen-cage.jpg",
+        "price": 169.99,
+        "description": "Transforms from cage to play area in seconds.",
+        "rating": 4.7,
+        "inStock": true
+      },
+      {
+        "id": 35,
+        "name": "Art Deco Bird Cage",
+        "image": "/images/birds/house/art-deco.jpg",
+        "price": 199.99,
+        "description": "Stylish geometric design from the 1920s.",
+        "rating": 4.6,
+        "inStock": true
+      },
+      {
+        "id": 36,
+        "name": "Mini Bird Condo",
+        "image": "/images/birds/house/mini-condo.jpg",
+        "price": 119.99,
+        "description": "Compact vertical design for small spaces.",
+        "rating": 4.4,
+        "inStock": true
+      },
+      {
+        "id": 37,
+        "name": "Folding Show Cage",
+        "image": "/images/birds/house/show-cage.jpg",
+        "price": 89.99,
+        "description": "Professional show cage that folds flat for storage.",
+        "rating": 4.5,
+        "inStock": true
+      },
+      {
+        "id": 38,
+        "name": "Hexagonal Display Cage",
+        "image": "/images/birds/house/hexagonal-cage.jpg",
+        "price": 139.99,
+        "description": "Unique six-sided design for optimal viewing.",
+        "rating": 4.7,
+        "inStock": true
+      },
+      {
+        "id": 39,
+        "name": "Automatic Cleaning Cage",
+        "image": "/images/birds/house/self-cleaning.jpg",
+        "price": 299.99,
+        "description": "Innovative design with removable waste tray.",
+        "rating": 4.8,
+        "inStock": true
+      },
+      {
+        "id": 40,
+        "name": "Wall-Mounted Cage",
+        "image": "/images/birds/house/wall-mounted.jpg",
+        "price": 149.99,
+        "description": "Space-saving design that mounts securely to walls.",
+        "rating": 4.3,
+        "inStock": true
       }
     ],
     "toys": [
@@ -57,6 +381,168 @@
         "price": 6.49,
         "description": "Natural wood toy for beak exercise and play.",
         "rating": 4.4,
+        "inStock": true
+      },
+      {
+        "id": 43,
+        "name": "Foraging Puzzle Toy",
+        "image": "/images/birds/toys/foraging-toy.jpg",
+        "price": 12.99,
+        "description": "Interactive puzzle that rewards with treats.",
+        "rating": 4.8,
+        "inStock": true
+      },
+      {
+        "id": 44,
+        "name": "Acrylic Mirror Toy",
+        "image": "/images/birds/toys/mirror-toy.jpg",
+        "price": 7.99,
+        "description": "Safe acrylic mirror for social birds.",
+        "rating": 4.2,
+        "inStock": true
+      },
+      {
+        "id": 45,
+        "name": "Rope Perch Ladder",
+        "image": "/images/birds/toys/rope-ladder.jpg",
+        "price": 9.99,
+        "description": "Colorful cotton rope ladder for climbing.",
+        "rating": 4.7,
+        "inStock": true
+      },
+      {
+        "id": 46,
+        "name": "Bell Chime Toy",
+        "image": "/images/birds/toys/bell-chime.jpg",
+        "price": 5.99,
+        "description": "Musical toy with multiple bells and chimes.",
+        "rating": 4.5,
+        "inStock": true
+      },
+      {
+        "id": 47,
+        "name": "Shreddable Palm Leaves",
+        "image": "/images/birds/toys/palm-leaves.jpg",
+        "price": 4.99,
+        "description": "Natural palm leaves perfect for shredding.",
+        "rating": 4.6,
+        "inStock": true
+      },
+      {
+        "id": 48,
+        "name": "Wooden Block Set",
+        "image": "/images/birds/toys/wooden-blocks.jpg",
+        "price": 11.99,
+        "description": "Assorted wooden blocks for chewing and stacking.",
+        "rating": 4.4,
+        "inStock": true
+      },
+      {
+        "id": 49,
+        "name": "Acrylic Bead Roller",
+        "image": "/images/birds/toys/bead-roller.jpg",
+        "price": 8.49,
+        "description": "Colorful rolling beads for beak play.",
+        "rating": 4.3,
+        "inStock": true
+      },
+      {
+        "id": 50,
+        "name": "Coconut Hideaway",
+        "image": "/images/birds/toys/coconut-hide.jpg",
+        "price": 14.99,
+        "description": "Natural coconut shell hiding spot.",
+        "rating": 4.8,
+        "inStock": true
+      },
+      {
+        "id": 51,
+        "name": "Stainless Steel Puzzle",
+        "image": "/images/birds/toys/steel-puzzle.jpg",
+        "price": 16.99,
+        "description": "Durable metal puzzle for intelligent birds.",
+        "rating": 4.9,
+        "inStock": true
+      },
+      {
+        "id": 52,
+        "name": "Vegetable Tanned Leather Strips",
+        "image": "/images/birds/toys/leather-strips.jpg",
+        "price": 6.99,
+        "description": "Safe leather for chewing and tying knots.",
+        "rating": 4.5,
+        "inStock": true
+      },
+      {
+        "id": 53,
+        "name": "Spiral Boing Perch",
+        "image": "/images/birds/toys/spiral-boing.jpg",
+        "price": 12.49,
+        "description": "Bouncy spiral perch for climbing and playing.",
+        "rating": 4.7,
+        "inStock": true
+      },
+      {
+        "id": 54,
+        "name": "Acrylic Foraging Wheel",
+        "image": "/images/birds/toys/foraging-wheel.jpg",
+        "price": 18.99,
+        "description": "Rotating wheel with compartments for hidden treats.",
+        "rating": 4.8,
+        "inStock": true
+      },
+      {
+        "id": 55,
+        "name": "Natural Vine Ball",
+        "image": "/images/birds/toys/vine-ball.jpg",
+        "price": 7.49,
+        "description": "Woven vine ball for tossing and chewing.",
+        "rating": 4.4,
+        "inStock": true
+      },
+      {
+        "id": 56,
+        "name": "Wooden Abacus Toy",
+        "image": "/images/birds/toys/abacus.jpg",
+        "price": 9.99,
+        "description": "Counting beads on a wooden frame for manipulation.",
+        "rating": 4.3,
+        "inStock": true
+      },
+      {
+        "id": 57,
+        "name": "Hanging Bamboo Chewer",
+        "image": "/images/birds/toys/bamboo-chewer.jpg",
+        "price": 5.99,
+        "description": "Bamboo segments strung for chewing fun.",
+        "rating": 4.5,
+        "inStock": true
+      },
+      {
+        "id": 58,
+        "name": "Acrylic Treasure Chest",
+        "image": "/images/birds/toys/treasure-chest.jpg",
+        "price": 13.99,
+        "description": "Openable chest to hide treats inside.",
+        "rating": 4.7,
+        "inStock": true
+      },
+      {
+        "id": 59,
+        "name": "Paper Shredding Toy",
+        "image": "/images/birds/toys/paper-shredder.jpg",
+        "price": 4.49,
+        "description": "Colorful paper strips perfect for shredding.",
+        "rating": 4.6,
+        "inStock": true
+      },
+      {
+        "id": 60,
+        "name": "Multi-Level Play Gym",
+        "image": "/images/birds/toys/play-gym.jpg",
+        "price": 34.99,
+        "description": "Large play stand with multiple activity stations.",
+        "rating": 4.9,
         "inStock": true
       }
     ]

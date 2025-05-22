@@ -1,6 +1,6 @@
 {
   "dog_products": {
-    "dog_food": [
+    "food": [
       {
         "id": 1,
         "name": "Blue Buffalo Life Protection Chicken",
@@ -222,7 +222,7 @@
         "image": "/images/dog_food/nulo.jpg"
       }
     ],
-    "dog_toys": [
+    "toys": [
       {
         "id": 21,
         "name": "Durable Nylon Bone",
@@ -424,7 +424,7 @@
         "inStock": false
       }
     ],
-    "dog_collars": [
+    "collars": [
       {
         "id": 41,
         "name": "Blueberry Pet Classic Solid Color",
@@ -646,7 +646,7 @@
         "image": "/images/dog_collars/fi.jpg"
       }
     ],
-    "dog_beds": [
+    "beds": [
       {
         "id": 61,
         "name": "Furhaven Plush Orthopedic Sofa",

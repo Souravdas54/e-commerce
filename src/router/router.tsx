@@ -9,10 +9,13 @@ import Signin from '../auth/signin/login';
 import Header from '../sharemodule/navbar/navbar';
 import Appbar from '../sharemodule/navbar/appbar';
 
-import DogProductsPage from '../components/dogtoys/dtoys';
+import ShopAll from '../components/shopall/allshop';
+import DogProductsPage from '../components/dogtoys/dog';
 import FishProductsPage from '../components/fishtoys/fishpage';
 import CatProductsPage from '../components/cat/cattyos';
 import BirdProductsPage from '../components/birds/bird';
+
+import CartPage from '../components/cart/cartpage';
 
 const Approuter = () => {
   return (
@@ -26,10 +29,13 @@ const Approuter = () => {
         <Route path='/register' element={<Signup />} />
         <Route path='/login' element={<Signin />} />
 
+        <Route path='/allshop' element={<ShopAll />} />
         <Route path='/dtoys' element={<DogProductsPage />} />
         <Route path='/fishpage' element={<FishProductsPage />} />
         <Route path='/cattyos' element={<CatProductsPage />} />
         <Route path='/bird' element={<BirdProductsPage />} />
+
+        <Route path='/cartpage/:id' element={<CartPage />} />
 
         {/* Default redirect to signup if no route matches */}
         {/* <Route path="*" element={<Navigate to="/signup" replace />} /> */}
