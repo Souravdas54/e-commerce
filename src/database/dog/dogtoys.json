@@ -10,7 +10,8 @@
         "flavor": "Chicken & Brown Rice",
         "rating": 4.8,
         "inStock": true,
-        "image": "/images/dog_food/blue_buffalo.jpg"
+        "image": "/images/dog_food/blue_buffacho.jpg",
+        "description": "Natural adult dog food with real chicken as the first ingredient, enhanced with vitamins, minerals, and antioxidants for immune system support."
       },
       {
         "id": 2,
@@ -21,7 +22,8 @@
         "flavor": "Salmon & Rice",
         "rating": 4.7,
         "inStock": true,
-        "image": "/images/dog_food/purina_pro.jpg"
+        "image": "/images/dog_food/purina_pro.jpg",
+        "description": "Formulated for dogs with sensitive skin, featuring salmon as the main protein source and omega fatty acids for skin and coat health."
       },
       {
         "id": 3,
@@ -32,7 +34,8 @@
         "flavor": "Chicken",
         "rating": 4.9,
         "inStock": true,
-        "image": "/images/dog_food/royal_canin.jpg"
+        "image": "/images/dog_food/royal_canin.jpg",
+        "description": "Specially sized kibble for small breed dogs, with optimal protein levels and highly digestible proteins for small dogs' sensitive digestion."
       },
       {
         "id": 4,
@@ -43,7 +46,8 @@
         "flavor": "Chicken & Barley",
         "rating": 4.8,
         "inStock": true,
-        "image": "/images/dog_food/hills_puppy.jpg"
+        "image": "/images/dog_food/hills_puppy.jpg",
+        "description": "Balanced nutrition for growing puppies with DHA from fish oil for brain and eye development, and high-quality protein for muscle growth."
       },
       {
         "id": 5,
@@ -54,7 +58,8 @@
         "flavor": "Beef & Sweet Potato",
         "rating": 4.7,
         "inStock": true,
-        "image": "/images/dog_food/merrick.jpg"
+        "image": "/images/dog_food/merrick.jpg",
+        "description": "Grain-free recipe with deboned beef as the first ingredient, plus sweet potatoes and peas for energy and fiber."
       },
       {
         "id": 6,
@@ -65,7 +70,8 @@
         "flavor": "Chicken",
         "rating": 4.5,
         "inStock": true,
-        "image": "/images/dog_food/iams.jpg"
+        "image": "/images/dog_food/iams.jpg",
+        "description": "Small kibble size with real farm-raised chicken, formulated to support healthy digestion with a tailored fiber blend including prebiotics."
       },
       {
         "id": 7,
@@ -76,7 +82,8 @@
         "flavor": "Chicken & Brown Rice",
         "rating": 4.6,
         "inStock": true,
-        "image": "/images/dog_food/nutro.jpg"
+        "image": "/images/dog_food/nutro.jpg",
+        "description": "Specially formulated for senior dogs with natural ingredients for joint health, including glucosamine and chondroitin."
       },
       {
         "id": 8,
@@ -87,7 +94,8 @@
         "flavor": "Deboned Chicken & Oatmeal",
         "rating": 4.8,
         "inStock": true,
-        "image": "/images/dog_food/wellness.jpg"
+        "image": "/images/dog_food/wellness.jpg",
+        "description": "Whole-protein puppy food with DHA for cognitive development, antioxidants for immune support, and controlled calcium levels for proper growth."
       },
       {
         "id": 9,
@@ -98,7 +106,8 @@
         "flavor": "Roasted Bison & Venison",
         "rating": 4.7,
         "inStock": true,
-        "image": "/images/dog_food/taste_wild.jpg"
+        "image": "/images/dog_food/taste_wild.jpg",
+        "description": "Grain-free formula with novel proteins like bison and venison, plus probiotics for digestive health and fruits/vegetables for antioxidants."
       },
       {
         "id": 10,
@@ -109,7 +118,8 @@
         "flavor": "Salmon & Sweet Potato",
         "rating": 4.9,
         "inStock": true,
-        "image": "/images/dog_food/canidae.jpg"
+        "image": "/images/dog_food/canidae.jpg",
+        "description": "Limited ingredient diet with 10 key ingredients or less, ideal for dogs with food sensitivities, featuring omega fatty acids for skin and coat."
       },
       {
         "id": 11,
@@ -120,7 +130,8 @@
         "flavor": "Salmon & Potato",
         "rating": 4.6,
         "inStock": true,
-        "image": "/images/dog_food/diamond.jpg"
+        "image": "/images/dog_food/diamond.jpg",
+        "description": "Salmon-based formula rich in omega-3 and omega-6 fatty acids to promote healthy skin and shiny coat, with probiotics for digestive health."
       },
       {
         "id": 12,
@@ -131,7 +142,8 @@
         "flavor": "Beef & Pork",
         "rating": 4.8,
         "inStock": true,
-        "image": "/images/dog_food/victor.jpg"
+        "image": "/images/dog_food/victor.jpg",
+        "description": "High-protein formula with 88% meat protein from multiple sources, designed for active dogs with glucosamine and chondroitin for joint support."
       },
       {
         "id": 13,
@@ -142,7 +154,8 @@
         "flavor": "Chicken & Vegetables",
         "rating": 4.9,
         "inStock": true,
-        "image": "/images/dog_food/fromm.jpg"
+        "image": "/images/dog_food/fromm.jpg",
+        "description": "Holistic formula with probiotics for digestive health, omega fatty acids for skin and coat, and balanced nutrition for all life stages."
       },
       {
         "id": 14,
@@ -153,7 +166,8 @@
         "flavor": "Free-Run Chicken & Turkey",
         "rating": 4.9,
         "inStock": true,
-        "image": "/images/dog_food/orijen.jpg"
+        "image": "/images/dog_food/orijen.jpg",
+        "description": "Biologically appropriate diet with 85% premium animal ingredients, fresh meats, and WholePrey ratios of meat, organs, and cartilage."
       },
       {
         "id": 15,
@@ -164,7 +178,8 @@
         "flavor": "Duck & Pear",
         "rating": 4.8,
         "inStock": true,
-        "image": "/images/dog_food/acana.jpg"
+        "image": "/images/dog_food/acana.jpg",
+        "description": "Single animal protein source recipe ideal for dogs with sensitivities, with 50% premium animal ingredients and 50% fruits and vegetables."
       },
       {
         "id": 16,
@@ -175,7 +190,8 @@
         "flavor": "Salmon & Sweet Potato",
         "rating": 4.7,
         "inStock": true,
-        "image": "/images/dog_food/natural_balance.jpg"
+        "image": "/images/dog_food/natural_balance.jpg",
+        "description": "Simplified recipe with single animal protein and easily digestible carbohydrate sources for dogs with food sensitivities."
       },
       {
         "id": 17,
@@ -186,7 +202,8 @@
         "flavor": "Chicken",
         "rating": 4.8,
         "inStock": true,
-        "image": "/images/dog_food/instinct.jpg"
+        "image": "/images/dog_food/instinct.jpg",
+        "description": "High-protein kibble combined with freeze-dried raw pieces for nutrition and taste, with probiotics for digestive health."
       },
       {
         "id": 18,
@@ -197,7 +214,8 @@
         "flavor": "Trout & Salmon",
         "rating": 4.7,
         "inStock": true,
-        "image": "/images/dog_food/zignature.jpg"
+        "image": "/images/dog_food/zignature.jpg",
+        "description": "Limited ingredient formula with novel protein sources, grain-free and potato-free, ideal for dogs with allergies or sensitivities."
       },
       {
         "id": 19,
@@ -208,7 +226,8 @@
         "flavor": "Bison Meal",
         "rating": 4.6,
         "inStock": true,
-        "image": "/images/dog_food/earthborn.jpg"
+        "image": "/images/dog_food/earthborn.jpg",
+        "description": "Grain-free recipe with bison as the single animal protein source, plus pumpkin and other superfoods for digestive health."
       },
       {
         "id": 20,
@@ -219,7 +238,8 @@
         "flavor": "Salmon & Peas",
         "rating": 4.7,
         "inStock": true,
-        "image": "/images/dog_food/nulo.jpg"
+        "image": "/images/dog_food/nulo.jpg",
+        "description": "High-meat, low-carb formula with BC30 probiotic to support digestive health and immune system, with omega fatty acids for skin and coat."
       }
     ],
     "toys": [
@@ -236,7 +256,7 @@
       {
         "id": 22,
         "name": "Squeaky Plush Squirrel",
-        "image": "/images/plush-squirrel.jpg",
+        "image": "https://image.made-in-china.com/202f0j00ctaobqPWaCuk/Amazon-Basics-Squeaky-Dog-Plush-Toy-Lion-and-Squirrel-Pet-Toy.webp",
         "price": 9.99,
         "description": "Soft plush toy with squeaker inside, great for fetch",
         "category": "plush",
@@ -286,7 +306,7 @@
       {
         "id": 27,
         "name": "Plush Duck with Quacker",
-        "image": "/images/plush-duck.jpg",
+        "image": "https://img.kwcdn.com/product/fancy/ecee38e9-905a-4350-8216-c3d70b4859ec.jpg?imageView2/2/w/500/q/60/format/webp",
         "price": 8.49,
         "description": "Adorable duck plush with duck-like squeaker",
         "category": "plush",
@@ -296,7 +316,7 @@
       {
         "id": 28,
         "name": "Flying Disc",
-        "image": "/images/flying-disc.jpg",
+        "image": "https://tuffpupper.com/cdn/shop/products/20220726_024702942_iOS.jpg?v=1670821613&width=1445",
         "price": 11.99,
         "description": "Durable frisbee designed for dog's teeth",
         "category": "fetch",
@@ -306,7 +326,7 @@
       {
         "id": 29,
         "name": "Tug-of-War Ring",
-        "image": "/images/tug-ring.jpg",
+        "image": "https://m.media-amazon.com/images/I/71X1toR5ZtL.jpg",
         "price": 14.99,
         "description": "Durable rubber ring for two-way tug games",
         "category": "tug",
@@ -316,7 +336,7 @@
       {
         "id": 30,
         "name": "Snuffle Mat",
-        "image": "/images/snuffle-mat.jpg",
+        "image": "https://www.rover.com/blog/wp-content/uploads/2016/04/DSC_0646-e1635889575591.jpg",
         "price": 22.99,
         "description": "Forage for treats in this mental stimulation mat",
         "category": "puzzle",
@@ -326,7 +346,7 @@
       {
         "id": 31,
         "name": "Dental Chew Stick",
-        "image": "/images/dental-chew.jpg",
+        "image": "https://m.media-amazon.com/images/I/81FxURioCoL._AC_UF1000,1000_QL80_.jpg",
         "price": 7.99,
         "description": "Textured chew helps reduce plaque and tartar",
         "category": "chew",
@@ -336,7 +356,7 @@
       {
         "id": 32,
         "name": "Plush Fox with Tail",
-        "image": "/images/plush-fox.jpg",
+        "image": "https://image.made-in-china.com/202f0j00KLPqfmHIECck/Amazon-Hot-Selling-Simulation-Anti-Bite-Plush-Pet-Chewy-Cat-Toys-High-Quality-Simulated-Animal-Pet-Plush-Chew-Squeaky-Dog-Rope-Toys.webp",
         "price": 10.99,
         "description": "Fox plush with extra-long tail for shaking",
         "category": "plush",
@@ -346,7 +366,7 @@
       {
         "id": 33,
         "name": "Glow-in-the-Dark Ball",
-        "image": "/images/glow-ball.jpg",
+        "image": "https://m.media-amazon.com/images/I/61F3Hr9kYtL._AC_UF1000,1000_QL80_.jpg",
         "price": 8.99,
         "description": "Light-up ball for nighttime fetch",
         "category": "fetch",
@@ -356,7 +376,7 @@
       {
         "id": 34,
         "name": "Tug Rope with Ball",
-        "image": "/images/rope-ball.jpg",
+        "image": "https://m.media-amazon.com/images/I/81CS-9KEx-L._AC_UF1000,1000_QL80_.jpg",
         "price": 12.49,
         "description": "Combination rope and ball for multiple play styles",
         "category": "tug",
@@ -366,7 +386,7 @@
       {
         "id": 35,
         "name": "Interactive Feeder",
-        "image": "/images/interactive-feeder.jpg",
+        "image": "https://m.media-amazon.com/images/I/61Y6j9CYblL._AC_UF894,1000_QL80_.jpg",
         "price": 18.99,
         "description": "Slow feeder that makes mealtime challenging",
         "category": "puzzle",
@@ -376,7 +396,7 @@
       {
         "id": 36,
         "name": "Rubber Chew Ring",
-        "image": "/images/rubber-ring.jpg",
+        "image": "https://m.media-amazon.com/images/I/71FtbnGQD6L._AC_UF1000,1000_QL80_.jpg",
         "price": 9.99,
         "description": "Flexible rubber ring with textured surface",
         "category": "chew",
@@ -386,7 +406,7 @@
       {
         "id": 37,
         "name": "Plush Lamb Chop",
-        "image": "/images/plush-lamb.jpg",
+        "image": "https://images.squarespace-cdn.com/content/v1/5b635679ee17591ac752ba2b/1633726081981-0WNKBWZAW42P5V1HHASQ/LambChop_Stock.png?format=1000w",
         "price": 7.99,
         "description": "Classic lamb plush with gentle squeaker",
         "category": "plush",
@@ -396,7 +416,7 @@
       {
         "id": 38,
         "name": "Chuckit! Ultra Ball",
-        "image": "/images/ultra-ball.jpg",
+        "image": "https://images-cdn.ubuy.co.in/6691178d17f63f5d2c3d9156-chuckit-ultra-ball-durable-rubber-fetch.jpg",
         "price": 9.49,
         "description": "High-visibility orange ball for easy retrieval",
         "category": "fetch",
@@ -406,7 +426,7 @@
       {
         "id": 39,
         "name": "Tug Rope with Handles",
-        "image": "/images/handle-rope.jpg",
+        "image": "https://i5.walmartimages.com/seo/Mammoth-Flossy-Chews-Cottonblend-Twin-Tug-with-Rubber-Handle-Rope-Dog-Toy-Medium-20-Assorted-Colors_11c0ef6e-6db5-4ccc-aa70-50e9a496f61f.fe71b5a7ec4ce3dbca2d59e19c88db34.jpeg",
         "price": 15.99,
         "description": "Extra-long rope with comfortable human handles",
         "category": "tug",
@@ -416,7 +436,7 @@
       {
         "id": 40,
         "name": "Treat Dispensing Ball",
-        "image": "/images/treat-ball.jpg",
+        "image": "https://5.imimg.com/data5/SELLER/Default/2023/2/GD/LW/ZW/53288030/treat-ball-1-copy-500x500.jpg",
         "price": 12.99,
         "description": "Rolling ball that releases treats as it moves",
         "category": "puzzle",
@@ -434,7 +454,8 @@
         "color": "Red",
         "rating": 4.7,
         "inStock": true,
-        "image": "/images/dog_collars/blueberry.jpg"
+        "image": "/images/dog_collars/blueberry.jpg",
+        "description": "Durable polyester collar with a classic buckle closure, available in vibrant solid colors. Features a metal D-ring for leash attachment and comes with a matching slide-on ID tag."
       },
       {
         "id": 42,
@@ -445,7 +466,8 @@
         "color": "Black",
         "rating": 4.8,
         "inStock": true,
-        "image": "/images/dog_collars/max_neo.jpg"
+        "image": "/images/dog_collars/max_neo.jpg",
+        "description": "Heavy-duty nylon collar with reflective stitching for nighttime visibility. Features a sturdy metal buckle and D-ring, designed for medium to large breeds."
       },
       {
         "id": 43,
@@ -456,7 +478,8 @@
         "color": "Purple",
         "rating": 4.9,
         "inStock": true,
-        "image": "/images/dog_collars/lupine.jpg"
+        "image": "/images/dog_collars/lupine.jpg",
+        "description": "Lifetime guaranteed nylon collar with vibrant woven patterns. Breakaway design prevents choking hazards, with an adjustable fit for growing puppies."
       },
       {
         "id": 44,
@@ -467,7 +490,8 @@
         "color": "Teal",
         "rating": 4.6,
         "inStock": true,
-        "image": "/images/dog_collars/petsafe.jpg"
+        "image": "/images/dog_collars/petsafe.jpg",
+        "description": "Headcollar designed to gently discourage pulling without choking. Nose loop provides control while padded neck strap ensures comfort during walks."
       },
       {
         "id": 45,
@@ -478,7 +502,8 @@
         "color": "Pink",
         "rating": 4.7,
         "inStock": true,
-        "image": "/images/dog_collars/rc_pet.jpg"
+        "image": "/images/dog_collars/rc_pet.jpg",
+        "description": "Safety breakaway collar releases under pressure to prevent choking. Features reflective trim for visibility and comes with a free bell for outdoor adventures."
       },
       {
         "id": 46,
@@ -489,7 +514,8 @@
         "color": "Orange",
         "rating": 4.8,
         "inStock": true,
-        "image": "/images/dog_collars/rogz.jpg"
+        "image": "/images/dog_collars/rogz.jpg",
+        "description": "High-visibility collar with reflective piping and a quick-release buckle. Durable nylon webbing withstands outdoor activities and water exposure."
       },
       {
         "id": 47,
@@ -500,7 +526,8 @@
         "color": "Neon Green",
         "rating": 4.7,
         "inStock": true,
-        "image": "/images/dog_collars/mighty_paw.jpg"
+        "image": "/images/dog_collars/mighty_paw.jpg",
+        "description": "Ultra-reflective collar with 360° visibility at night. Heavy-duty nylon construction with a padded neoprene liner for all-day comfort."
       },
       {
         "id": 48,
@@ -511,7 +538,8 @@
         "color": "Silver",
         "rating": 4.6,
         "inStock": true,
-        "image": "/images/dog_collars/pawtitas.jpg"
+        "image": "/images/dog_collars/pawtitas.jpg",
+        "description": "Fashion collar with sparkling rhinestones on a durable nylon base. Features an adjustable fit and secure buckle for small breeds and puppies."
       },
       {
         "id": 49,
@@ -522,7 +550,8 @@
         "color": "Blue",
         "rating": 4.9,
         "inStock": true,
-        "image": "/images/dog_collars/ezydog.jpg"
+        "image": "/images/dog_collars/ezydog.jpg",
+        "description": "Padded neoprene collar with quick-adjust slider for perfect fit. Water-resistant and comfortable for active dogs, with reinforced stitching for durability."
       },
       {
         "id": 50,
@@ -533,117 +562,8 @@
         "color": "Navy",
         "rating": 4.7,
         "inStock": true,
-        "image": "/images/dog_collars/frisco.jpg"
-      },
-      {
-        "id": 51,
-        "name": "OneTigris Tactical Nylon",
-        "price": 24.99,
-        "size": "Large (18-26\")",
-        "material": "Nylon",
-        "color": "Coyote Brown",
-        "rating": 4.8,
-        "inStock": true,
-        "image": "/images/dog_collars/onetigris.jpg"
-      },
-      {
-        "id": 52,
-        "name": "Petmate Lupine Eco Collar",
-        "price": 16.99,
-        "size": "Small (10-14\")",
-        "material": "Recycled Materials",
-        "color": "Green",
-        "rating": 4.6,
-        "inStock": true,
-        "image": "/images/dog_collars/lupine_eco.jpg"
-      },
-      {
-        "id": 53,
-        "name": "Kurgo Journey Reflective",
-        "price": 19.99,
-        "size": "Medium (14-20\")",
-        "material": "Polyester",
-        "color": "Gray",
-        "rating": 4.7,
-        "inStock": true,
-        "image": "/images/dog_collars/kurgo.jpg"
-      },
-      {
-        "id": 54,
-        "name": "Chai's Choice Organic Cotton",
-        "price": 18.99,
-        "size": "Small (10-14\")",
-        "material": "Organic Cotton",
-        "color": "Natural",
-        "rating": 4.8,
-        "inStock": true,
-        "image": "/images/dog_collars/chais.jpg"
-      },
-      {
-        "id": 55,
-        "name": "DoggieDesigns Handmade Leather",
-        "price": 34.99,
-        "size": "Medium (14-20\")",
-        "material": "Genuine Leather",
-        "color": "Brown",
-        "rating": 4.9,
-        "inStock": true,
-        "image": "/images/dog_collars/doggiedesigns.jpg"
-      },
-      {
-        "id": 56,
-        "name": "Illumiseen LED Safety Collar",
-        "price": 22.99,
-        "size": "Adjustable",
-        "material": "Silicone",
-        "color": "Multi-Color",
-        "rating": 4.7,
-        "inStock": true,
-        "image": "/images/dog_collars/illumiseen.jpg"
-      },
-      {
-        "id": 57,
-        "name": "Pawz Road Reflective Martingale",
-        "price": 17.99,
-        "size": "Medium (14-20\")",
-        "material": "Nylon",
-        "color": "Red/Black",
-        "rating": 4.6,
-        "inStock": true,
-        "image": "/images/dog_collars/pawz.jpg"
-      },
-      {
-        "id": 58,
-        "name": "Wild One Quick-Release Collar",
-        "price": 28.00,
-        "size": "Small (10-14\")",
-        "material": "TPU-Coated Webbing",
-        "color": "Sage",
-        "rating": 4.8,
-        "inStock": true,
-        "image": "/images/dog_collars/wild_one.jpg"
-      },
-      {
-        "id": 59,
-        "name": "HDP Big Dog Heavy Duty",
-        "price": 29.99,
-        "size": "X-Large (24-34\")",
-        "material": "Nylon",
-        "color": "Black",
-        "rating": 4.9,
-        "inStock": true,
-        "image": "/images/dog_collars/hdp.jpg"
-      },
-      {
-        "id": 60,
-        "name": "Fi Smart Dog Collar",
-        "price": 149.00,
-        "size": "Adjustable",
-        "material": "Silicone/Nylon",
-        "color": "Black",
-        "rating": 4.7,
-        "inStock": true,
-        "image": "/images/dog_collars/fi.jpg"
+        "image": "/images/dog_collars/frisco.jpg",
+        "description": "Limited-slip martingale design prevents backing out while being gentle on the neck. Ideal for training or dogs with narrow heads like Greyhounds."
       }
     ],
     "beds": [

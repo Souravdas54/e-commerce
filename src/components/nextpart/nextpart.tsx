@@ -28,7 +28,7 @@ const dealItems = [
   {
     name: 'Small Animals',
     image: 'https://wallpapercave.com/wp/wp11441496.jpg',
-    link: '/smallanimaltoys'
+    link: '/smallanimalpage'
   },
   {
     name: 'Reptiles',

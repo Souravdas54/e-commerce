@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { CircularProgress, Alert, Select, MenuItem, FormControl, Rating, Button, Box, Typography } from '@mui/material';
+import { CircularProgress, Alert, Select, MenuItem, FormControl, Rating, Button, Box, Typography, Card, CardMedia, CardContent, CardActions, Dialog, DialogTitle, IconButton, DialogContent, DialogActions } from '@mui/material';
+import CloseIcon from '@mui/icons-material/Close';
 import './dogstyle.css';
 
 interface DogProduct {
@@ -11,6 +12,15 @@ interface DogProduct {
   category: string;
   rating: number;
   inStock: boolean;
+  reviewCount?: number;
+  specifications?: Record<string, string>;
+  size: number;
+  color: string;
+  material: string;
+}
+
+interface CartItem extends DogProduct {
+  quantity: number;
 }
 
 interface DogCategory {
@@ -25,7 +35,22 @@ interface NestedDogProducts {
   beds?: Omit<DogProduct, 'category'>[];
 }
 
+interface RawDogData {
+  dog_products: DogProduct[] | NestedDogProducts;
+}
+
+function isNestedDogProducts(obj: any): obj is NestedDogProducts {
+  return obj && (
+    ('food' in obj && Array.isArray(obj.food)) ||
+    ('toys' in obj && Array.isArray(obj.toys)) ||
+    ('collars' in obj && Array.isArray(obj.collars)) ||
+    ('beds' in obj && Array.isArray(obj.beds))
+  );
+}
+
 import rawData from '../../database/dog/dogtoys.json';
+const CART_STORAGE_KEY = 'dog_products_cart';
+const CART_COUNT_KEY = 'dog_products_cart_count';
 
 const DogProductsPage: React.FC = () => {
   const [dogProducts, setDogProducts] = useState<DogProduct[]>([]);
@@ -35,6 +60,9 @@ const DogProductsPage: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [sortOption, setSortOption] = useState<string>('featured');
   const [currentCategoryName, setCurrentCategoryName] = useState<string>('Products');
+  const [openDialog, setOpenDialog] = useState<boolean>(false);
+  const [selectedProduct, setSelectedProduct] = useState<DogProduct | null>(null);
+  const [cartItems, setCartItems] = useState<CartItem[]>([]);
 
   const categories: DogCategory[] = [
     { name: 'All', value: 'all' },
@@ -44,24 +72,30 @@ const DogProductsPage: React.FC = () => {
     { name: 'Beds', value: 'beds' }
   ];
 
+
+  const handleViewDetails = (product: DogProduct, e: React.MouseEvent) => {
+    e.stopPropagation();
+    setSelectedProduct(product);
+    setOpenDialog(true);
+  };
+
   useEffect(() => {
     const loadData = async () => {
       try {
-        if (rawData && rawData.dog_products) {
+        const data = rawData as unknown as RawDogData;
+
+        if (data?.dog_products) {
           let products: DogProduct[] = [];
 
-          if ('food' in rawData.dog_products) {
-            const nestedData = rawData.dog_products as NestedDogProducts;
-            console.log("nestedData", nestedData);
-
+          if (isNestedDogProducts(data.dog_products)) {
             products = [
-              ...(nestedData.food || []).map(p => ({ ...p, category: 'food' })),
-              ...(nestedData.toys || []).map(p => ({ ...p, category: 'toys' })),
-              ...(nestedData.collars || []).map(p => ({ ...p, category: 'collars' })),
-              ...(nestedData.beds || []).map(p => ({ ...p, category: 'beds' })),
+              ...(data.dog_products.food?.map(p => ({ ...p, category: 'food' })) || []),
+              ...(data.dog_products.toys?.map(p => ({ ...p, category: 'toys' })) || []),
+              ...(data.dog_products.collars?.map(p => ({ ...p, category: 'collars' })) || []),
+              ...(data.dog_products.beds?.map(p => ({ ...p, category: 'beds' })) || []),
             ];
-          } else {
-            products = Array.isArray(rawData.dog_products) ? rawData.dog_products as DogProduct[] : [];
+          } else if (Array.isArray(data.dog_products)) {
+            products = data.dog_products;
           }
 
           setDogProducts(products);
@@ -70,10 +104,23 @@ const DogProductsPage: React.FC = () => {
           return;
         }
 
+        // Fallback to fetch if needed
         const response = await fetch('/db.json');
         if (!response.ok) throw new Error('Failed to fetch dog products');
-        const data = await response.json();
-        const fetchedProducts = Array.isArray(data.dog_products) ? data.dog_products : [];
+        const fetchedData = await response.json() as RawDogData;
+        const fetchedProducts = Array.isArray(fetchedData.dog_products) ? fetchedData.dog_products : [];
+
+        const cartData = localStorage.getItem(CART_STORAGE_KEY);
+        if (cartData) {
+          setCartItems(JSON.parse(cartData));
+        }
+        const savedCount = localStorage.getItem(CART_COUNT_KEY);
+        if (savedCount) {
+          // setCartCount(parseInt(savedCount));
+          console.log(savedCount);
+
+        }
+
         setDogProducts(fetchedProducts);
         setFilteredProducts(fetchedProducts);
         setLoading(false);
@@ -87,8 +134,9 @@ const DogProductsPage: React.FC = () => {
     loadData();
   }, []);
 
+  // ... (keep the rest of your existing useEffect and other functions the same)
   useEffect(() => {
-    if(!Array.isArray(dogProducts)){
+    if (!Array.isArray(dogProducts)) {
       setDogProducts([]);
       return;
     }
@@ -124,6 +172,28 @@ const DogProductsPage: React.FC = () => {
     target.src = "/assets/no-image.png";
   };
 
+  const handleAddToCart = (product: DogProduct) => {
+    try {
+      const updatedCart = [...cartItems];
+      const existingItemIndex = updatedCart.findIndex(item => item.id === product.id);
+
+      if (existingItemIndex >= 0) {
+        updatedCart[existingItemIndex].quantity += 1;
+      } else {
+        updatedCart.push({ ...product, quantity: 1 });
+      }
+
+      const newCount = updatedCart.reduce((total, item) => total + item.quantity, 0);
+      // setCartCount(newCount);
+      localStorage.setItem(CART_COUNT_KEY, newCount.toString());
+
+      setCartItems(updatedCart);
+      localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(updatedCart));
+    } catch (error) {
+      console.error('Error adding to cart:', error);
+    }
+  };
+
   if (loading) {
     return (
       <Box display="flex" justifyContent="center" alignItems="center" minHeight="60vh">
@@ -149,6 +219,7 @@ const DogProductsPage: React.FC = () => {
 
   return (
     <Box className="dog-page">
+      {/* ... (keep the existing header and controls code the same) ... */}
       <Typography variant="h3" component="h1" gutterBottom className="dog-title">
         {currentCategoryName}
       </Typography>
@@ -187,20 +258,19 @@ const DogProductsPage: React.FC = () => {
       <Box className="dog-products-grid">
         {filteredProducts.length > 0 ? (
           filteredProducts.map(product => (
-            <Box key={product.id} className="dog-card">
-              <Box className="dog-card-img-wrapper">
-                <img
-                  src={product.image.startsWith('http') ? product.image : product.image.startsWith('/') ? product.image : `/${product.image}`}
-                  alt={product.name}
-                  style={{
-                    maxWidth: '100%',
-                    maxHeight: '100%',
-                    objectFit: 'contain'
-                  }}
-                  onError={handleImageError}
-                />
-              </Box>
-              <Box className="dog-card-body">
+            <Card key={product.id} className="dog-card">
+              <CardMedia
+                component="img"
+                image={product.image.startsWith('http') ? product.image : product.image.startsWith('/') ? product.image : `/${product.image}`}
+                alt={product.name}
+                className="dog-card-img-wrapper"
+                style={{
+                  maxWidth: '100%',
+                  objectFit: 'cover'
+                }}
+                onError={handleImageError}
+              />
+              <CardContent className="dog-card-body">
                 <Typography variant="h6" component="h3" gutterBottom className="dog-card-title">
                   {product.name}
                 </Typography>
@@ -216,20 +286,34 @@ const DogProductsPage: React.FC = () => {
                 <Typography className="dog-card-category">
                   {product.category.toUpperCase()}
                 </Typography>
-              </Box>
-              <Box className="dog-card-footer">
                 <Typography className="dog-card-price">
                   ${product.price.toFixed(2)}
                 </Typography>
+              </CardContent>
+              <CardActions className="dog-card-footer" sx={{ justifyContent: 'space-between' }}>
+                <Button
+                  variant="contained"
+                  size="small"
+                  onClick={(e) => handleViewDetails(product, e)}
+                >
+                  View Details
+                </Button>
                 <Button
                   variant="contained"
                   disabled={!product.inStock}
                   size="small"
-                  className="dog-add-btn">
+                  className='dog-add-btn'
+                  onClick={() => handleAddToCart(product)}
+
+                // onClick={(e) => {
+                //   e.stopPropagation();
+                //   handleAddToCart(product);
+                // }}
+                >
                   {product.inStock ? 'Add to Cart' : 'Out of Stock'}
                 </Button>
-              </Box>
-            </Box>
+              </CardActions>
+            </Card>
           ))
         ) : (
           <Box textAlign="center" py={6} width="100%">
@@ -246,6 +330,110 @@ const DogProductsPage: React.FC = () => {
           </Box>
         )}
       </Box>
+
+      {/* Product Details Dialog */}
+      <Dialog open={openDialog} onClose={() => setOpenDialog(false)} maxWidth="md" fullWidth>
+        <DialogTitle>
+          {selectedProduct?.name}
+          <IconButton
+            aria-label="close"
+            onClick={() => setOpenDialog(false)}
+            sx={{
+              position: 'absolute',
+              right: 8,
+              top: 8,
+              color: (theme) => theme.palette.grey[500],
+            }}
+          >
+            <CloseIcon />
+          </IconButton>
+        </DialogTitle>
+        <DialogContent dividers>
+          {selectedProduct && (
+            <Box sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' }, gap: 3 }}>
+              <Box sx={{ flex: 1 }}>
+                <CardMedia
+                  component="img"
+                  image={selectedProduct.image.startsWith('http') ? selectedProduct.image : selectedProduct.image.startsWith('/') ? selectedProduct.image : `/${selectedProduct.image}`}
+                  alt={selectedProduct.name}
+                  sx={{
+                    width: '100%',
+                    maxHeight: 400,
+                    objectFit: 'contain'
+                  }}
+                  onError={handleImageError}
+                />
+              </Box>
+              <Box sx={{ flex: 1 }}>
+                <Typography variant="h5" gutterBottom>
+                  {selectedProduct.name}
+                </Typography>
+                <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
+                  <Rating value={selectedProduct.rating} precision={0.5} readOnly />
+                  <Typography variant="body1" sx={{ ml: 1 }}>
+                    {selectedProduct.rating.toFixed(1)} ({selectedProduct.reviewCount || 0} reviews)
+                  </Typography>
+                </Box>
+                <Typography variant="h6" color="primary" gutterBottom>
+                  ${selectedProduct.price.toFixed(2)}
+                </Typography>
+                <Typography variant="body2" color={selectedProduct.inStock ? 'success.main' : 'error'} gutterBottom>
+                  {selectedProduct.inStock ? 'In Stock' : 'Out of Stock'}
+                </Typography>
+                <Typography variant="body1" paragraph>
+                  {selectedProduct.description}
+                </Typography>
+                <Typography variant="body2" color="text">
+                  Size : {selectedProduct.size}
+                </Typography>
+                <Typography variant="body2" color="text">
+                  Material : {selectedProduct.material}
+                </Typography>
+                <Typography variant="body2" color="text">
+                  Color : {selectedProduct.color}
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  Category: {selectedProduct.category.toUpperCase()}
+                </Typography>
+
+                {selectedProduct.specifications && (
+                  <Box sx={{ mt: 2 }}>
+                    <Typography variant="h6" gutterBottom>
+                      Specifications
+                    </Typography>
+                    {Object.entries(selectedProduct.specifications).map(([key, value]) => (
+                      <Typography key={key} variant="body2">
+                        <strong>{key}:</strong> {value}
+                      </Typography>
+                    ))}
+                  </Box>
+                )}
+              </Box>
+            </Box>
+          )}
+        </DialogContent>
+        <DialogActions>
+          <Button
+            variant="outlined"
+            onClick={() => setOpenDialog(false)}
+          >
+            Close
+          </Button>
+          <Button
+            variant="contained"
+            color="primary"
+            disabled={!selectedProduct?.inStock}
+            onClick={() => {
+              if (selectedProduct) {
+                handleAddToCart(selectedProduct);
+                setOpenDialog(false);
+              }
+            }}
+          >
+            Add to Cart
+          </Button>
+        </DialogActions>
+      </Dialog>
     </Box>
   );
 };

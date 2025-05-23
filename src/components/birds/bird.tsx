@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { CircularProgress, Alert, Select, MenuItem, FormControl, Rating, Button, Box, Typography } from '@mui/material';
+import { CircularProgress, Alert, Select, MenuItem, FormControl, Rating, Button, Box, Typography, Dialog, DialogTitle, DialogContent, DialogActions,
+  CardMedia, IconButton
+} from '@mui/material';
+import CloseIcon from '@mui/icons-material/Close';
 import './birdsttyle.css';
 
 interface BirdProduct {
@@ -11,6 +14,12 @@ interface BirdProduct {
   category: string;
   rating: number;
   inStock: boolean;
+  reviewCount?: number;
+  specifications?: Record<string, string>;
+}
+
+interface CartItem extends BirdProduct {
+  quantity: number;
 }
 
 interface BirdCategory {
@@ -25,6 +34,8 @@ interface NestedBirdProducts {
 }
 
 import rawData from '../../database/bird/bird.json';
+const CART_STORAGE_KEY = 'bird_products_cart';
+const CART_COUNT_KEY = 'bird_products_cart_count';
 
 const BirdProductsPage: React.FC = () => {
   const [birdProducts, setBirdProducts] = useState<BirdProduct[]>([]);
@@ -34,6 +45,9 @@ const BirdProductsPage: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [sortOption, setSortOption] = useState<string>('featured');
   const [currentCategoryName, setCurrentCategoryName] = useState<string>('Products');
+  const [cartItems, setCartItems] = useState<CartItem[]>([]);
+  const [selectedProduct, setSelectedProduct] = useState<BirdProduct | null>(null);
+  const [openDialog, setOpenDialog] = useState(false);
 
   const categories: BirdCategory[] = [
     { name: 'All', value: 'all' },
@@ -41,6 +55,12 @@ const BirdProductsPage: React.FC = () => {
     { name: 'House', value: 'house' },
     { name: 'Toys', value: 'toys' }
   ];
+
+  const handleViewDetails = (product: BirdProduct, e: React.MouseEvent) => {
+    e.stopPropagation();
+    setSelectedProduct(product);
+    setOpenDialog(true);
+  };
 
   useEffect(() => {
     const loadData = async () => {
@@ -71,6 +91,16 @@ const BirdProductsPage: React.FC = () => {
         const fetchedProducts = Array.isArray(data.bird_products)
           ? data.bird_products
           : [];
+
+        const cartData = localStorage.getItem(CART_STORAGE_KEY);
+        if (cartData) {
+          setCartItems(JSON.parse(cartData));
+        }
+        const savedCount = localStorage.getItem(CART_COUNT_KEY);
+        if (savedCount) {
+          console.log(savedCount);
+        }
+
         setBirdProducts(fetchedProducts);
         setFilteredProducts(fetchedProducts);
         setLoading(false);
@@ -123,6 +153,27 @@ const BirdProductsPage: React.FC = () => {
       </Box>
     );
   }
+
+  const handleAddToCart = (product: BirdProduct) => {
+    try {
+      const updatedCart = [...cartItems];
+      const existingItemIndex = updatedCart.findIndex(item => item.id === product.id);
+
+      if (existingItemIndex >= 0) {
+        updatedCart[existingItemIndex].quantity += 1;
+      } else {
+        updatedCart.push({ ...product, quantity: 1 });
+      }
+
+      const newCount = updatedCart.reduce((total, item) => total + item.quantity, 0);
+      localStorage.setItem(CART_COUNT_KEY, newCount.toString());
+
+      setCartItems(updatedCart);
+      localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(updatedCart));
+    } catch (error) {
+      console.error('Error adding to cart:', error);
+    }
+  };
 
   if (error) {
     return (
@@ -210,16 +261,26 @@ const BirdProductsPage: React.FC = () => {
                 <Typography className="bird-card-category">
                   {product.category.toUpperCase()}
                 </Typography>
-              </Box>
-              <Box className="bird-card-footer">
                 <Typography className="bird-card-price">
                   ${product.price.toFixed(2)}
                 </Typography>
+              </Box>
+              <Box className="bird-card-footer">
+
+                <Button
+                  variant="contained"
+                  size="small"
+                  onClick={(e) => handleViewDetails(product, e)}
+                >
+                  View Details
+                </Button>
                 <Button
                   variant="contained"
                   disabled={!product.inStock}
                   size="small"
-                  className="bird-add-btn">
+                  className="bird-add-btn"
+                  onClick={() => handleAddToCart(product)}
+                >
                   {product.inStock ? 'Add to Cart' : 'Out of Stock'}
                 </Button>
               </Box>
@@ -240,6 +301,99 @@ const BirdProductsPage: React.FC = () => {
           </Box>
         )}
       </Box>
+      <Dialog open={openDialog} onClose={() => setOpenDialog(false)} maxWidth="md" fullWidth>
+        <DialogTitle>
+          {selectedProduct?.name}
+          <IconButton
+            aria-label="close"
+            onClick={() => setOpenDialog(false)}
+            sx={{
+              position: 'absolute',
+              right: 8,
+              top: 8,
+              color: (theme) => theme.palette.grey[500],
+            }}
+          >
+            <CloseIcon />
+          </IconButton>
+        </DialogTitle>
+        <DialogContent dividers>
+          {selectedProduct && (
+            <Box sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' }, gap: 3 }}>
+              <Box sx={{ flex: 1 }}>
+                <CardMedia
+                  component="img"
+                  image={selectedProduct.image.startsWith('http') ? selectedProduct.image : selectedProduct.image.startsWith('/') ? selectedProduct.image : `/${selectedProduct.image}`}
+                  alt={selectedProduct.name}
+                  sx={{
+                    width: '100%',
+                    maxHeight: 400,
+                    objectFit: 'contain'
+                  }}
+                  onError={handleImageError}
+                />
+              </Box>
+              <Box sx={{ flex: 1 }}>
+                <Typography variant="h5" gutterBottom>
+                  {selectedProduct.name}
+                </Typography>
+                <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
+                  <Rating value={selectedProduct.rating} precision={0.5} readOnly />
+                  <Typography variant="body1" sx={{ ml: 1 }}>
+                    {selectedProduct.rating.toFixed(1)} ({selectedProduct.reviewCount || 0} reviews)
+                  </Typography>
+                </Box>
+                <Typography variant="h6" color="primary" gutterBottom>
+                  ${selectedProduct.price.toFixed(2)}
+                </Typography>
+                <Typography variant="body2" color={selectedProduct.inStock ? 'success.main' : 'error'} gutterBottom>
+                  {selectedProduct.inStock ? 'In Stock' : 'Out of Stock'}
+                </Typography>
+                <Typography variant="body1" paragraph>
+                  {selectedProduct.description}
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  Category: {selectedProduct.category.toUpperCase()}
+                </Typography>
+
+                {selectedProduct.specifications && (
+                  <Box sx={{ mt: 2 }}>
+                    <Typography variant="h6" gutterBottom>
+                      Specifications
+                    </Typography>
+                    {Object.entries(selectedProduct.specifications).map(([key, value]) => (
+                      <Typography key={key} variant="body2">
+                        <strong>{key}:</strong> {value}
+                      </Typography>
+                    ))}
+                  </Box>
+                )}
+              </Box>
+            </Box>
+          )}
+        </DialogContent>
+        <DialogActions>
+          <Button
+            variant="outlined"
+            onClick={() => setOpenDialog(false)}
+          >
+            Close
+          </Button>
+          <Button
+            variant="contained"
+            color="primary"
+            disabled={!selectedProduct?.inStock}
+            onClick={() => {
+              if (selectedProduct) {
+                handleAddToCart(selectedProduct);
+                setOpenDialog(false);
+              }
+            }}
+          >
+            Add to Cart
+          </Button>
+        </DialogActions>
+      </Dialog>
     </Box>
   );
 };

@@ -28,17 +28,20 @@
 
 .dog-products-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 25px;
+  gap: 1rem;
+  width: 100%;
 }
 
 .dog-card {
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  background: #fff;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  height: 100%;
 }
 
 .dog-card:hover {
@@ -47,11 +50,11 @@
 }
 
 .dog-card-img-wrapper {
-  height: 250px;
+  height: 10rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 15px;
+  padding: 0.5rem;
   background-color: #f9f9f9;
 }
 
@@ -114,48 +117,46 @@
 }
 
 /* Responsive Styles */
-@media (max-width: 599px) { /* xs */
+@media (max-width: 599px) {
+  /* xs */
   .dog-page {
     padding: 10px;
   }
-  
+
   .dog-title {
     font-size: 1.8rem !important;
   }
-  
+
   .dog-controls {
     flex-direction: column;
     align-items: stretch;
   }
-  
+
   .dog-category-buttons {
     justify-content: center;
   }
-  
+
   .dog-products-grid {
     grid-template-columns: 1fr;
   }
 }
 
-@media (min-width: 600px) and (max-width: 899px) { /* sm */
+@media (min-width: 600px) and (max-width: 899px) {
+  /* sm */
   .dog-products-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (min-width: 900px) and (max-width: 1199px) { /* md */
+@media (min-width: 900px) and (max-width: 1199px) {
+  /* md */
   .dog-products-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media (min-width: 1200px) and (max-width: 1535px) { /* lg */
-  .dog-products-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-@media (min-width: 1536px) { /* xl */
+@media (min-width: 1200px) {
+  /* lg and up - now showing 5 cards per row */
   .dog-products-grid {
     grid-template-columns: repeat(5, 1fr);
   }

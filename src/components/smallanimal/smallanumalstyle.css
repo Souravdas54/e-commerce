@@ -1,0 +1,267 @@
+/* Base styles for all screen sizes */
+.small-animal-page {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.small-animal-title {
+  color: #2c3e50;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.small-animal-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.small-animal-category-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.small-animal-products-grid {
+  display: grid;
+  gap: 25px;
+}
+
+.small-animal-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  background-color: white;
+}
+
+.small-animal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.small-animal-card-img-wrapper {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 15px;
+}
+
+.small-animal-card-img-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.small-animal-card-body {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.small-animal-card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.small-animal-card-rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.small-animal-card-description {
+  font-size: 0.875rem;
+  color: #666;
+  margin-bottom: 15px;
+  flex-grow: 1;
+}
+
+.small-animal-card-category {
+  font-size: 0.75rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 5px;
+}
+
+.small-animal-card-price {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #3498db;
+  margin-bottom: 15px;
+}
+
+.small-animal-card-footer {
+  padding: 15px 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.small-animal-card-footer .MuiButton-root {
+  flex: 1;
+}
+
+/* Extra Small (xs) screens - mobile portrait */
+@media (max-width: 599px) {
+  .small-animal-page {
+    padding: 10px;
+  }
+
+  .small-animal-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  .small-animal-controls {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  .small-animal-products-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .small-animal-card-img-wrapper {
+    height: 150px;
+    padding: 10px;
+  }
+
+  .small-animal-card-body {
+    padding: 15px;
+  }
+
+  .small-animal-card-title {
+    font-size: 1rem;
+  }
+
+  .small-animal-card-description {
+    font-size: 0.8rem;
+  }
+
+  .small-animal-card-footer {
+    padding: 10px 15px;
+  }
+
+  .small-animal-card-footer .MuiButton-root {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+  }
+}
+
+/* Small (sm) screens - mobile landscape */
+@media (min-width: 600px) and (max-width: 899px) {
+  .small-animal-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .small-animal-card-img-wrapper {
+    height: 180px;
+  }
+
+  .small-animal-card-title {
+    font-size: 1.1rem;
+  }
+
+  .small-animal-card-description {
+    font-size: 0.85rem;
+  }
+}
+
+/* Medium (md) screens - tablets */
+@media (min-width: 900px) and (max-width: 1199px) {
+  .small-animal-products-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+
+  .small-animal-card-img-wrapper {
+    height: 200px;
+  }
+}
+
+/* Large (lg) screens - small desktops */
+@media (min-width: 1200px) and (max-width: 1535px) {
+  .small-animal-products-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .small-animal-page {
+    padding: 30px;
+  }
+}
+
+/* Extra Large (xl) screens - large desktops */
+@media (min-width: 1536px) {
+  .small-animal-products-grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+  }
+
+  .small-animal-page {
+    padding: 40px;
+  }
+
+  .small-animal-card-img-wrapper {
+    height: 220px;
+  }
+}
+
+/* Special cases for very small screens */
+@media (max-width: 400px) {
+  .small-animal-title {
+    font-size: 1.5rem;
+  }
+
+  .small-animal-card-footer {
+    flex-direction: column;
+  }
+
+  .small-animal-card-footer .MuiButton-root {
+    width: 100%;
+  }
+}
+
+/* High-density displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .small-animal-card {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Print styles */
+@media print {
+  .small-animal-page {
+    padding: 0;
+  }
+
+  .small-animal-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .small-animal-card {
+    break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+
+  .small-animal-card-footer {
+    display: none;
+  }
+}

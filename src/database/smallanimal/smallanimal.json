@@ -1,0 +1,957 @@
+{
+  "small_animal_products": {
+    "cages": [
+      {
+        "id": 1,
+        "name": "Deluxe Wooden Rabbit Hutch",
+        "image": "/images/cages/hutch1.jpg",
+        "price": 129.99,
+        "description": "Spacious wooden hutch with waterproof roof and raised base, perfect for rabbits and guinea pigs.",
+        "rating": 4.7,
+        "inStock": true,
+        "reviewCount": 42,
+        "specifications": {
+          "Material": "Solid wood with metal wire",
+          "Dimensions": "150cm x 60cm x 50cm",
+          "Weight": "28kg",
+          "Color": "Natural wood"
+        }
+      },
+      {
+        "id": 2,
+        "name": "Metal Ferret Cage with Platforms",
+        "image": "/images/cages/ferret1.jpg",
+        "price": 89.95,
+        "description": "Multi-level cage with ramps and platforms, ideal for ferrets and small rodents.",
+        "rating": 4.5,
+        "inStock": true,
+        "reviewCount": 36,
+        "specifications": {
+          "Material": "Powder-coated steel",
+          "Dimensions": "90cm x 60cm x 120cm",
+          "Weight": "15kg",
+          "Levels": "3"
+        }
+      },
+      {
+        "id": 3,
+        "name": "Modular Guinea Pig Habitat",
+        "image": "/images/cages/guinea1.jpg",
+        "price": 75.50,
+        "description": "Expandable cage system with connecting panels for customizable living space.",
+        "rating": 4.8,
+        "inStock": true,
+        "reviewCount": 58,
+        "specifications": {
+          "Material": "Plastic base with metal grids",
+          "Base Area": "0.7 sqm",
+          "Expandable": "Yes",
+          "Included": "Water bottle, food bowl"
+        }
+      },
+      {
+        "id": 4,
+        "name": "Hamster Mansion with Tubes",
+        "image": "/images/cages/hamster1.jpg",
+        "price": 49.99,
+        "description": "Colorful plastic habitat with connecting tubes and exercise wheel included.",
+        "rating": 4.3,
+        "inStock": false,
+        "reviewCount": 29,
+        "specifications": {
+          "Material": "Plastic",
+          "Dimensions": "50cm x 30cm x 40cm",
+          "Tubes Included": "3",
+          "Color Options": "Blue, Pink, Green"
+        }
+      },
+      {
+        "id": 5,
+        "name": "Outdoor Rabbit Run with Shelter",
+        "image": "/images/cages/run1.jpg",
+        "price": 159.00,
+        "description": "Secure outdoor enclosure with weatherproof shelter and grazing area.",
+        "rating": 4.9,
+        "inStock": true,
+        "reviewCount": 67,
+        "specifications": {
+          "Material": "Wood and galvanized mesh",
+          "Dimensions": "200cm x 100cm x 80cm",
+          "Weatherproof": "Yes",
+          "Movable": "Yes"
+        }
+      },
+      {
+        "id": 6,
+        "name": "Chinchilla Cage with Ledges",
+        "image": "/images/cages/chinchilla1.jpg",
+        "price": 139.95,
+        "description": "Tall cage with multiple wooden ledges perfect for chinchillas' jumping habits.",
+        "rating": 4.6,
+        "inStock": true,
+        "reviewCount": 38,
+        "specifications": {
+          "Material": "Metal with wooden shelves",
+          "Dimensions": "60cm x 50cm x 120cm",
+          "Ledges Included": "4",
+          "Bar Spacing": "1.5cm"
+        }
+      },
+      {
+        "id": 7,
+        "name": "Foldable Small Animal Playpen",
+        "image": "/images/cages/playpen1.jpg",
+        "price": 34.99,
+        "description": "Portable exercise pen that sets up in seconds, great for indoor/outdoor use.",
+        "rating": 4.4,
+        "inStock": true,
+        "reviewCount": 51,
+        "specifications": {
+          "Material": "Fabric with steel frame",
+          "Diameter": "100cm",
+          "Height": "50cm",
+          "Foldable": "Yes"
+        }
+      },
+      {
+        "id": 8,
+        "name": "Rat Cage with Ladders",
+        "image": "/images/cages/rat1.jpg",
+        "price": 79.99,
+        "description": "Multi-level cage with ladders and platforms designed specifically for rats.",
+        "rating": 4.7,
+        "inStock": true,
+        "reviewCount": 44,
+        "specifications": {
+          "Material": "Powder-coated wire",
+          "Dimensions": "80cm x 50cm x 100cm",
+          "Levels": "3",
+          "Bar Spacing": "1.2cm"
+        }
+      },
+      {
+        "id": 9,
+        "name": "Bunny Condo with Balcony",
+        "image": "/images/cages/bunny1.jpg",
+        "price": 109.50,
+        "description": "Two-story rabbit home with balcony area and pull-out tray for easy cleaning.",
+        "rating": 4.5,
+        "inStock": false,
+        "reviewCount": 33,
+        "specifications": {
+          "Material": "Wood with wire mesh",
+          "Dimensions": "120cm x 60cm x 80cm",
+          "Removable Tray": "Yes",
+          "Balcony Area": "Yes"
+        }
+      },
+      {
+        "id": 10,
+        "name": "Gerbil Tank Topper",
+        "image": "/images/cages/gerbil1.jpg",
+        "price": 45.00,
+        "description": "Wire topper that converts any aquarium into a perfect gerbil habitat.",
+        "rating": 4.2,
+        "inStock": true,
+        "reviewCount": 27,
+        "specifications": {
+          "Material": "Metal wire",
+          "Fits Tank Sizes": "40-75 liter",
+          "Height": "30cm",
+          "Access Door": "Yes"
+        }
+      },
+      {
+        "id": 11,
+        "name": "Small Animal Starter Kit",
+        "image": "/images/cages/starter1.jpg",
+        "price": 59.99,
+        "description": "Complete habitat kit including cage, water bottle, food dish and hideaway.",
+        "rating": 4.0,
+        "inStock": true,
+        "reviewCount": 48,
+        "specifications": {
+          "Material": "Plastic base with wire top",
+          "Dimensions": "70cm x 40cm x 35cm",
+          "Included Items": "4",
+          "Suitable For": "Hamsters, mice, gerbils"
+        }
+      },
+      {
+        "id": 12,
+        "name": "Luxury Rabbit Villa",
+        "image": "/images/cages/villa1.jpg",
+        "price": 199.00,
+        "description": "Premium two-story rabbit home with enclosed sleeping area and run space.",
+        "rating": 4.8,
+        "inStock": true,
+        "reviewCount": 39,
+        "specifications": {
+          "Material": "Solid wood with asphalt roof",
+          "Dimensions": "180cm x 90cm x 100cm",
+          "Weatherproof": "Yes",
+          "Lockable Doors": "2"
+        }
+      },
+      {
+        "id": 13,
+        "name": "Modular Mouse Cage System",
+        "image": "/images/cages/mouse1.jpg",
+        "price": 65.75,
+        "description": "Customizable plastic habitat with connecting tubes and chambers.",
+        "rating": 4.3,
+        "inStock": true,
+        "reviewCount": 31,
+        "specifications": {
+          "Material": "Durable plastic",
+          "Base Units": "3",
+          "Tubes Included": "5",
+          "Cleaning Access": "Wide doors"
+        }
+      },
+      {
+        "id": 14,
+        "name": "Portable Small Animal Carrier",
+        "image": "/images/cages/carrier1.jpg",
+        "price": 29.95,
+        "description": "Lightweight temporary cage perfect for travel or vet visits.",
+        "rating": 4.1,
+        "inStock": true,
+        "reviewCount": 56,
+        "specifications": {
+          "Material": "Plastic with metal door",
+          "Dimensions": "40cm x 25cm x 30cm",
+          "Ventilation": "All sides",
+          "Handle": "Yes"
+        }
+      },
+      {
+        "id": 15,
+        "name": "Guinea Pig C&C Cage Kit",
+        "image": "/images/cages/cc1.jpg",
+        "price": 89.00,
+        "description": "DIY cubes and coroplast cage system for guinea pigs with large living area.",
+        "rating": 4.9,
+        "inStock": true,
+        "reviewCount": 62,
+        "specifications": {
+          "Material": "Metal grids with plastic base",
+          "Configurable Size": "Up to 2x4 grids",
+          "Included": "Coroplast tray, zip ties",
+          "Recommended For": "2-3 guinea pigs"
+        }
+      },
+      {
+        "id": 16,
+        "name": "Squirrel Monkey Cage",
+        "image": "/images/cages/monkey1.jpg",
+        "price": 249.99,
+        "description": "Extra large cage with climbing branches for small primates.",
+        "rating": 4.7,
+        "inStock": false,
+        "reviewCount": 18,
+        "specifications": {
+          "Material": "Stainless steel",
+          "Dimensions": "150cm x 100cm x 180cm",
+          "Lock Type": "Secure latch",
+          "Included": "3 wooden branches"
+        }
+      },
+      {
+        "id": 17,
+        "name": "Stackable Rat Breeding Cage",
+        "image": "/images/cages/breeding1.jpg",
+        "price": 119.50,
+        "description": "Professional stacking system with removable trays for breeders.",
+        "rating": 4.4,
+        "inStock": true,
+        "reviewCount": 22,
+        "specifications": {
+          "Material": "Powder-coated steel",
+          "Dimensions per Unit": "60cm x 40cm x 45cm",
+          "Stackable": "Up to 3 high",
+          "Trays": "Pull-out plastic"
+        }
+      },
+      {
+        "id": 18,
+        "name": "Hexagonal Rabbit Enclosure",
+        "image": "/images/cages/hex1.jpg",
+        "price": 139.95,
+        "description": "Unique six-sided outdoor run with weatherproof roof panels.",
+        "rating": 4.6,
+        "inStock": true,
+        "reviewCount": 29,
+        "specifications": {
+          "Material": "Wood and wire mesh",
+          "Diameter": "180cm",
+          "Height": "70cm",
+          "Roof": "Removable panels"
+        }
+      },
+      {
+        "id": 19,
+        "name": "Bioactive Terrarium Kit",
+        "image": "/images/cages/bio1.jpg",
+        "price": 179.00,
+        "description": "Complete bioactive setup for small reptiles or invertebrates with live plants.",
+        "rating": 4.8,
+        "inStock": true,
+        "reviewCount": 41,
+        "specifications": {
+          "Material": "Glass with screen top",
+          "Dimensions": "60cm x 45cm x 45cm",
+          "Included": "Substrate, plants, cleanup crew",
+          "Lighting": "LED strip included"
+        }
+      },
+      {
+        "id": 20,
+        "name": "Wall-Mounted Small Animal Cage",
+        "image": "/images/cages/wall1.jpg",
+        "price": 95.00,
+        "description": "Space-saving design that mounts securely to any wall for small pets.",
+        "rating": 4.2,
+        "inStock": true,
+        "reviewCount": 35,
+        "specifications": {
+          "Material": "Metal with acrylic panels",
+          "Dimensions": "80cm x 40cm x 50cm",
+          "Weight Limit": "15kg",
+          "Mounting": "Hardware included"
+        }
+      }
+    ],
+    "equipment": [
+      {
+        "id": 21,
+        "name": "Automatic Water Dispenser",
+        "image": "/images/equipment/water1.jpg",
+        "price": 24.99,
+        "description": "No-spill bottle with stainless steel nozzle provides continuous fresh water.",
+        "rating": 4.6,
+        "inStock": true,
+        "reviewCount": 87,
+        "specifications": {
+          "Capacity": "600ml",
+          "Material": "Plastic with metal spout",
+          "Suitable For": "All small animals",
+          "Mounting": "Cage clip included"
+        }
+      },
+      {
+        "id": 22,
+        "name": "Ceramic Food Bowl Set",
+        "image": "/images/equipment/bowl1.jpg",
+        "price": 12.95,
+        "description": "Heavyweight bowls that resist tipping, set of two different sizes.",
+        "rating": 4.8,
+        "inStock": true,
+        "reviewCount": 112,
+        "specifications": {
+          "Material": "Ceramic",
+          "Sizes": "10cm and 15cm diameter",
+          "Dishwasher Safe": "Yes",
+          "Colors": "Assorted"
+        }
+      },
+      {
+        "id": 23,
+        "name": "Small Animal Harness & Leash",
+        "image": "/images/equipment/harness1.jpg",
+        "price": 15.50,
+        "description": "Adjustable vest-style harness with 1.5m retractable leash for safe outdoor time.",
+        "rating": 4.3,
+        "inStock": true,
+        "reviewCount": 64,
+        "specifications": {
+          "Sizes": "XS, S, M",
+          "Material": "Nylon mesh",
+          "Adjustable": "Chest and belly straps",
+          "Colors": "5 options"
+        }
+      },
+      {
+        "id": 24,
+        "name": "Heated Small Animal Pad",
+        "image": "/images/equipment/heat1.jpg",
+        "price": 29.99,
+        "description": "Low-voltage warming pad with chew-resistant cord, ideal for elderly pets.",
+        "rating": 4.7,
+        "inStock": false,
+        "reviewCount": 93,
+        "specifications": {
+          "Size": "25cm x 30cm",
+          "Temperature": "Adjustable 30-40°C",
+          "Power": "12V DC",
+          "Safety": "Auto shut-off"
+        }
+      },
+      {
+        "id": 25,
+        "name": "Nail Clipper Set",
+        "image": "/images/equipment/nail1.jpg",
+        "price": 9.99,
+        "description": "Professional-grade clippers with safety stop and file for small pets.",
+        "rating": 4.5,
+        "inStock": true,
+        "reviewCount": 78,
+        "specifications": {
+          "Included": "Clipper, file, styptic powder",
+          "Sizes": "Small and medium",
+          "Material": "Stainless steel",
+          "Grip": "Ergonomic"
+        }
+      },
+      {
+        "id": 26,
+        "name": "Travel Carrier Backpack",
+        "image": "/images/equipment/backpack1.jpg",
+        "price": 49.95,
+        "description": "Ventilated pet backpack with see-through bubble window and safety leash.",
+        "rating": 4.4,
+        "inStock": true,
+        "reviewCount": 56,
+        "specifications": {
+          "Capacity": "Up to 4kg pet",
+          "Material": "Polyester mesh",
+          "Ventilation": "360° airflow",
+          "Pockets": "2 storage"
+        }
+      },
+      {
+        "id": 27,
+        "name": "Automatic Feeder",
+        "image": "/images/equipment/feeder1.jpg",
+        "price": 59.00,
+        "description": "Programmable dispenser with digital timer for precise feeding schedules.",
+        "rating": 4.6,
+        "inStock": true,
+        "reviewCount": 42,
+        "specifications": {
+          "Capacity": "1.5L",
+          "Meals per Day": "Up to 4",
+          "Power": "Battery or AC",
+          "Food Type": "Pellets or seeds"
+        }
+      },
+      {
+        "id": 28,
+        "name": "Small Animal Grooming Kit",
+        "image": "/images/equipment/groom1.jpg",
+        "price": 19.99,
+        "description": "Complete set with brush, comb, scissors and dematting tool for small pets.",
+        "rating": 4.7,
+        "inStock": true,
+        "reviewCount": 67,
+        "specifications": {
+          "Included Tools": "5 pieces",
+          "Case": "Zippered pouch",
+          "Suitable For": "Long/short hair",
+          "Material": "Stainless steel"
+        }
+      },
+      {
+        "id": 29,
+        "name": "Exercise Wheel (Silent)",
+        "image": "/images/equipment/wheel1.jpg",
+        "price": 34.95,
+        "description": "Whisper-quiet 28cm running wheel with sturdy stand and non-slip surface.",
+        "rating": 4.9,
+        "inStock": true,
+        "reviewCount": 124,
+        "specifications": {
+          "Diameter": "28cm",
+          "Noise Level": "<30dB",
+          "Material": "Plastic with metal axle",
+          "Suitable For": "Hamsters, mice"
+        }
+      },
+      {
+        "id": 30,
+        "name": "Hanging Chew Toy Bundle",
+        "image": "/images/equipment/chew1.jpg",
+        "price": 14.50,
+        "description": "Variety pack of 6 natural wood chew toys for dental health.",
+        "rating": 4.5,
+        "inStock": true,
+        "reviewCount": 89,
+        "specifications": {
+          "Materials": "Apple wood, willow, pine",
+          "Mounting": "Includes clips",
+          "Natural": "Untreated woods",
+          "Variety": "6 shapes"
+        }
+      },
+      {
+        "id": 31,
+        "name": "Small Animal Play Tunnel",
+        "image": "/images/equipment/tunnel1.jpg",
+        "price": 12.99,
+        "description": "Collapsible fabric tunnel with peek holes for hide-and-seek fun.",
+        "rating": 4.4,
+        "inStock": true,
+        "reviewCount": 73,
+        "specifications": {
+          "Length": "60cm extended",
+          "Diameter": "15cm",
+          "Material": "Fleece with wire frame",
+          "Washable": "Hand wash"
+        }
+      },
+      {
+        "id": 32,
+        "name": "LED Habitat Light",
+        "image": "/images/equipment/light1.jpg",
+        "price": 27.50,
+        "description": "Energy-efficient cage light with day/night cycle simulation.",
+        "rating": 4.3,
+        "inStock": true,
+        "reviewCount": 38,
+        "specifications": {
+          "LEDs": "12 white/blue",
+          "Timer": "6/12/18hr settings",
+          "Power": "USB or batteries",
+          "Mounting": "Clip or stand"
+        }
+      },
+      {
+        "id": 33,
+        "name": "Small Animal First Aid Kit",
+        "image": "/images/equipment/firstaid1.jpg",
+        "price": 39.99,
+        "description": "Comprehensive 35-piece medical kit for minor pet emergencies.",
+        "rating": 4.8,
+        "inStock": true,
+        "reviewCount": 52,
+        "specifications": {
+          "Items Included": "35",
+          "Contents": "Bandages, antiseptic, etc.",
+          "Case": "Waterproof",
+          "Manual": "Included"
+        }
+      },
+      {
+        "id": 34,
+        "name": "Odor Control Cage Liners",
+        "image": "/images/equipment/liners1.jpg",
+        "price": 18.95,
+        "description": "Absorbent 3-layer pads with activated charcoal for odor neutralization.",
+        "rating": 4.6,
+        "inStock": true,
+        "reviewCount": 97,
+        "specifications": {
+          "Size": "Fits most standard cages",
+          "Quantity": "30 per pack",
+          "Layers": "Absorbent middle, waterproof bottom",
+          "Biodegradable": "Partial"
+        }
+      },
+      {
+        "id": 35,
+        "name": "Small Animal Playpen",
+        "image": "/images/equipment/pen1.jpg",
+        "price": 45.00,
+        "description": "8-panel exercise pen with door latch for supervised playtime.",
+        "rating": 4.7,
+        "inStock": true,
+        "reviewCount": 64,
+        "specifications": {
+          "Panels": "8",
+          "Height": "50cm",
+          "Shape": "Configurable",
+          "Material": "Powder-coated steel"
+        }
+      },
+      {
+        "id": 36,
+        "name": "Temperature Monitoring System",
+        "image": "/images/equipment/temp1.jpg",
+        "price": 59.95,
+        "description": "Digital thermometer/hygrometer with remote sensor and alerts.",
+        "rating": 4.5,
+        "inStock": true,
+        "reviewCount": 41,
+        "specifications": {
+          "Range": "0-50°C, 10-99% RH",
+          "Display": "LCD with backlight",
+          "Alarms": "High/low settings",
+          "Sensor Range": "30m"
+        }
+      },
+      {
+        "id": 37,
+        "name": "Hanging Coconut Hideaway",
+        "image": "/images/equipment/coco1.jpg",
+        "price": 16.99,
+        "description": "Natural coconut shell sleeping hut with rope hanger.",
+        "rating": 4.9,
+        "inStock": true,
+        "reviewCount": 108,
+        "specifications": {
+          "Material": "Natural coconut",
+          "Diameter": "15cm",
+          "Hanging Height": "Adjustable",
+          "Entrance": "Two openings"
+        }
+      },
+      {
+        "id": 38,
+        "name": "Small Animal Diapers",
+        "image": "/images/equipment/diaper1.jpg",
+        "price": 14.50,
+        "description": "Washable/reusable belly bands for incontinent or elderly pets.",
+        "rating": 4.2,
+        "inStock": true,
+        "reviewCount": 47,
+        "specifications": {
+          "Sizes": "XS, S, M",
+          "Material": "Absorbent inner, waterproof outer",
+          "Quantity": "3 per pack",
+          "Washable": "Up to 100x"
+        }
+      },
+      {
+        "id": 39,
+        "name": "Waterproof Cage Cover",
+        "image": "/images/equipment/cover1.jpg",
+        "price": 32.99,
+        "description": "Custom-fit cover with insulation layer for temperature regulation.",
+        "rating": 4.4,
+        "inStock": true,
+        "reviewCount": 53,
+        "specifications": {
+          "Material": "Polyester with thermal layer",
+          "Sizes": "Multiple options",
+          "Closure": "Elastic hem",
+          "Ventilation": "Mesh windows"
+        }
+      },
+      {
+        "id": 40,
+        "name": "Automatic Cleaning System",
+        "image": "/images/equipment/clean1.jpg",
+        "price": 199.00,
+        "description": "Self-cleaning litter box with odor filter for small animal habitats.",
+        "rating": 4.7,
+        "inStock": false,
+        "reviewCount": 29,
+        "specifications": {
+          "Technology": "Raking system",
+          "Waste Container": "7-day capacity",
+          "Power": "AC adapter",
+          "Noise": "<40dB"
+        }
+      }
+    ],
+    "toys": [
+      {
+        "id": 41,
+        "name": "Interactive Treat Puzzle",
+        "image": "/images/toys/puzzle1.jpg",
+        "price": 18.99,
+        "description": "Mental stimulation toy with hidden compartments for treats and snacks.",
+        "rating": 4.8,
+        "inStock": true,
+        "reviewCount": 92,
+        "specifications": {
+          "Difficulty Levels": "3",
+          "Material": "Food-grade plastic",
+          "Size": "15cm diameter",
+          "Washable": "Yes"
+        }
+      },
+      {
+        "id": 42,
+        "name": "Wooden Chew Castle",
+        "image": "/images/toys/castle1.jpg",
+        "price": 24.50,
+        "description": "Multi-level chew toy with ramps and hideouts made from safe woods.",
+        "rating": 4.7,
+        "inStock": true,
+        "reviewCount": 67,
+        "specifications": {
+          "Material": "Apple wood, pine",
+          "Height": "25cm",
+          "Base": "15cm x 15cm",
+          "Colors": "Natural wood"
+        }
+      },
+      {
+        "id": 43,
+        "name": "Hanging Rope Perch",
+        "image": "/images/toys/rope1.jpg",
+        "price": 12.95,
+        "description": "Braided cotton rope with wooden beads for climbing and chewing.",
+        "rating": 4.6,
+        "inStock": true,
+        "reviewCount": 84,
+        "specifications": {
+          "Length": "60cm",
+          "Material": "Cotton, wood",
+          "Mounting": "Metal hooks",
+          "Colors": "Assorted"
+        }
+      },
+      {
+        "id": 44,
+        "name": "Rolling Treat Ball",
+        "image": "/images/toys/ball1.jpg",
+        "price": 9.99,
+        "description": "Dispenses treats as your pet rolls it around their habitat.",
+        "rating": 4.5,
+        "inStock": true,
+        "reviewCount": 113,
+        "specifications": {
+          "Size": "8cm diameter",
+          "Material": "Durable plastic",
+          "Adjustable": "Treat opening size",
+          "Colors": "4 options"
+        }
+      },
+      {
+        "id": 45,
+        "name": "Tunnel Maze System",
+        "image": "/images/toys/maze1.jpg",
+        "price": 34.95,
+        "description": "Modular plastic tunnels with multiple entry/exit points for exploration.",
+        "rating": 4.9,
+        "inStock": true,
+        "reviewCount": 78,
+        "specifications": {
+          "Pieces": "6 tunnel segments",
+          "Length": "Up to 2m configured",
+          "Diameter": "10cm",
+          "Connections": "Snap-lock"
+        }
+      },
+      {
+        "id": 46,
+        "name": "Digging Box with Substrate",
+        "image": "/images/toys/dig1.jpg",
+        "price": 29.99,
+        "description": "Deep plastic box filled with safe digging material for natural behaviors.",
+        "rating": 4.7,
+        "inStock": false,
+        "reviewCount": 56,
+        "specifications": {
+          "Size": "40cm x 30cm x 20cm",
+          "Included": "1kg digging substrate",
+          "Material": "Plastic with lid",
+          "Refills": "Available"
+        }
+      },
+      {
+        "id": 47,
+        "name": "Hanging Wooden Ladder",
+        "image": "/images/toys/ladder1.jpg",
+        "price": 14.50,
+        "description": "Natural wood rungs connected with sisal rope for climbing fun.",
+        "rating": 4.6,
+        "inStock": true,
+        "reviewCount": 62,
+        "specifications": {
+          "Length": "45cm",
+          "Rungs": "7 wooden",
+          "Material": "Birch wood, sisal",
+          "Mounting": "Metal hooks"
+        }
+      },
+      {
+        "id": 48,
+        "name": "Interactive Foraging Wheel",
+        "image": "/images/toys/forage1.jpg",
+        "price": 22.99,
+        "description": "Rotating compartments hide treats to encourage natural foraging behavior.",
+        "rating": 4.8,
+        "inStock": true,
+        "reviewCount": 47,
+        "specifications": {
+          "Diameter": "20cm",
+          "Compartments": "6",
+          "Material": "Plastic with metal axle",
+          "Mounting": "Cage clip or freestanding"
+        }
+      },
+      {
+        "id": 49,
+        "name": "Crinkle Tunnel",
+        "image": "/images/toys/crinkle1.jpg",
+        "price": 11.99,
+        "description": "Noisy fabric tunnel with crinkle paper lining that pets love.",
+        "rating": 4.4,
+        "inStock": true,
+        "reviewCount": 89,
+        "specifications": {
+          "Length": "50cm",
+          "Diameter": "12cm",
+          "Material": "Polyester with crinkle layer",
+          "Washable": "Surface wash"
+        }
+      },
+      {
+        "id": 50,
+        "name": "Wooden Chew Blocks",
+        "image": "/images/toys/blocks1.jpg",
+        "price": 8.95,
+        "description": "Variety pack of 12 untreated wood pieces in different shapes.",
+        "rating": 4.5,
+        "inStock": true,
+        "reviewCount": 104,
+        "specifications": {
+          "Wood Types": "Apple, willow, birch",
+          "Quantity": "12 pieces",
+          "Sizes": "5-8cm",
+          "Natural": "No dyes or treatments"
+        }
+      },
+      {
+        "id": 51,
+        "name": "Hanging Seagrass Mat",
+        "image": "/images/toys/mat1.jpg",
+        "price": 16.50,
+        "description": "Woven mat perfect for chewing, climbing, or as a cozy platform.",
+        "rating": 4.7,
+        "inStock": true,
+        "reviewCount": 58,
+        "specifications": {
+          "Size": "25cm x 35cm",
+          "Material": "Natural seagrass",
+          "Mounting": "4 corner hooks",
+          "Edible": "Safe if ingested"
+        }
+      },
+      {
+        "id": 52,
+        "name": "Ball Pit Set",
+        "image": "/images/toys/ballpit1.jpg",
+        "price": 19.99,
+        "description": "Shallow pit with 50 colorful plastic balls for digging and play.",
+        "rating": 4.6,
+        "inStock": true,
+        "reviewCount": 73,
+        "specifications": {
+          "Pit Size": "40cm diameter",
+          "Balls Included": "50",
+          "Ball Diameter": "5cm",
+          "Material": "Plastic"
+        }
+      },
+      {
+        "id": 53,
+        "name": "Swing Perch",
+        "image": "/images/toys/swing1.jpg",
+        "price": 13.95,
+        "description": "Wooden platform swing with sisal rope suspension.",
+        "rating": 4.5,
+        "inStock": true,
+        "reviewCount": 67,
+        "specifications": {
+          "Platform Size": "15cm x 10cm",
+          "Material": "Pine wood, sisal",
+          "Height Adjustable": "Yes",
+          "Weight Limit": "1kg"
+        }
+      },
+      {
+        "id": 54,
+        "name": "Interactive Mirror Toy",
+        "image": "/images/toys/mirror1.jpg",
+        "price": 9.50,
+        "description": "Unbreakable acrylic mirror with hanging bell for curious pets.",
+        "rating": 4.3,
+        "inStock": true,
+        "reviewCount": 42,
+        "specifications": {
+          "Size": "10cm diameter",
+          "Material": "Acrylic mirror, metal bell",
+          "Mounting": "Metal hook",
+          "Safety": "Rounded edges"
+        }
+      },
+      {
+        "id": 55,
+        "name": "Digging Sand",
+        "image": "/images/toys/sand1.jpg",
+        "price": 14.99,
+        "description": "2kg of sterilized play sand for natural digging behaviors.",
+        "rating": 4.7,
+        "inStock": true,
+        "reviewCount": 88,
+        "specifications": {
+          "Weight": "2kg",
+          "Sterilized": "Yes",
+          "Dust-Free": "Low dust formula",
+          "Container": "Resealable bag"
+        }
+      },
+      {
+        "id": 56,
+        "name": "Hanging Loofah Chew",
+        "image": "/images/toys/loofah1.jpg",
+        "price": 7.99,
+        "description": "Natural loofah slices strung on sisal rope for chewing fun.",
+        "rating": 4.4,
+        "inStock": true,
+        "reviewCount": 76,
+        "specifications": {
+          "Length": "30cm",
+          "Loofah Slices": "5",
+          "Material": "Natural loofah, sisal",
+          "Edible": "Safe if ingested"
+        }
+      },
+      {
+        "id": 57,
+        "name": "Rolling Hay Dispenser",
+        "image": "/images/toys/hay1.jpg",
+        "price": 17.50,
+        "description": "Stimulating toy that dispenses hay as your pet rolls it around.",
+        "rating": 4.8,
+        "inStock": true,
+        "reviewCount": 64,
+        "specifications": {
+          "Size": "15cm diameter",
+          "Material": "Stainless steel with plastic ends",
+          "Capacity": "Handful of hay",
+          "Design": "Open slats"
+        }
+      },
+      {
+        "id": 58,
+        "name": "Hanging Coconut Chew",
+        "image": "/images/toys/cocochew1.jpg",
+        "price": 11.95,
+        "description": "Half coconut shell with hanging rope for chewing and climbing.",
+        "rating": 4.6,
+        "inStock": true,
+        "reviewCount": 53,
+        "specifications": {
+          "Size": "12cm diameter",
+          "Material": "Natural coconut, cotton rope",
+          "Mounting": "Metal hook",
+          "Edible": "Safe if ingested"
+        }
+      },
+      {
+        "id": 59,
+        "name": "Tunnel with Peek Holes",
+        "image": "/images/toys/peek1.jpg",
+        "price": 15.99,
+        "description": "Fabric tunnel with multiple peek holes and crinkle lining.",
+        "rating": 4.5,
+        "inStock": true,
+        "reviewCount": 47,
+        "specifications": {
+          "Length": "60cm",
+          "Diameter": "15cm",
+          "Material": "Fleece with crinkle layer",
+          "Washable": "Machine wash gentle"
+        }
+      },
+      {
+        "id": 60,
+        "name": "Wooden Obstacle Course",
+        "image": "/images/toys/obstacle1.jpg",
+        "price": 39.99,
+        "description": "Modular set with bridges, ramps and platforms for active play.",

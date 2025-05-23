@@ -237,7 +237,7 @@ const Appbar: React.FC<AppbarProps> = ({ cartItemCount = 0 }) => {
                                         onClick={() => navigate('/allshop')}
                                         sx={{ textTransform: 'none' }}
                                     >
-                                        Shop
+                                        Shop All
                                     </Button>
                                 <IconButton
                                     color="inherit"
