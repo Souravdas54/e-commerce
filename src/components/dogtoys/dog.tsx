@@ -14,9 +14,14 @@ interface DogProduct {
   inStock: boolean;
   reviewCount?: number;
   specifications?: Record<string, string>;
+  // Food
+  flavor: string;
+  // Beds & Collars
   size: number;
   color: string;
   material: string;
+
+
 }
 
 interface CartItem extends DogProduct {
@@ -270,8 +275,8 @@ const DogProductsPage: React.FC = () => {
       <Box className="dog-products-grid">
         {filteredProducts.length > 0 ? (
           filteredProducts.map(product => (
-            <Card 
-              key={product.id} 
+            <Card
+              key={product.id}
               className="dog-card"
               onClick={() => handleCardClick(product)}
               sx={{ cursor: 'pointer' }}
@@ -317,7 +322,10 @@ const DogProductsPage: React.FC = () => {
                     e.stopPropagation();
                     handleAddToCart(product);
                   }}
-                  
+                  sx={{
+                    flex: 1,
+                    minWidth: 0
+                  }}
                 >
                   {product.inStock ? 'Add to Cart' : 'Out of Stock'}
                 </Button>
@@ -333,7 +341,9 @@ const DogProductsPage: React.FC = () => {
                     backgroundColor: '#ff6f00',
                     '&:hover': {
                       backgroundColor: '#e65100'
-                    }
+                    },
+                    flex: 1,
+                    minWidth: 0
                   }}
                 >
                   Buy Now
@@ -408,15 +418,31 @@ const DogProductsPage: React.FC = () => {
                 <Typography variant="body1" paragraph>
                   {selectedProduct.description}
                 </Typography>
-                <Typography variant="body2" color="text">
-                  Size : {selectedProduct.size}
-                </Typography>
-                <Typography variant="body2" color="text">
-                  Material : {selectedProduct.material}
-                </Typography>
-                <Typography variant="body2" color="text">
-                  Color : {selectedProduct.color}
-                </Typography>
+
+                {selectedProduct.category === 'food' && selectedProduct.flavor && (
+                  <Typography variant="body2">
+                    <strong>Flavor:</strong> {selectedProduct.flavor}
+                  </Typography>
+                )}
+                {(selectedProduct.category === 'beds' || selectedProduct.category === 'collars') && (
+                  <>
+                    {selectedProduct.size && (
+                      <Typography variant="body2">
+                        <strong>Size:</strong> {selectedProduct.size}
+                      </Typography>
+                    )}
+                    {selectedProduct.color && (
+                      <Typography variant="body2">
+                        <strong>Color:</strong> {selectedProduct.color}
+                      </Typography>
+                    )}
+                    {selectedProduct.material && (
+                      <Typography variant="body2">
+                        <strong>Material:</strong> {selectedProduct.material}
+                      </Typography>
+                    )}
+                  </>
+                )}
                 <Typography variant="body2" color="text.secondary">
                   Category: {selectedProduct.category.toUpperCase()}
                 </Typography>
@@ -438,12 +464,12 @@ const DogProductsPage: React.FC = () => {
           )}
         </DialogContent>
         <DialogActions>
-          <Button
+          {/* <Button
             variant="outlined"
             onClick={() => setOpenDialog(false)}
           >
             Close
-          </Button>
+          </Button> */}
           <Button
             variant="contained"
             color="primary"
