@@ -18,6 +18,7 @@ import SmallAnimalProductsPage from '../components/smallanimal/smallanimalpage';
 import ReptileProductsPage from '../components/reptiles/reptiles';
 
 import CartPage from '../components/cart/cartpage';
+import BuyNowPage from '../payment/bynow';
 
 const Approuter = () => {
   return (
@@ -39,7 +40,8 @@ const Approuter = () => {
         <Route path='/smallanimalpage' element={<SmallAnimalProductsPage />} />
         <Route path='/reptiles' element={<ReptileProductsPage />} />
 
-        <Route path='/cartpage/:id' element={<CartPage />} />
+        <Route path='/cart/:id' element={<CartPage />} />
+        <Route path='/bynow' element={<BuyNowPage />} />
 
         {/* Default redirect to signup if no route matches */}
         {/* <Route path="*" element={<Navigate to="/signup" replace />} /> */}

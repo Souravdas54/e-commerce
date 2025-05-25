@@ -251,7 +251,14 @@
         "description": "Extra tough nylon bone for aggressive chewers, helps clean teeth",
         "category": "chew",
         "rating": 4.5,
-        "inStock": true
+        "inStock": true,
+        "specifications": {
+          "Material": "Food-grade nylon",
+          "Size": "Medium (6 inches)",
+          "Color": "Natural bone color",
+          "Weight": "0.3 lbs",
+          "RecommendedFor": "Medium to large dogs"
+        }
       },
       {
         "id": 22,
@@ -261,7 +268,14 @@
         "description": "Soft plush toy with squeaker inside, great for fetch",
         "category": "plush",
         "rating": 4.2,
-        "inStock": true
+        "inStock": true,
+        "specifications": {
+          "Material": "Polyester plush with cotton filling",
+          "Size": "10 inches long",
+          "Squeakers": "2 internal squeakers",
+          "Care": "Surface washable",
+          "RecommendedFor": "All dog sizes"
+        }
       },
       {
         "id": 23,
@@ -271,7 +285,14 @@
         "description": "Super bouncy ball made from natural rubber, floats in water",
         "category": "fetch",
         "rating": 4.7,
-        "inStock": true
+        "inStock": true,
+        "specifications": {
+          "Diameter": "3 inches",
+          "Material": "Natural rubber",
+          "Color": "Bright orange",
+          "Features": "Floats in water, high bounce",
+          "RecommendedFor": "Medium dogs"
+        }
       },
       {
         "id": 24,
@@ -281,7 +302,14 @@
         "description": "Braided cotton rope with knots for dental health",
         "category": "tug",
         "rating": 4.3,
-        "inStock": false
+        "inStock": false,
+        "specifications": {
+          "Length": "24 inches",
+          "Material": "100% cotton",
+          "Knots": "3 dental knots",
+          "Features": "Promotes dental health",
+          "WeightCapacity": "Up to 50 lbs"
+        }
       },
       {
         "id": 25,
@@ -291,7 +319,14 @@
         "description": "Interactive puzzle that dispenses treats when solved",
         "category": "puzzle",
         "rating": 4.8,
-        "inStock": true
+        "inStock": true,
+        "specifications": {
+          "Dimensions": "8 x 8 x 2 inches",
+          "Material": "BPA-free plastic",
+          "Difficulty": "Intermediate",
+          "Capacity": "Holds 1/2 cup of treats",
+          "RecommendedFor": "Smart dogs who need mental stimulation"
+        }
       },
       {
         "id": 26,
@@ -301,7 +336,14 @@
         "description": "Natural deer antler, long-lasting chew",
         "category": "chew",
         "rating": 4.6,
-        "inStock": true
+        "inStock": true,
+        "specifications": {
+          "Type": "Deer antler",
+          "Size": "6-8 inches",
+          "Weight": "0.5 lbs",
+          "Features": "Rich in minerals, odorless",
+          "Longevity": "Lasts weeks to months"
+        }
       },
       {
         "id": 27,
@@ -311,7 +353,14 @@
         "description": "Adorable duck plush with duck-like squeaker",
         "category": "plush",
         "rating": 4.1,
-        "inStock": true
+        "inStock": true,
+        "specifications": {
+          "Material": "Soft plush exterior",
+          "Sound": "Duck quack squeaker",
+          "Size": "9 inches tall",
+          "Features": "No-stuffing construction",
+          "RecommendedFor": "Gentle chewers"
+        }
       },
       {
         "id": 28,
@@ -321,7 +370,14 @@
         "description": "Durable frisbee designed for dog's teeth",
         "category": "fetch",
         "rating": 4.4,
-        "inStock": true
+        "inStock": true,
+        "specifications": {
+          "Diameter": "9 inches",
+          "Material": "Flexible rubber",
+          "Color": "Neon green",
+          "Features": "Soft on teeth, floats",
+          "MaxDistance": "Up to 100 yards"
+        }
       },
       {
         "id": 29,
@@ -331,7 +387,14 @@
         "description": "Durable rubber ring for two-way tug games",
         "category": "tug",
         "rating": 4,
-        "inStock": true
+        "inStock": true,
+        "specifications": {
+          "Diameter": "10 inches",
+          "Material": "Natural rubber",
+          "Grip": "Textured surface",
+          "Weight": "1.2 lbs",
+          "RecommendedFor": "Strong chewers"
+        }
       },
       {
         "id": 30,
@@ -341,7 +404,14 @@
         "description": "Forage for treats in this mental stimulation mat",
         "category": "puzzle",
         "rating": 4.9,
-        "inStock": true
+        "inStock": true,
+        "specifications": {
+          "Dimensions": "16 x 16 inches",
+          "Material": "Food-grade fleece",
+          "Base": "Non-slip rubber",
+          "Capacity": "Holds 1 cup of treats",
+          "Care": "Machine washable"
+        }
       },
       {
         "id": 31,
@@ -351,7 +421,14 @@
         "description": "Textured chew helps reduce plaque and tartar",
         "category": "chew",
         "rating": 4.3,
-        "inStock": true
+        "inStock": true,
+        "specifications": {
+          "Material": "Medical-grade rubber",
+          "Length": "6 inches",
+          "Texture": "Dental ridges",
+          "Benefits": "Plaque reduction",
+          "RecommendedUse": "Daily chewing"
+        }
       },
       {
         "id": 32,
@@ -361,7 +438,14 @@
         "description": "Fox plush with extra-long tail for shaking",
         "category": "plush",
         "rating": 4.2,
-        "inStock": false
+        "inStock": false,
+        "specifications": {
+          "Material": "Reinforced plush",
+          "TailLength": "14 inches",
+          "Squeakers": "3 internal",
+          "Features": "Extra durable stitching",
+          "Weight": "0.4 lbs"
+        }
       },
       {
         "id": 33,
@@ -371,7 +455,14 @@
         "description": "Light-up ball for nighttime fetch",
         "category": "fetch",
         "rating": 4.5,
-        "inStock": true
+        "inStock": true,
+        "specifications": {
+          "Diameter": "2.5 inches",
+          "GlowDuration": "8 hours",
+          "Activation": "5 minutes sunlight",
+          "Material": "Phosphorescent rubber",
+          "Waterproof": "Yes"
+        }
       },
       {
         "id": 34,
@@ -381,7 +472,14 @@
         "description": "Combination rope and ball for multiple play styles",
         "category": "tug",
         "rating": 4.4,
-        "inStock": true
+        "inStock": true,
+        "specifications": {
+          "RopeLength": "18 inches",
+          "BallDiameter": "3 inches",
+          "Material": "Cotton rope + rubber",
+          "Knots": "4 reinforced",
+          "MaxTension": "50 lbs"
+        }
       },
       {
         "id": 35,
@@ -391,7 +489,14 @@
         "description": "Slow feeder that makes mealtime challenging",
         "category": "puzzle",
         "rating": 4.7,
-        "inStock": true
+        "inStock": true,
+        "specifications": {
+          "Capacity": "2 cups food",
+          "Material": "Food-grade plastic",
+          "Difficulty": "Adjustable",
+          "Cleaning": "Dishwasher safe",
+          "Base": "Non-slip"
+        }
       },
       {
         "id": 36,
@@ -401,7 +506,14 @@
         "description": "Flexible rubber ring with textured surface",
         "category": "chew",
         "rating": 4.1,
-        "inStock": true
+        "inStock": true,
+        "specifications": {
+          "Diameter": "5 inches",
+          "Texture": "Massaging nubs",
+          "Material": "Natural rubber",
+          "Features": "Floats in water",
+          "Flexibility": "High"
+        }
       },
       {
         "id": 37,
@@ -411,7 +523,14 @@
         "description": "Classic lamb plush with gentle squeaker",
         "category": "plush",
         "rating": 4.6,
-        "inStock": true
+        "inStock": true,
+        "specifications": {
+          "Material": "Ultra-soft plush",
+          "Squeaker": "Gentle tone",
+          "Size": "12 inches",
+          "Features": "Nostalgic design",
+          "Care": "Spot clean"
+        }
       },
       {
         "id": 38,
@@ -421,7 +540,14 @@
         "description": "High-visibility orange ball for easy retrieval",
         "category": "fetch",
         "rating": 4.8,
-        "inStock": true
+        "inStock": true,
+        "specifications": {
+          "Diameter": "2.5 inches",
+          "Visibility": "High-contrast orange",
+          "Bounce": "High",
+          "Material": "Durable rubber",
+          "Float": "Yes"
+        }
       },
       {
         "id": 39,
@@ -431,7 +557,14 @@
         "description": "Extra-long rope with comfortable human handles",
         "category": "tug",
         "rating": 4.3,
-        "inStock": true
+        "inStock": true,
+        "specifications": {
+          "Length": "36 inches",
+          "Handles": "Rubber grips",
+          "Material": "Blended cotton",
+          "Strength": "Reinforced core",
+          "WeightLimit": "75 lbs"
+        }
       },
       {
         "id": 40,
@@ -441,7 +574,14 @@
         "description": "Rolling ball that releases treats as it moves",
         "category": "puzzle",
         "rating": 4.5,
-        "inStock": false
+        "inStock": false,
+        "specifications": {
+          "Diameter": "4 inches",
+          "Adjustability": "3 difficulty levels",
+          "Capacity": "1/4 cup treats",
+          "Material": "BPA-free plastic",
+          "Cleaning": "Top-rack dishwasher safe"
+        }
       }
     ],
     "collars": [

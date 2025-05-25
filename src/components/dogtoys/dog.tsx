@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { CircularProgress, Alert, Select, MenuItem, FormControl, Rating, Button, Box, Typography, Card, CardMedia, CardContent, CardActions, Dialog, DialogTitle, IconButton, DialogContent, DialogActions } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
+import { useNavigate } from 'react-router';
 import './dogstyle.css';
 
 interface DogProduct {
@@ -70,6 +71,8 @@ const DogProductsPage: React.FC = () => {
   const [selectedProduct, setSelectedProduct] = useState<DogProduct | null>(null);
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
 
+  const navigate = useNavigate();
+
   const categories: DogCategory[] = [
     { name: 'All', value: 'all' },
     { name: 'Food', value: 'food' },
@@ -90,7 +93,7 @@ const DogProductsPage: React.FC = () => {
       setCartItems(buyNowItem);
 
       // Navigate to checkout page
-      // navigate('/checkout');
+      navigate('/bynow');
     } catch (error) {
       console.error('Error processing Buy Now:', error);
     }

@@ -4,6 +4,7 @@ import {
   IconButton, DialogContent, CardMedia, DialogActions, Card, CardActionArea, CardActions, CardContent
 } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
+import { useNavigate } from 'react-router';
 import './fishstyle.css';
 
 interface FishProduct {
@@ -53,6 +54,8 @@ const FishProductsPage: React.FC = () => {
   const [openDialog, setOpenDialog] = useState<boolean>(false);
   const [selectedProduct, setSelectedProduct] = useState<FishProduct | null>(null);
 
+  const navigate = useNavigate();
+
   const categories: FishCategory[] = [
     { name: 'All', value: 'all' },
     { name: 'Aquariums', value: 'aquariums' },
@@ -74,7 +77,7 @@ const FishProductsPage: React.FC = () => {
       setCartItems(buyNowItem);
 
       // Navigate to checkout page
-      // navigate('/checkout');
+      navigate('/bynow');
     } catch (error) {
       console.error('Error processing Buy Now:', error);
     }
@@ -304,6 +307,10 @@ const FishProductsPage: React.FC = () => {
                       e.stopPropagation();
                       handleAddToCart(product);
                     }}
+                    sx={{
+                      flex: 1,
+                      minWidth: 0
+                    }}
                   >
                     {product.inStock ? 'Add to Cart' : 'Out of Stock'}
                   </Button>
@@ -320,7 +327,9 @@ const FishProductsPage: React.FC = () => {
                       '&:hover': {
                         backgroundColor: '#e65100'
                       },
-                      ml: 1
+                      ml: 5,
+                      flex: 1,
+                      minWidth: 0
                     }}
                   >
                     Buy Now
@@ -416,12 +425,12 @@ const FishProductsPage: React.FC = () => {
           )}
         </DialogContent>
         <DialogActions>
-          <Button
+          {/* <Button
             variant="outlined"
             onClick={() => setOpenDialog(false)}
           >
             Close
-          </Button>
+          </Button> */}
           <Button
             variant="contained"
             color="primary"
@@ -431,6 +440,15 @@ const FishProductsPage: React.FC = () => {
                 handleAddToCart(selectedProduct);
                 setOpenDialog(false);
               }
+            }}
+            sx={{
+              backgroundColor: '#ff6f00',
+              '&:hover': {
+                backgroundColor: '#e65100'
+              },
+              ml: 1,
+              //   flex: 1,
+              // minWidth: 0
             }}
           >
             Add to Cart
