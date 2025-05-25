@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import {CircularProgress, Alert, Select, MenuItem, FormControl, InputLabel, Rating, Button, Box, Typography,
-  CardContent, CardMedia, Card, CardActions, Dialog, DialogTitle, DialogContent, DialogActions, IconButton,} from '@mui/material';
+import {
+  CircularProgress, Alert, Select, MenuItem, FormControl, InputLabel, Rating, Button, Box, Typography,
+  CardContent, CardMedia, Card, CardActions, Dialog, DialogTitle, DialogContent, DialogActions, IconButton,
+} from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import './catstyle.css';
 
@@ -46,6 +48,7 @@ function isNestedCatProducts(obj: any): obj is NestedCatProducts {
 import rawData from '../../database/cat/cat.json';
 const CART_STORAGE_KEY = 'cat_products_cart';
 const CART_COUNT_KEY = 'cat_products_cart_count';
+const BUY_NOW_KEY = 'cat_products_buy_now';
 
 const CatProductsPage: React.FC = () => {
   const [catProducts, setCatProducts] = useState<CatProduct[]>([]);
@@ -101,9 +104,9 @@ const CatProductsPage: React.FC = () => {
         if (savedCount) {
           // setCartCount(parseInt(savedCount));
           console.log(savedCount);
-          
+
         }
-        
+
       } catch (err) {
         setError(err instanceof Error ? err.message : 'An unknown error occurred');
         setLoading(false);
@@ -165,6 +168,24 @@ const CatProductsPage: React.FC = () => {
       localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(updatedCart));
     } catch (error) {
       console.error('Error adding to cart:', error);
+    }
+  };
+
+  const handleBuyNow = (product: CatProduct) => {
+    try {
+      // Create a single-item cart for immediate checkout
+      const buyNowItem = [{ ...product, quantity: 1 }];
+
+      // Save to localStorage
+      localStorage.setItem(BUY_NOW_KEY, JSON.stringify(buyNowItem));
+
+      // Update state
+      setCartItems(buyNowItem);
+
+      // Navigate to checkout page
+      // navigate('/checkout');
+    } catch (error) {
+      console.error('Error processing Buy Now:', error);
     }
   };
 
@@ -241,7 +262,12 @@ const CatProductsPage: React.FC = () => {
       <Box className="cat-products-grid">
         {filteredProducts.length > 0 ? (
           filteredProducts.map(product => (
-            <Card key={product.id} className="cat-card">
+            <Card key={product.id} className="cat-card"
+              onClick={() => {
+                setSelectedProduct(product);
+                setOpenDialog(true);
+              }}
+              sx={{ cursor: 'pointer' }}>
               <CardMedia
                 component="img"
                 image={product.image.startsWith('http') ? product.image : product.image.startsWith('/') ? product.image : `/${product.image}`}
@@ -280,12 +306,19 @@ const CatProductsPage: React.FC = () => {
                   <Button
                     variant="contained"
                     size="small"
-                    onClick={() => {
-                      setSelectedProduct(product);
-                      setOpenDialog(true);
+                    className="dog-add-btn"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleBuyNow(product);
+                    }}
+                    sx={{
+                      backgroundColor: '#ff6f00',
+                      '&:hover': {
+                        backgroundColor: '#e65100'
+                      }
                     }}
                   >
-                    View Details
+                    Buy Now
                   </Button>
                   <Button
                     variant="contained"
@@ -400,6 +433,24 @@ const CatProductsPage: React.FC = () => {
             }}
           >
             Add to Cart
+          </Button>
+          <Button
+            variant="contained"
+            disabled={!selectedProduct?.inStock}
+            onClick={() => {
+              if (selectedProduct) {
+                handleBuyNow(selectedProduct);
+                setOpenDialog(false);
+              }
+            }}
+            sx={{
+              backgroundColor: '#ff6f00',
+              '&:hover': {
+                backgroundColor: '#e65100'
+              }
+            }}
+          >
+            Buy Now
           </Button>
         </DialogActions>
       </Dialog>

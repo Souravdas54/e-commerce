@@ -4,9 +4,9 @@ import {
     CardMedia, IconButton
 } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
-import './smallanumalstyle.css'; // Fixed typo in filename
+import './reptilesstyle.css';
 
-interface SmallAnimalProduct {
+interface ReptileProduct {
     id: number;
     name: string;
     image: string;
@@ -21,64 +21,58 @@ interface SmallAnimalProduct {
         Dimensions?: string;
         Weight?: string;
         Color?: string;
-        [key: string]: string | undefined; // Allow other specification fields
+        [key: string]: string | undefined;
     };
 }
 
-interface CartItem extends SmallAnimalProduct {
+interface CartItem extends ReptileProduct {
     quantity: number;
 }
 
-interface SmallAnimalCategory {
+interface ReptileCategory {
     name: string;
     value: string;
 }
 
-interface NestedSmallAnimalProducts {
-    cages?: Omit<SmallAnimalProduct, 'category'>[];
-    equipment?: Omit<SmallAnimalProduct, 'category'>[];
-    toys?: Omit<SmallAnimalProduct, 'category'>[];
+interface NestedReptileProducts {
+    habitats?: Omit<ReptileProduct, 'category'>[];
+    heating?: Omit<ReptileProduct, 'category'>[];
+    accessories?: Omit<ReptileProduct, 'category'>[];
 }
 
-function isNestedSmallAnimalProducts(obj: any): obj is NestedSmallAnimalProducts {
+function isNestedReptileProducts(obj: any): obj is NestedReptileProducts {
     return obj &&
-        ('cages' in obj || 'equipment' in obj || 'toys' in obj) &&
-        (!obj.cages || Array.isArray(obj.cages)) &&
-        (!obj.equipment || Array.isArray(obj.equipment)) &&
-        (!obj.toys || Array.isArray(obj.toys));
+        ('habitats' in obj || 'heating' in obj || 'accessories' in obj) &&
+        (!obj.habitats || Array.isArray(obj.habitats)) &&
+        (!obj.heating || Array.isArray(obj.heating)) &&
+        (!obj.accessories || Array.isArray(obj.accessories));
 }
 
-import rawData from '../../database/smallanimal/smallanimal.json';
-const CART_STORAGE_KEY = 'small_animal_products_cart';
-const CART_COUNT_KEY = 'small_animal_products_cart_count';
-const BUY_NOW_KEY = 'smallanimal_products_buy_now';
+import rawData from '../../database/reptlies/reptlies.json';
+const CART_STORAGE_KEY = 'reptile_products_cart';
+const CART_COUNT_KEY = 'reptile_products_cart_count';
+const CART_BYNOW_KEY = 'reptile_products_bynow';
 
-const SmallAnimalProductsPage: React.FC = () => {
-    const [smallAnimalProducts, setSmallAnimalProducts] = useState<SmallAnimalProduct[]>([]);
-    const [filteredProducts, setFilteredProducts] = useState<SmallAnimalProduct[]>([]);
+const ReptileProductsPage: React.FC = () => {
+    const [reptileProducts, setReptileProducts] = useState<ReptileProduct[]>([]);
+    const [filteredProducts, setFilteredProducts] = useState<ReptileProduct[]>([]);
     const [loading, setLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>(null);
     const [selectedCategory, setSelectedCategory] = useState<string>('all');
     const [sortOption, setSortOption] = useState<string>('featured');
     const [currentCategoryName, setCurrentCategoryName] = useState<string>('Products');
     const [cartItems, setCartItems] = useState<CartItem[]>([]);
-    const [selectedProduct, setSelectedProduct] = useState<SmallAnimalProduct | null>(null);
+    const [selectedProduct, setSelectedProduct] = useState<ReptileProduct | null>(null);
     const [openDialog, setOpenDialog] = useState(false);
 
-    const categories: SmallAnimalCategory[] = [
+    const categories: ReptileCategory[] = [
         { name: 'All', value: 'all' },
-        { name: 'Cages', value: 'cages' },
-        { name: 'Equipment', value: 'equipment' },
-        { name: 'Toys', value: 'toys' }
+        { name: 'Habitats', value: 'habitats' },
+        { name: 'Heating', value: 'heating' },
+        { name: 'Accessories', value: 'accessories' }
     ];
 
-    const handleViewDetails = (product: SmallAnimalProduct, e: React.MouseEvent) => {
-        e.stopPropagation();
-        setSelectedProduct(product);
-        setOpenDialog(true);
-    };
-
-    const handleCardClick = (product: SmallAnimalProduct) => {
+    const handleCardClick = (product: ReptileProduct) => {
         setSelectedProduct(product);
         setOpenDialog(true);
     };
@@ -86,32 +80,32 @@ const SmallAnimalProductsPage: React.FC = () => {
     useEffect(() => {
         const loadData = async () => {
             try {
-                if (rawData && rawData.small_animal_products) {
-                    let products: SmallAnimalProduct[] = [];
+                if (rawData && rawData.reptile_products) {
+                    let products: ReptileProduct[] = [];
 
-                    if (isNestedSmallAnimalProducts(rawData.small_animal_products)) {
+                    if (isNestedReptileProducts(rawData.reptile_products)) {
                         products = [
-                            ...(rawData.small_animal_products.cages?.map(p => ({ ...p, category: 'cages' })) || []),
-                            ...(rawData.small_animal_products.equipment?.map(p => ({ ...p, category: 'equipment' })) || []),
-                            ...(rawData.small_animal_products.toys?.map(p => ({ ...p, category: 'toys' })) || [])
+                            ...(rawData.reptile_products.habitats?.map(p => ({ ...p, category: 'habitats' })) || []),
+                            ...(rawData.reptile_products.heating?.map(p => ({ ...p, category: 'heating' })) || []),
+                            ...(rawData.reptile_products.accessories?.map(p => ({ ...p, category: 'accessories' })) || [])
                         ];
                     } else {
-                        products = Array.isArray(rawData.small_animal_products) ? 
-                            rawData.small_animal_products as SmallAnimalProduct[] : 
+                        products = Array.isArray(rawData.reptile_products) ?
+                            rawData.reptile_products as ReptileProduct[] :
                             [];
                     }
 
-                    setSmallAnimalProducts(products);
+                    setReptileProducts(products);
                     setFilteredProducts(products);
                     setLoading(false);
                     return;
                 }
 
                 const response = await fetch('/db.json');
-                if (!response.ok) throw new Error('Failed to fetch small animal products');
+                if (!response.ok) throw new Error('Failed to fetch reptile products');
                 const data = await response.json();
-                const fetchedProducts = Array.isArray(data.small_animal_products)
-                    ? data.small_animal_products
+                const fetchedProducts = Array.isArray(data.reptile_products)
+                    ? data.reptile_products
                     : [];
 
                 const cartData = localStorage.getItem(CART_STORAGE_KEY);
@@ -122,8 +116,12 @@ const SmallAnimalProductsPage: React.FC = () => {
                 if (savedCount) {
                     console.log(savedCount);
                 }
+                const bydata = localStorage.getItem(CART_BYNOW_KEY);
+                if (bydata) {
+                    console.log(bydata);
+                }
 
-                setSmallAnimalProducts(fetchedProducts);
+                setReptileProducts(fetchedProducts);
                 setFilteredProducts(fetchedProducts);
                 setLoading(false);
             } catch (err) {
@@ -136,14 +134,14 @@ const SmallAnimalProductsPage: React.FC = () => {
     }, []);
 
     useEffect(() => {
-        let filtered = [...smallAnimalProducts];
+        let filtered = [...reptileProducts];
 
         if (selectedCategory !== 'all') {
             filtered = filtered.filter(product => product.category === selectedCategory);
             const categoryObj = categories.find(c => c.value === selectedCategory);
-            setCurrentCategoryName(categoryObj ? `Small Animal ${categoryObj.name}` : 'Small Animal Products');
+            setCurrentCategoryName(categoryObj ? `Reptile ${categoryObj.name}` : 'Reptile Products');
         } else {
-            setCurrentCategoryName('Small Animal Products');
+            setCurrentCategoryName('Reptile Products');
         }
 
         switch (sortOption) {
@@ -161,14 +159,28 @@ const SmallAnimalProductsPage: React.FC = () => {
         }
 
         setFilteredProducts(filtered);
-    }, [selectedCategory, sortOption, smallAnimalProducts]);
+    }, [selectedCategory, sortOption, reptileProducts]);
 
     const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
         const target = e.target as HTMLImageElement;
         target.src = "/assets/no-image.png";
     };
 
-    const handleAddToCart = (product: SmallAnimalProduct) => {
+    const handleByNowProduct = (product: ReptileProduct) => {
+        try {
+            const byNowProduct = [{ ...product, quantity: 1 }];
+
+            localStorage.setItem(CART_BYNOW_KEY, JSON.stringify(byNowProduct));
+
+            setCartItems(byNowProduct);
+
+            console.log('Product ready for immediate purchase:', product.name);
+        } catch (error) {
+            console.error('Error saving product for immediate purchase:', error);
+        }
+    };
+
+    const handleAddToCart = (product: ReptileProduct) => {
         try {
             const updatedCart = [...cartItems];
             const existingItemIndex = updatedCart.findIndex(item => item.id === product.id);
@@ -186,24 +198,6 @@ const SmallAnimalProductsPage: React.FC = () => {
             localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(updatedCart));
         } catch (error) {
             console.error('Error adding to cart:', error);
-        }
-    };
-
-    const handleBuyNow = (product: SmallAnimalProduct) => {
-        try {
-            // Create a single-item cart for immediate checkout
-            const buyNowItem = [{ ...product, quantity: 1 }];
-
-            // Save to localStorage
-            localStorage.setItem(BUY_NOW_KEY, JSON.stringify(buyNowItem));
-
-            // Update state
-            setCartItems(buyNowItem);
-
-            // Navigate to checkout page
-            // navigate('/checkout');
-        } catch (error) {
-            console.error('Error processing Buy Now:', error);
         }
     };
 
@@ -231,13 +225,13 @@ const SmallAnimalProductsPage: React.FC = () => {
     }
 
     return (
-        <Box className="small-animal-page">
-            <Typography variant="h3" component="h1" gutterBottom className="small-animal-title">
+        <Box className="reptile-page">
+            <Typography variant="h3" component="h1" gutterBottom className="reptile-title">
                 {currentCategoryName}
             </Typography>
 
-            <Box className="small-animal-controls">
-                <Box className="small-animal-category-buttons">
+            <Box className="reptile-controls">
+                <Box className="reptile-category-buttons">
                     {categories.map(category => (
                         <Button
                             key={category.value}
@@ -269,16 +263,16 @@ const SmallAnimalProductsPage: React.FC = () => {
                 </FormControl>
             </Box>
 
-            <Box className="small-animal-products-grid">
+            <Box className="reptile-products-grid">
                 {filteredProducts.length > 0 ? (
                     filteredProducts.map(product => (
-                        <Box 
-                            key={product.id} 
-                            className="small-animal-card"
+                        <Box
+                            key={product.id}
+                            className="reptile-card"
                             onClick={() => handleCardClick(product)}
                             sx={{ cursor: 'pointer' }}
                         >
-                            <Box className="small-animal-card-img-wrapper">
+                            <Box className="reptile-card-img-wrapper">
                                 <img
                                     src={product.image.startsWith('http') ? product.image : product.image.startsWith('/') ? product.image : `/${product.image}`}
                                     alt={product.name}
@@ -290,56 +284,34 @@ const SmallAnimalProductsPage: React.FC = () => {
                                     onError={handleImageError}
                                 />
                             </Box>
-                            <Box className="small-animal-card-body">
-                                <Typography variant="h6" component="h3" gutterBottom className="small-animal-card-title">
+                            <Box className="reptile-card-body">
+                                <Typography variant="h6" component="h3" gutterBottom className="reptile-card-title">
                                     {product.name}
                                 </Typography>
-                                <Box className="small-animal-card-rating">
+                                <Box className="reptile-card-rating">
                                     <Rating value={product.rating} precision={0.5} readOnly />
                                     <Typography variant="body2" sx={{ ml: 1 }}>
                                         {product.rating.toFixed(1)}
                                     </Typography>
                                 </Box>
-                                <Typography className="small-animal-card-description">
+                                <Typography className="reptile-card-description">
                                     {product.description}
                                 </Typography>
-                                <Typography className="small-animal-card-category">
+                                <Typography className="reptile-card-category">
                                     {product.category.toUpperCase()}
                                 </Typography>
-                                <Typography className="small-animal-card-price">
+                                <Typography className="reptile-card-price">
                                     ${product.price.toFixed(2)}
                                 </Typography>
                             </Box>
-                            <Box className="small-animal-card-footer">
-                                {/* <Button
-                                    variant="contained"
-                                    size="small"
-                                    onClick={(e) => {
-                                        e.stopPropagation();
-                                        handleViewDetails(product, e);
-                                    }}
-                                >
-                                    View Details
-                                </Button> */}
-                                <Button
-                                    variant="contained"
-                                    disabled={!product.inStock}
-                                    size="small"
-                                    className="small-animal-add-btn"
-                                    onClick={(e) => {
-                                        e.stopPropagation();
-                                        handleAddToCart(product);
-                                    }}
-                                >
-                                    {product.inStock ? 'Add to Cart' : 'Out of Stock'}
-                                </Button>
+                            <Box className="reptile-card-footer">
                                 <Button
                                     variant="contained"
                                     size="small"
-                                    className="small-animal-buy-btn"
+                                    className="reptile-add-btn"
                                     onClick={(e) => {
                                         e.stopPropagation();
-                                        handleBuyNow(product);
+                                        handleByNowProduct(product);
                                     }}
                                     sx={{
                                         backgroundColor: '#ff6f00',
@@ -349,6 +321,24 @@ const SmallAnimalProductsPage: React.FC = () => {
                                     }}
                                 >
                                     Buy Now
+                                </Button>
+                                <Button
+                                    variant="contained"
+                                    disabled={!product.inStock}
+                                    size="small"
+                                    className="reptile-add-btn"
+                                    onClick={(e) => {
+                                        e.stopPropagation();
+                                        handleAddToCart(product);
+                                    }}
+                                    sx={{
+                                        backgroundColor: '#ff6f00',
+                                        '&:hover': {
+                                            backgroundColor: '#e65100'
+                                        }
+                                    }}
+                                >
+                                    {product.inStock ? 'Add to Cart' : 'Out of Stock'}
                                 </Button>
                             </Box>
                         </Box>
@@ -456,22 +446,19 @@ const SmallAnimalProductsPage: React.FC = () => {
                                 setOpenDialog(false);
                             }
                         }}
-                         sx={{
-                                        backgroundColor: '#ff6f00',
-                                        '&:hover': {
-                                            backgroundColor: '#e65100'
-                                        }
-                                    }}
                     >
                         Add to Cart
                     </Button>
                     <Button
                         variant="contained"
+                        color="primary"
                         disabled={!selectedProduct?.inStock}
                         onClick={() => {
                             if (selectedProduct) {
-                                handleBuyNow(selectedProduct);
+                                handleByNowProduct(selectedProduct);
                                 setOpenDialog(false);
+                                // Optionally navigate to checkout here
+                                // navigate('/checkout');
                             }
                         }}
                         sx={{
@@ -489,4 +476,4 @@ const SmallAnimalProductsPage: React.FC = () => {
     );
 };
 
-export default SmallAnimalProductsPage;
+export default ReptileProductsPage;

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
     AppBar, Toolbar, Button, MenuItem, Box, Container, IconButton, Drawer, List, ListItem, Collapse,
     Divider, useMediaQuery, useTheme, Popover
@@ -19,21 +19,22 @@ interface AppbarProps {
     cartItemCount?: number;
 }
 
-const Appbar: React.FC<AppbarProps> = ({ cartItemCount = 0 }) => {
+const Appbar: React.FC<AppbarProps> = () => {
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down('md'));
     const [mobileOpen, setMobileOpen] = useState(false);
     const [expandedItems, setExpandedItems] = useState<{ [key: string]: boolean }>({});
     const [anchorEl, setAnchorEl] = useState<{ [key: string]: HTMLElement | null }>({});
+    const [totalCount, setTotalCount] = useState(0);
     const navigate = useNavigate();
 
     const navItems: NavItem[] = [
         { title: 'Shop All', subItems: [], path: '/allshop' },
-        { title: 'Dogs', subItems: ['Dog food', 'Dog toys', 'Dog collars', 'Dog beds'], path: '/dogs' },
+        { title: 'Dogs', subItems: ['Dog food', 'Dog toys', 'Dog collars', 'Dog beds'], path: '/dtoys' },
         { title: 'Cats', subItems: ['Cat poles', 'Cat tools', 'Cat toys'], path: '/cattyos' },
         { title: 'Birds', subItems: ['Birds food', 'Birds house', 'Birds toys'], path: '/bird' },
         { title: 'Fish & Aquatics', subItems: ['Aquariums', 'Cleaning', 'Decoration'], path: '/fishpage' },
-        { title: 'Small Animals', subItems: ['Animal Cages', 'Animal equipment', 'Animal toys'], path: '/small-animals' },
+        { title: 'Small Animals', subItems: ['Animal Cages', 'Animal equipment', 'Animal toys'], path: '/smallanimalpage' },
         { title: 'Reptiles', subItems: ['Reptiles Aquariums', 'Reptiles Decoration', 'Reptiles Heating'], path: '/reptiles' },
     ];
 
@@ -214,6 +215,25 @@ const Appbar: React.FC<AppbarProps> = ({ cartItemCount = 0 }) => {
         </Drawer>
     );
 
+    useEffect(() => {
+        const calculateTotal = () => {
+            const cat = parseInt(localStorage.getItem('cat_products_cart_count') || '0');
+            const dog = parseInt(localStorage.getItem('dog_products_cart_count') || '0');
+            const fish = parseInt(localStorage.getItem('fish_products_cart_count') || '0');
+            const bird = parseInt(localStorage.getItem('bird_products_cart_count') || '0');
+            const smallanimal = parseInt(localStorage.getItem('small_animal_products_cart_count') || '0');
+            const reptiles = parseInt(localStorage.getItem('reptile_products_cart_count') || '0');
+
+            setTotalCount(cat + dog + fish + bird + smallanimal + reptiles);
+        };
+
+        // Recalculate whenever localStorage changes
+        window.addEventListener('storage', calculateTotal);
+        calculateTotal(); // Initial calculation
+
+        return () => window.removeEventListener('storage', calculateTotal);
+    }, []);
+
     return (
         <div className="navbar-container">
             <AppBar position="static" color="default" elevation={0}>
@@ -239,15 +259,15 @@ const Appbar: React.FC<AppbarProps> = ({ cartItemCount = 0 }) => {
                                     >
                                         Shop All
                                     </Button>
-                                <IconButton
-                                    color="inherit"
-                                    onClick={() => navigate('/cart')}
-                                    sx={{ mr: 1 }}
-                                >
-                                    <Badge badgeContent={cartItemCount} color="primary">
-                                        <ShoppingCartIcon />
-                                    </Badge>
-                                </IconButton>
+                                    <IconButton
+                                        color="inherit"
+                                        onClick={() => navigate('/cart')}
+                                        sx={{ mr: 1 }}
+                                    >
+                                        <Badge badgeContent={totalCount} color="primary">
+                                            <ShoppingCartIcon />
+                                        </Badge>
+                                    </IconButton>
                                 </Box>
                                 <IconButton
                                     color="inherit"
@@ -261,13 +281,13 @@ const Appbar: React.FC<AppbarProps> = ({ cartItemCount = 0 }) => {
                             </>
                         ) : (
                             <>
-                           { renderDesktopNav()}
+                                {renderDesktopNav()}
                                 < IconButton
                                     color="inherit"
                                     onClick={() => navigate('/cart')}
                                     sx={{ ml: 2 }}
                                 >
-                                    <Badge badgeContent={cartItemCount} color="primary">
+                                    <Badge badgeContent={totalCount} color="primary">
                                         <ShoppingCartIcon />
                                     </Badge>
                                 </IconButton>

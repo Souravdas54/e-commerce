@@ -15,6 +15,7 @@ import FishProductsPage from '../components/fishtoys/fishpage';
 import CatProductsPage from '../components/cat/cattyos';
 import BirdProductsPage from '../components/birds/bird';
 import SmallAnimalProductsPage from '../components/smallanimal/smallanimalpage';
+import ReptileProductsPage from '../components/reptiles/reptiles';
 
 import CartPage from '../components/cart/cartpage';
 
@@ -36,6 +37,7 @@ const Approuter = () => {
         <Route path='/cattyos' element={<CatProductsPage />} />
         <Route path='/bird' element={<BirdProductsPage />} />
         <Route path='/smallanimalpage' element={<SmallAnimalProductsPage />} />
+        <Route path='/reptiles' element={<ReptileProductsPage />} />
 
         <Route path='/cartpage/:id' element={<CartPage />} />
 

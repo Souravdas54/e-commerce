@@ -36,6 +36,7 @@ interface NestedBirdProducts {
 import rawData from '../../database/bird/bird.json';
 const CART_STORAGE_KEY = 'bird_products_cart';
 const CART_COUNT_KEY = 'bird_products_cart_count';
+const BUY_NOW_KEY = 'bird_products_buy_now';
 
 const BirdProductsPage: React.FC = () => {
   const [birdProducts, setBirdProducts] = useState<BirdProduct[]>([]);
@@ -56,10 +57,27 @@ const BirdProductsPage: React.FC = () => {
     { name: 'Toys', value: 'toys' }
   ];
 
-  const handleViewDetails = (product: BirdProduct, e: React.MouseEvent) => {
-    e.stopPropagation();
+  const handleCardClick = (product: BirdProduct) => {
     setSelectedProduct(product);
     setOpenDialog(true);
+  };
+
+  const handleBuyNow = (product: BirdProduct) => {
+    try {
+      // Create a single-item cart for immediate checkout
+      const buyNowItem = [{ ...product, quantity: 1 }];
+
+      // Save to localStorage
+      localStorage.setItem(BUY_NOW_KEY, JSON.stringify(buyNowItem));
+
+      // Update state
+      setCartItems(buyNowItem);
+
+      // Navigate to checkout page
+      // navigate('/checkout');
+    } catch (error) {
+      console.error('Error processing Buy Now:', error);
+    }
   };
 
   useEffect(() => {
@@ -232,7 +250,12 @@ const BirdProductsPage: React.FC = () => {
       <Box className="bird-products-grid">
         {filteredProducts.length > 0 ? (
           filteredProducts.map(product => (
-            <Box key={product.id} className="bird-card">
+            <Box 
+              key={product.id} 
+              className="bird-card"
+              onClick={() => handleCardClick(product)}
+              sx={{ cursor: 'pointer' }}
+            >
               <Box className="bird-card-img-wrapper">
                 <img
                   src={product.image.startsWith('http') ? product.image : product.image.startsWith('/') ? product.image : `/${product.image}`}
@@ -266,22 +289,34 @@ const BirdProductsPage: React.FC = () => {
                 </Typography>
               </Box>
               <Box className="bird-card-footer">
-
-                <Button
-                  variant="contained"
-                  size="small"
-                  onClick={(e) => handleViewDetails(product, e)}
-                >
-                  View Details
-                </Button>
                 <Button
                   variant="contained"
                   disabled={!product.inStock}
                   size="small"
                   className="bird-add-btn"
-                  onClick={() => handleAddToCart(product)}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleAddToCart(product);
+                  }}
                 >
                   {product.inStock ? 'Add to Cart' : 'Out of Stock'}
+                </Button>
+                <Button
+                  variant="contained"
+                  size="small"
+                  className="bird-buy-btn"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleBuyNow(product);
+                  }}
+                  sx={{
+                    backgroundColor: '#ff6f00',
+                    '&:hover': {
+                      backgroundColor: '#e65100'
+                    }
+                  }}
+                >
+                  Buy Now
                 </Button>
               </Box>
             </Box>
@@ -391,6 +426,24 @@ const BirdProductsPage: React.FC = () => {
             }}
           >
             Add to Cart
+          </Button>
+          <Button
+            variant="contained"
+            disabled={!selectedProduct?.inStock}
+            onClick={() => {
+              if (selectedProduct) {
+                handleBuyNow(selectedProduct);
+                setOpenDialog(false);
+              }
+            }}
+            sx={{
+              backgroundColor: '#ff6f00',
+              '&:hover': {
+                backgroundColor: '#e65100'
+              }
+            }}
+          >
+            Buy Now
           </Button>
         </DialogActions>
       </Dialog>

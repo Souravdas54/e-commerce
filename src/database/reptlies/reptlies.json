@@ -1,0 +1,968 @@
+{
+  "reptile_products": {
+    "habitats": [
+      {
+        "id": 1,
+        "name": "Zoo Med ReptiBreeze Open Air Screen Cage",
+        "image": "https://i.ebayimg.com/images/g/IB0AAOSw1vJllqKc/s-l1200.jpg",
+        "price": 89.99,
+        "description": "Perfect for chameleons and other arboreal reptiles with excellent ventilation and easy access.",
+        "rating": 4.7,
+        "inStock": true,
+        "reviewCount": 142,
+        "specifications": {
+          "Material": "Aluminum screen",
+          "Dimensions": "16″ x 16″ x 30″",
+          "Weight": "5.5 lbs",
+          "Color": "Black"
+        }
+      },
+      {
+        "id": 2,
+        "name": "Exo Terra Glass Terrarium (Large)",
+        "image": "https://i.ebayimg.com/images/g/L~YAAOSwNd5dm~Xm/s-l400.jpg",
+        "price": 199.99,
+        "description": "Front opening glass terrarium with dual doors and ventilation system for optimal airflow.",
+        "rating": 4.8,
+        "inStock": true,
+        "reviewCount": 89,
+        "specifications": {
+          "Material": "Glass",
+          "Dimensions": "36″ x 18″ x 18″",
+          "Weight": "45 lbs",
+          "Color": "Black frame"
+        }
+      },
+      {
+        "id": 3,
+        "name": "Reptile Habitat with Stand 40 Gallon",
+        "image": "https://images-cdn.ubuy.co.in/6668463c058ad736241bce28-primezone-fish-tank-stand-40-gallon.jpg",
+        "price": 249.99,
+        "description": "Complete setup with sturdy stand, perfect for bearded dragons or similar reptiles.",
+        "rating": 4.6,
+        "inStock": true,
+        "reviewCount": 56,
+        "specifications": {
+          "Material": "Glass and wood",
+          "Dimensions": "36″ x 18″ x 24″",
+          "Weight": "80 lbs",
+          "Color": "Oak finish"
+        }
+      },
+      {
+        "id": 4,
+        "name": "Zilla Critter Cage (20 Gallon)",
+        "image": "https://m.media-amazon.com/images/I/61NfbT0Y8dL._AC_UF1000,1000_QL80_.jpg",
+        "price": 69.99,
+        "description": "Secure front-opening enclosure with sliding glass doors and screen top.",
+        "rating": 4.4,
+        "inStock": true,
+        "reviewCount": 112,
+        "specifications": {
+          "Material": "Glass and screen",
+          "Dimensions": "30″ x 12″ x 12″",
+          "Weight": "25 lbs",
+          "Color": "Clear"
+        }
+      },
+      {
+        "id": 5,
+        "name": "Exo Terra Short All Glass Terrarium",
+        "image": "https://m.media-amazon.com/images/I/81KiOk9jRZL._AC_SY200_QL15_.jpg",
+        "price": 129.99,
+        "description": "Low-profile terrarium ideal for terrestrial reptiles like leopard geckos.",
+        "rating": 4.5,
+        "inStock": false,
+        "reviewCount": 67,
+        "specifications": {
+          "Material": "Glass",
+          "Dimensions": "24″ x 18″ x 12″",
+          "Weight": "32 lbs",
+          "Color": "Black frame"
+        }
+      },
+      {
+        "id": 6,
+        "name": "Reptile Breeding Rack System",
+        "image": "https://www.herpxotics.uk/wp-content/uploads/2021/02/12L-rack.jpg",
+        "price": 349.99,
+        "description": "Professional 10-bin rack system with heat tape and thermostat control.",
+        "rating": 4.9,
+        "inStock": true,
+        "reviewCount": 34,
+        "specifications": {
+          "Material": "Plastic and PVC",
+          "Dimensions": "48″ x 24″ x 72″",
+          "Weight": "55 lbs",
+          "Color": "White"
+        }
+      },
+      {
+        "id": 7,
+        "name": "Zoo Med Naturalistic Terrarium",
+        "image": "https://m.media-amazon.com/images/I/61X3jMFeJML._SL1002_.jpg",
+        "price": 179.99,
+        "description": "Beautiful terrarium with realistic rock background and waterfall-ready design.",
+        "rating": 4.7,
+        "inStock": true,
+        "reviewCount": 78,
+        "specifications": {
+          "Material": "Glass and resin",
+          "Dimensions": "18″ x 18″ x 24″",
+          "Weight": "42 lbs",
+          "Color": "Rock pattern"
+        }
+      },
+      {
+        "id": 8,
+        "name": "Vision Cage Model 332",
+        "image": "https://www.visionproducts.us/wp-content/uploads/2020/11/vision_products_cage_shelf_332-300x300.jpg",
+        "price": 299.99,
+        "description": "Professional-grade PVC cage with sliding glass doors and ventilation.",
+        "rating": 4.8,
+        "inStock": true,
+        "reviewCount": 45,
+        "specifications": {
+          "Material": "PVC",
+          "Dimensions": "36″ x 18″ x 18″",
+          "Weight": "28 lbs",
+          "Color": "White"
+        }
+      },
+      {
+        "id": 9,
+        "name": "Reptile Basic Starter Kit (10 Gallon)",
+        "image": "https://images-cdn.ubuy.co.in/633ba68dda2dfd490e0b2a17-zilla-basic-tropical-reptile-starter.jpg",
+        "price": 99.99,
+        "description": "Complete beginner setup with heat lamp, substrate, and hiding cave included.",
+        "rating": 4.2,
+        "inStock": true,
+        "reviewCount": 203,
+        "specifications": {
+          "Material": "Glass",
+          "Dimensions": "20″ x 10″ x 12″",
+          "Weight": "22 lbs",
+          "Color": "Clear"
+        }
+      },
+      {
+        "id": 10,
+        "name": "Exo Terra Tall Glass Terrarium",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCdeaLcC5LsbmuOf_FWwDrbxwSXkRsAzFDPtCXs-Ty-ZspTz31gp_79BttPJUJ6tVsbLM&usqp=CAU",
+        "price": 159.99,
+        "description": "Extra tall enclosure perfect for arboreal species like tree frogs or green tree pythons.",
+        "rating": 4.6,
+        "inStock": true,
+        "reviewCount": 91,
+        "specifications": {
+          "Material": "Glass",
+          "Dimensions": "18″ x 18″ x 36″",
+          "Weight": "38 lbs",
+          "Color": "Black frame"
+        }
+      },
+      {
+        "id": 11,
+        "name": "PVC Reptile Enclosure (4x2x2)",
+        "image": "https://dubiaroaches.com/cdn/shop/files/4x2x2-Whi_55304859-8c92-4de0-8952-963945848894.jpg?v=1744382839",
+        "price": 399.99,
+        "description": "Large PVC cage with radiant heat panel and LED lighting included.",
+        "rating": 4.9,
+        "inStock": true,
+        "reviewCount": 27,
+        "specifications": {
+          "Material": "PVC",
+          "Dimensions": "48″ x 24″ x 24″",
+          "Weight": "65 lbs",
+          "Color": "Black"
+        }
+      },
+      {
+        "id": 12,
+        "name": "Zilla Front Opening Terrarium (25 Gallon)",
+        "image": "https://shop.petcityhouston.com/image/cache/catalog/Reptile%20Cages/ihdgx7vamhewi1g6v0zg-550x550.jpg",
+        "price": 129.99,
+        "description": "Front opening design with dual doors for easy access and maintenance.",
+        "rating": 4.5,
+        "inStock": false,
+        "reviewCount": 63,
+        "specifications": {
+          "Material": "Glass and screen",
+          "Dimensions": "24″ x 18″ x 18″",
+          "Weight": "35 lbs",
+          "Color": "Clear"
+        }
+      },
+      {
+        "id": 13,
+        "name": "Reptile Portable Travel Carrier",
+        "image": "https://m.media-amazon.com/images/I/81APmMfzdHL._AC_UF1000,1000_QL80_.jpg",
+        "price": 29.99,
+        "description": "Secure temporary enclosure for vet visits or reptile shows.",
+        "rating": 4.3,
+        "inStock": true,
+        "reviewCount": 187,
+        "specifications": {
+          "Material": "Plastic",
+          "Dimensions": "12″ x 8″ x 8″",
+          "Weight": "2 lbs",
+          "Color": "Clear with vents"
+        }
+      },
+      {
+        "id": 14,
+        "name": "Bioactive Reptile Terrarium Kit",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQCbMiqARH0MVh5FmHFQQUhqT8LV-zEipIcg&s",
+        "price": 279.99,
+        "description": "Complete bioactive setup with live plants, substrate, and cleanup crew included.",
+        "rating": 4.8,
+        "inStock": true,
+        "reviewCount": 42,
+        "specifications": {
+          "Material": "Glass",
+          "Dimensions": "24″ x 18″ x 18″",
+          "Weight": "50 lbs",
+          "Color": "Natural"
+        }
+      },
+      {
+        "id": 15,
+        "name": "Exo Terra Nano Terrarium",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVHIE88mEA8V5UW5TW6heUM83stSopfdZFZA&s",
+        "price": 59.99,
+        "description": "Small enclosure perfect for juvenile reptiles or small species like dart frogs.",
+        "rating": 4.4,
+        "inStock": true,
+        "reviewCount": 156,
+        "specifications": {
+          "Material": "Glass",
+          "Dimensions": "12″ x 12″ x 12″",
+          "Weight": "15 lbs",
+          "Color": "Black frame"
+        }
+      },
+      {
+        "id": 16,
+        "name": "Reptile Screen Cage (24x24x48)",
+        "image": "https://m.media-amazon.com/images/I/814Khqy4xDL.jpg",
+        "price": 119.99,
+        "description": "Extra large screen cage for chameleons or other arboreal species needing maximum airflow.",
+        "rating": 4.6,
+        "inStock": true,
+        "reviewCount": 74,
+        "specifications": {
+          "Material": "Aluminum screen",
+          "Dimensions": "24″ x 24″ x 48″",
+          "Weight": "12 lbs",
+          "Color": "Black"
+        }
+      },
+      {
+        "id": 17,
+        "name": "Zoo Med Aquatic Turtle Kit (40 Gallon)",
+        "image": "https://zoomed.com/wp-content/uploads/NT-T40-Aquatic-40-gal-pckg.jpg",
+        "price": 229.99,
+        "description": "Complete aquatic setup with basking platform, filter, and UVB lighting included.",
+        "rating": 4.7,
+        "inStock": true,
+        "reviewCount": 58,
+        "specifications": {
+          "Material": "Glass",
+          "Dimensions": "36″ x 18″ x 16″",
+          "Weight": "55 lbs",
+          "Color": "Clear"
+        }
+      },
+      {
+        "id": 18,
+        "name": "Reptile PVC Stackable Enclosure",
+        "image": "https://images-cdn.ubuy.co.in/6682c61677f6d6152029ee24-pvc-reptile-enclosure-up-to-4x2x2ft.jpg",
+        "price": 179.99,
+        "description": "Modular design allows vertical stacking to save space in reptile rooms.",
+        "rating": 4.5,
+        "inStock": true,
+        "reviewCount": 39,
+        "specifications": {
+          "Material": "PVC",
+          "Dimensions": "24″ x 18″ x 12″",
+          "Weight": "22 lbs",
+          "Color": "White"
+        }
+      },
+      {
+        "id": 19,
+        "name": "Exo Terra Rainforest Habitat Kit",
+        "image": "https://zoomaailm.ee/media/catalog/product/cache/c2d350c8995b0dfc992ce14336d98342/0/-/0-2-0262.jpg",
+        "price": 199.99,
+        "description": "Complete rainforest setup with fogger, waterfall, and tropical plants included.",
+        "rating": 4.8,
+        "inStock": false,
+        "reviewCount": 67,
+        "specifications": {
+          "Material": "Glass",
+          "Dimensions": "18″ x 18″ x 24″",
+          "Weight": "45 lbs",
+          "Color": "Black frame"
+        }
+      },
+      {
+        "id": 20,
+        "name": "Reptile Glass Terrarium with Background (50 Gallon)",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvitfBzyjxOwbnSOHT3-zTyee3uDmsWgg2ENy6Sn2_uRDl47mjAKVHV0vGaXB1UIWoLLM&usqp=CAU",
+        "price": 279.99,
+        "description": "Large terrarium with 3D rock background and multiple access points.",
+        "rating": 4.7,
+        "inStock": true,
+        "reviewCount": 33,
+        "specifications": {
+          "Material": "Glass and resin",
+          "Dimensions": "36″ x 18″ x 24″",
+          "Weight": "75 lbs",
+          "Color": "Rock pattern"
+        }
+      }
+    ],
+    "accessories": [
+      {
+        "id": 21,
+        "name": "Exo Terra Forest Branch (Large)",
+        "image": "https://siniyej.ru/image/catalog/equipment/decor/subsidiary/Exo-Terra_PT3075_PT3076_PT3077_Frest_branch_use.jpg",
+        "price": 24.99,
+        "description": "Natural-looking branch perfect for climbing reptiles and amphibians.",
+        "rating": 4.6,
+        "inStock": true,
+        "reviewCount": 87,
+        "specifications": {
+          "Material": "Resin",
+          "Dimensions": "18″ long",
+          "Weight": "1.5 lbs",
+          "Color": "Brown"
+        }
+      },
+      {
+        "id": 22,
+        "name": "Zoo Med Repti Shelter (Cave)",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSse1vSyySm-PvQJJm7fR30AlkImxHV_SHjEg&s",
+        "price": 19.99,
+        "description": "Naturalistic cave hide perfect for reptiles needing security.",
+        "rating": 4.7,
+        "inStock": true,
+        "reviewCount": 124,
+        "specifications": {
+          "Material": "Resin",
+          "Dimensions": "8″ x 6″ x 4″",
+          "Weight": "1.2 lbs",
+          "Color": "Rock pattern"
+        }
+      },
+      {
+        "id": 23,
+        "name": "Reptile Hammock with Suction Cups",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2PR71wYzDxUjosa5_DROk-LQ31Ej7Rf_IRg&s",
+        "price": 12.99,
+        "description": "Soft mesh hammock for lizards to lounge and bask on.",
+        "rating": 4.4,
+        "inStock": true,
+        "reviewCount": 203,
+        "specifications": {
+          "Material": "Mesh fabric",
+          "Dimensions": "12″ x 8″",
+          "Weight": "0.3 lbs",
+          "Color": "Green"
+        }
+      },
+      {
+        "id": 24,
+        "name": "Exo Terra Water Dish (Large)",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRfgLveKWPFGV0xQ1lExRQUyACTJvWJ89Vcg&s",
+        "price": 14.99,
+        "description": "Naturalistic rock water dish that won't tip over easily.",
+        "rating": 4.8,
+        "inStock": true,
+        "reviewCount": 156,
+        "specifications": {
+          "Material": "Resin",
+          "Dimensions": "10″ diameter",
+          "Weight": "1.8 lbs",
+          "Color": "Rock pattern"
+        }
+      },
+      {
+        "id": 25,
+        "name": "Zilla Rock Lair (Medium)",
+        "image": "https://m.media-amazon.com/images/I/81eZ6-NLhwL._AC_UF350,350_QL80_.jpg",
+        "price": 29.99,
+        "description": "Realistic rock formation with multiple entrances and basking spots.",
+        "rating": 4.5,
+        "inStock": true,
+        "reviewCount": 78,
+        "specifications": {
+          "Material": "Resin",
+          "Dimensions": "12″ x 8″ x 6″",
+          "Weight": "3.2 lbs",
+          "Color": "Gray"
+        }
+      },
+      {
+        "id": 26,
+        "name": "Reptile Background (3D Jungle)",
+        "image": "https://media.istockphoto.com/id/1456057968/video/tropical-jungle-movement-with-vegetation.jpg?s=640x640&k=20&c=1E8sVajx61f-KchsfHzHpmqdQ-c5i3l9AXvZJDjH0_Q=",
+        "price": 39.99,
+        "description": "Three-dimensional jungle background that adds depth to any terrarium.",
+        "rating": 4.7,
+        "inStock": true,
+        "reviewCount": 64,
+        "specifications": {
+          "Material": "Expanded foam",
+          "Dimensions": "36″ x 18″",
+          "Weight": "4.5 lbs",
+          "Color": "Green/brown"
+        }
+      },
+      {
+        "id": 27,
+        "name": "Exo Terra Bamboo Bridge",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvc_so3odmCAP8J8BkiYxFU6OrliMkiXfMMQ&s",
+        "price": 17.99,
+        "description": "Natural-looking bamboo bridge for climbing and accessories.",
+        "rating": 4.3,
+        "inStock": false,
+        "reviewCount": 92,
+        "specifications": {
+          "Material": "Bamboo and resin",
+          "Dimensions": "14″ long",
+          "Weight": "0.8 lbs",
+          "Color": "Natural"
+        }
+      },
+      {
+        "id": 28,
+        "name": "Zoo Med Repti Rock Food Dish",
+        "image": "https://m.media-amazon.com/images/I/61WYvC4TIhL.jpg",
+        "price": 12.99,
+        "description": "Naturalistic rock dish for feeding reptiles while blending into habitat.",
+        "rating": 4.6,
+        "inStock": true,
+        "reviewCount": 145,
+        "specifications": {
+          "Material": "Resin",
+          "Dimensions": "6″ diameter",
+          "Weight": "0.9 lbs",
+          "Color": "Gray"
+        }
+      },
+      {
+        "id": 29,
+        "name": "Reptile Hanging Vine with Leaves",
+        "image": "https://m.media-amazon.com/images/I/81WgPvR4N3L._AC_UF894,1000_QL80_.jpg",
+        "price": 16.99,
+        "description": "Flexible vine with realistic leaves for climbing and hiding.",
+        "rating": 4.5,
+        "inStock": true,
+        "reviewCount": 118,
+        "specifications": {
+          "Material": "Plastic and wire",
+          "Dimensions": "36″ long",
+          "Weight": "0.6 lbs",
+          "Color": "Green"
+        }
+      },
+      {
+        "id": 30,
+        "name": "Exo Terra Coconut Hideaway",
+        "image": "https://m.media-amazon.com/images/I/619H+Ut6asL._AC_UF1000,1000_QL80_.jpg",
+        "price": 22.99,
+        "description": "Natural coconut shell turned into a cozy hide for small reptiles.",
+        "rating": 4.8,
+        "inStock": true,
+        "reviewCount": 96,
+        "specifications": {
+          "Material": "Real coconut",
+          "Dimensions": "6″ diameter",
+          "Weight": "1.1 lbs",
+          "Color": "Brown"
+        }
+      },
+      {
+        "id": 31,
+        "name": "Zilla Bark Bends (Set of 3)",
+        "image": "https://m.media-amazon.com/images/I/91x79RrueEL.jpg",
+        "price": 19.99,
+        "description": "Naturalistic cork bark pieces for climbing and accessories.",
+        "rating": 4.7,
+        "inStock": true,
+        "reviewCount": 83,
+        "specifications": {
+          "Material": "Cork bark",
+          "Dimensions": "Various sizes",
+          "Weight": "2.5 lbs",
+          "Color": "Natural"
+        }
+      },
+      {
+        "id": 32,
+        "name": "Reptile Mossy Cave Hide",
+        "image": "https://m.media-amazon.com/images/I/91WcObiKYTL.jpg",
+        "price": 27.99,
+        "description": "Moss-covered cave hide that helps maintain humidity.",
+        "rating": 4.6,
+        "inStock": true,
+        "reviewCount": 57,
+        "specifications": {
+          "Material": "Resin and moss",
+          "Dimensions": "10″ x 8″ x 6″",
+          "Weight": "2.8 lbs",
+          "Color": "Green/brown"
+        }
+      },
+      {
+        "id": 33,
+        "name": "Exo Terra Plantation Soil (10 qt)",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo-O3_jtBiX0GUolAhDO8H67kDl9u7prII_w&s",
+        "price": 14.99,
+        "description": "Natural soil substrate perfect for tropical terrariums.",
+        "rating": 4.5,
+        "inStock": true,
+        "reviewCount": 204,
+        "specifications": {
+          "Material": "Soil and fibers",
+          "Weight": "5 lbs",
+          "Color": "Dark brown"
+        }
+      },
+      {
+        "id": 34,
+        "name": "Zoo Med Repti Rock Waterfall",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr20Uhq1wlN0QTDh5R9Hx5RUQxJSDUt2AEOg&s",
+        "price": 49.99,
+        "description": "Realistic rock waterfall with pump included for aquatic setups.",
+        "rating": 4.4,
+        "inStock": true,
+        "reviewCount": 72,
+        "specifications": {
+          "Material": "Resin",
+          "Dimensions": "12″ x 8″ x 10″",
+          "Weight": "4.2 lbs",
+          "Color": "Gray"
+        }
+      },
+      {
+        "id": 35,
+        "name": "Reptile Desert Background (3D)",
+        "image": "https://m.media-amazon.com/images/I/61YlSbpKp6L._AC_UF894,1000_QL80_.jpg",
+        "price": 34.99,
+        "description": "Three-dimensional desert rock background for arid habitats.",
+        "rating": 4.7,
+        "inStock": true,
+        "reviewCount": 48,
+        "specifications": {
+          "Material": "Expanded foam",
+          "Dimensions": "24″ x 18″",
+          "Weight": "3.8 lbs",
+          "Color": "Sandstone"
+        }
+      },
+      {
+        "id": 36,
+        "name": "Exo Terra Jungle Vine (Large)",
+        "image": "https://exo-terra.com/wp-content/uploads/feat_img__0005_Sub_Cat_header_Vines.jpg",
+        "price": 18.99,
+        "description": "Thick jungle vine with realistic texture for climbing reptiles.",
+        "rating": 4.6,
+        "inStock": true,
+        "reviewCount": 93,
+        "specifications": {
+          "Material": "Plastic and wire",
+          "Dimensions": "48″ long",
+          "Weight": "1.2 lbs",
+          "Color": "Brown/green"
+        }
+      },
+      {
+        "id": 37,
+        "name": "Zilla Stone Food Dish",
+        "image": "https://m.media-amazon.com/images/I/6106FyQdfrL._AC_UF1000,1000_QL80_.jpg",
+        "price": 11.99,
+        "description": "Heavy stone-like dish that prevents tipping during feeding.",
+        "rating": 4.8,
+        "inStock": true,
+        "reviewCount": 167,
+        "specifications": {
+          "Material": "Resin",
+          "Dimensions": "5″ diameter",
+          "Weight": "1.5 lbs",
+          "Color": "Gray"
+        }
+      },
+      {
+        "id": 38,
+        "name": "Reptile Magnetic Feeding Ledge",
+        "image": "https://m.media-amazon.com/images/I/71iI97TQgvL._AC_UF1000,1000_QL80_.jpg",
+        "price": 22.99,
+        "description": "Strong magnetic ledge that attaches to glass for elevated feeding.",
+        "rating": 4.5,
+        "inStock": true,
+        "reviewCount": 79,
+        "specifications": {
+          "Material": "Plastic and magnets",
+          "Dimensions": "8″ x 4″",
+          "Weight": "0.7 lbs",
+          "Color": "Rock pattern"
+        }
+      },
+      {
+        "id": 39,
+        "name": "Exo Terra Rainforest Canopy",
+        "image": "https://m.media-amazon.com/images/I/91f9nu42jiL._AC_UF1000,1000_QL80_.jpg",
+        "price": 29.99,
+        "description": "Dense foliage canopy for creating shaded areas in tropical terrariums.",
+        "rating": 4.7,
+        "inStock": true,
+        "reviewCount": 64,
+        "specifications": {
+          "Material": "Plastic",
+          "Dimensions": "12″ x 12″",
+          "Weight": "1.1 lbs",
+          "Color": "Green"
+        }
+      },
+      {
+        "id": 40,
+        "name": "Zoo Med Repti Sand (10 lb)",
+        "image": "https://m.media-amazon.com/images/I/91Fnn4uo2OL._AC_UF1000,1000_QL80_.jpg",
+        "price": 19.99,
+        "description": "Natural calcium sand perfect for desert-dwelling reptiles.",
+        "rating": 4.3,
+        "inStock": true,
+        "reviewCount": 132,
+        "specifications": {
+          "Material": "Calcium carbonate",
+          "Weight": "10 lbs",
+          "Color": "Beige"
+        }
+      }
+    ],
+    "heating": [
+      {
+        "id": 41,
+        "name": "Zoo Med ReptiTherm Under Tank Heater",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSGgKr6e1I0uoQ_jtEp8GmCqR23ez7qxggHg&s",
+        "price": 24.99,
+        "description": "Low-profile under tank heater provides gentle belly heat for digestion.",
+        "rating": 4.7,
+        "inStock": true,
+        "reviewCount": 215,
+        "specifications": {
+          "Wattage": "8W",
+          "Dimensions": "8″ x 6″",
+          "Voltage": "120V",
+          "Color": "Black"
+        }
+      },
+      {
+        "id": 42,
+        "name": "Exo Terra Heat Glo Infrared Lamp",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs-xuv1s5tgY0k_828APb2_gxUEggQrS1xHg&s",
+        "price": 19.99,
+        "description": "Infrared heat lamp provides 24-hour heat without disturbing sleep cycles.",
+        "rating": 4.6,
+        "inStock": true,
+        "reviewCount": 178,
+        "specifications": {
+          "Wattage": "100W",
+          "Bulb Type": "Infrared",
+          "Lifespan": "2000 hours",
+          "Color": "Red"
+        }
+      },
+      {
+        "id": 43,
+        "name": "Zilla Digital Thermostat Controller",
+        "image": "https://m.media-amazon.com/images/I/71+4+0pfyRL.jpg",
+        "price": 49.99,
+        "description": "Precise temperature control for heat mats, lamps, and other heating devices.",
+        "rating": 4.8,
+        "inStock": true,
+        "reviewCount": 94,
+        "specifications": {
+          "Temperature Range": "40-108°F",
+          "Power": "8A/1000W",
+          "Display": "Digital LCD",
+          "Color": "Black"
+        }
+      },
+      {
+        "id": 44,
+        "name": "Reptile Ceramic Heat Emitter (100W)",
+        "image": "https://m.media-amazon.com/images/I/81OsVeHzl2L.jpg",
+        "price": 22.99,
+        "description": "Heat without light - perfect for nocturnal reptiles or 24-hour heating.",
+        "rating": 4.7,
+        "inStock": true,
+        "reviewCount": 203,
+        "specifications": {
+          "Wattage": "100W",
+          "Lifespan": "25,000 hours",
+          "Voltage": "120V",
+          "Color": "White ceramic"
+        }
+      },
+      {
+        "id": 45,
+        "name": "Exo Terra Sun Glo Basking Spot Lamp",
+        "image": "https://m.media-amazon.com/images/I/81eVdvnMc-L._AC_UF1000,1000_QL80_.jpg",
+        "price": 12.99,
+        "description": "Intense basking spot that mimics natural sunlight for thermoregulation.",
+        "rating": 4.5,
+        "inStock": true,
+        "reviewCount": 267,
+        "specifications": {
+          "Wattage": "75W",
+          "Bulb Type": "Incandescent",
+          "Lifespan": "2000 hours",
+          "Color": "Clear"
+        }
+      },
+      {
+        "id": 46,
+        "name": "Zoo Med ReptiTemp Digital Thermostat",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHeqcSWdGadgSjveslQefk0oB53h9gSNI15Q&s",
+        "price": 39.99,
+        "description": "Simple plug-and-play thermostat for maintaining perfect temperatures.",
+        "rating": 4.6,
+        "inStock": true,
+        "reviewCount": 128,
+        "specifications": {
+          "Temperature Range": "50-110°F",
+          "Power": "500W max",
+          "Display": "Digital",
+          "Color": "White"
+        }
+      },
+      {
+        "id": 47,
+        "name": "Reptile Heat Cable (20 ft)",
+        "image": "https://amtra.net/wp-content/uploads/2022/02/T6016005-097612300505-REPTI-HEAT-CABLE-50-Watt-70-mt-100x100.jpg",
+        "price": 34.99,
+        "description": "Flexible heating cable for custom heat gradients in large enclosures.",
+        "rating": 4.4,
+        "inStock": true,
+        "reviewCount": 87,
+        "specifications": {
+          "Wattage": "50W",
+          "Length": "20 feet",
+          "Voltage": "120V",
+          "Color": "Black"
+        }
+      },
+      {
+        "id": 48,
+        "name": "Exo Terra Heat Wave Rock (Medium)",
+        "image": "https://i.ebayimg.com/images/g/exkAAOSw2k5lLpnZ/s-l1200.jpg",
+        "price": 29.99,
+        "description": "Naturalistic rock with built-in heating element for basking spots.",
+        "rating": 4.3,
+        "inStock": false,
+        "reviewCount": 156,
+        "specifications": {
+          "Wattage": "25W",
+          "Dimensions": "12″ x 8″",
+          "Voltage": "120V",
+          "Color": "Rock pattern"
+        }
+      },
+      {
+        "id": 49,
+        "name": "Zilla Heat Mat (20-30 Gallon)",
+        "image": "https://cdn11.bigcommerce.com/s-o2rv5d0tql/images/stencil/2201x2901/products/19751/2725882/182840__90547.1696964792.jpg?c=2",
+        "price": 27.99,
+        "description": "Undertank heater with adhesive backing for secure placement.",
+        "rating": 4.5,
+        "inStock": true,
+        "reviewCount": 142,
+        "specifications": {
+          "Wattage": "16W",
+          "Dimensions": "11″ x 17″",
+          "Voltage": "120V",
+          "Color": "Black"
+        }
+      },
+      {
+        "id": 50,
+        "name": "Reptile Radiant Heat Panel (40W)",
+        "image": "https://i.ytimg.com/vi/2hTZghUwq8E/mqdefault.jpg",
+        "price": 89.99,
+        "description": "Energy efficient panel heater for consistent ambient temperatures.",
+        "rating": 4.8,
+        "inStock": true,
+        "reviewCount": 63,
+        "specifications": {
+          "Wattage": "40W",
+          "Dimensions": "12″ x 6″",
+          "Voltage": "120V",
+          "Color": "White"
+        }
+      },
+      {
+        "id": 51,
+        "name": "Exo Terra Night Heat Lamp",
+        "image": "https://m.media-amazon.com/images/I/81SD3e8zZYL.jpg",
+        "price": 16.99,
+        "description": "Purple night heat lamp provides warmth without disturbing sleep cycles.",
+        "rating": 4.4,
+        "inStock": true,
+        "reviewCount": 198,
+        "specifications": {
+          "Wattage": "100W",
+          "Bulb Type": "Incandescent",
+          "Lifespan": "2000 hours",
+          "Color": "Purple"
+        }
+      },
+      {
+        "id": 52,
+        "name": "Zoo Med ReptiCare Temp Gun",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS-P6DZvOeoO0-6ZQxkG89uqnhGCswcXhrTg&s",
+        "price": 39.99,
+        "description": "Infrared thermometer for accurate surface temperature readings.",
+        "rating": 4.7,
+        "inStock": true,
+        "reviewCount": 107,
+        "specifications": {
+          "Temperature Range": "-58°F to 716°F",
+          "Accuracy": "±2%",
+          "Display": "Digital LCD",
+          "Color": "Yellow/black"
+        }
+      },
+      {
+        "id": 53,
+        "name": "Reptile Dual Lamp Fixture with Dimmers",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4ZddpZ2T4-GTMi5M7Iqn47gExsQt2744uWw&s",
+        "price": 49.99,
+        "description": "Two-lamp fixture with individual dimmers for perfect heat control.",
+        "rating": 4.6,
+        "inStock": true,
+        "reviewCount": 84,
+        "specifications": {
+          "Max Wattage": "150W per bulb",
+          "Dimensions": "12″ x 6″ x 3″",
+          "Voltage": "120V",
+          "Color": "Black"
+        }
+      },
+      {
+        "id": 54,
+        "name": "Exo Terra Monsoon Multi Mist System",
+        "image": "https://m.media-amazon.com/images/I/81YSb3fZwoL._AC_UF1000,1000_QL80_.jpg",
+        "price": 129.99,
+        "description": "Programmable misting system that also helps regulate temperature.",
+        "rating": 4.5,
+        "inStock": true,
+        "reviewCount": 72,
+        "specifications": {
+          "Tank Capacity": "2.5 gallons",
+          "Nozzles Included": "4",
+          "Programs": "8",
+          "Color": "White"
+        }
+      },
+      {
+        "id": 55,
+        "name": "Zilla Heat Emitter Guard",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt67XIM-fmx7OxbX4fncoedWdB4fjh6KAPPQ&s",
+        "price": 14.99,
+        "description": "Protective cage prevents burns from heat emitters and lamps.",
+        "rating": 4.7,
+        "inStock": true,
+        "reviewCount": 96,
+        "specifications": {
+          "Material": "Metal",
+          "Dimensions": "6″ diameter",
+          "Weight": "0.8 lbs",
+          "Color": "Black"
+        }
+      },
+      {
+        "id": 56,
+        "name": "Reptile Pulse Proportional Thermostat",
+        "image": "https://i.ebayimg.com/images/g/9yIAAOSwjFtm-nkO/s-l400.jpg",
+        "price": 79.99,
+        "description": "Professional-grade thermostat for precise temperature regulation.",
+        "rating": 4.9,
+        "inStock": true,
+        "reviewCount": 48,
+        "specifications": {
+          "Temperature Range": "40-110°F",
+          "Power": "1000W max",
+          "Display": "Digital LCD",
+          "Color": "Black"
+        }
+      },
+      {
+        "id": 57,
+        "name": "Exo Terra Solar Glo Mercury Vapor Lamp",
+        "image": "https://m.media-amazon.com/images/I/81RiIYoLAUL._AC_UF1000,1000_QL80_.jpg",
+        "price": 34.99,
+        "description": "Combines heat, UVA, and UVB in one bulb for desert species.",
+        "rating": 4.7,
+        "inStock": true,
+        "reviewCount": 153,
+        "specifications": {
+          "Wattage": "125W",
+          "UVB Output": "30μW/cm²",
+          "Lifespan": "12 months",
+          "Color": "White"
+        }
+      },
+      {
+        "id": 58,
+        "name": "Zoo Med Repti Fogger",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-ViKW7yPHnoJtgTdGDxf_HsNFHHZ3AD6WTQ&s",
+        "price": 59.99,
+        "description": "Creates cool mist while slightly lowering ambient temperature.",
+        "rating": 4.5,
+        "inStock": true,
+        "reviewCount": 87,
+        "specifications": {
+          "Tank Capacity": "1 gallon",
+          "Run Time": "Up to 10 hours",
+          "Voltage": "120V",
+          "Color": "Black"
+        }
+      },
+      {
+        "id": 59,
+        "name": "Reptile Heat Tape (11″ x 11′)",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuDA-GIQUGONANnsxKzB3ruq5rxkWWG7bNsQ&s",
+        "price": 44.99,
+        "description": "Flexible heating tape for custom rack systems and large enclosures.",
+        "rating": 4.6,
+        "inStock": true,
+        "reviewCount": 63,
+        "specifications": {
+          "Wattage": "40W",
+          "Dimensions": "11″ x 11′",
+          "Voltage": "120V",
+          "Color": "White"
+        }
+      },
+      {
+        "id": 60,
+        "name": "Exo Terra HygroTherm Controller",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu1P7Q2fAEMX50NyhGDmI-vgBXPnTkyelIqw&s",
+        "price": 99.99,
+        "description": "Controls both temperature and humidity automatically.",
+        "rating": 4.8,
+        "inStock": true,
+        "reviewCount": 57,
+        "specifications": {
+          "Temperature Range": "50-110°F",
+          "Humidity Range": "30-90%",
+          "Power": "500W max",
+          "Color": "Black"
+        }
+      }
+    ]
+  }
+}

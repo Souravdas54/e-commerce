@@ -39,6 +39,7 @@ interface NestedFishProducts {
 import rawData from '../../database/fish/fish.json';
 const CART_STORAGE_KEY = 'fish_products_cart';
 const CART_COUNT_KEY = 'fish_products_cart_count';
+const BUY_NOW_KEY = 'fish_products_buy_now';
 
 const FishProductsPage: React.FC = () => {
   const [fishProducts, setFishProducts] = useState<FishProduct[]>([]);
@@ -60,6 +61,24 @@ const FishProductsPage: React.FC = () => {
     { name: 'Food', value: 'food' },
     { name: 'Filters', value: 'filters' }
   ];
+
+  const handleBuyNow = (product: FishProduct) => {
+    try {
+      // Create a single-item cart for immediate checkout
+      const buyNowItem = [{ ...product, quantity: 1 }];
+
+      // Save to localStorage
+      localStorage.setItem(BUY_NOW_KEY, JSON.stringify(buyNowItem));
+
+      // Update state
+      setCartItems(buyNowItem);
+
+      // Navigate to checkout page
+      // navigate('/checkout');
+    } catch (error) {
+      console.error('Error processing Buy Now:', error);
+    }
+  };
 
   useEffect(() => {
     const loadData = async () => {
@@ -277,14 +296,6 @@ const FishProductsPage: React.FC = () => {
               <CardActions sx={{ mt: 'auto', justifyContent: 'space-between', p: 2 }}>
                 <Box>
                   <Button
-                    size="small"
-                    variant="contained"
-                    onClick={() => handleViewDetails(product)}
-                    sx={{ mr: 1 }}
-                  >
-                    View Details
-                  </Button>
-                  <Button
                     variant="contained"
                     disabled={!product.inStock}
                     size="small"
@@ -295,6 +306,24 @@ const FishProductsPage: React.FC = () => {
                     }}
                   >
                     {product.inStock ? 'Add to Cart' : 'Out of Stock'}
+                  </Button>
+                  <Button
+                    variant="contained"
+                    size="small"
+                    className="fish-buy-btn"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleBuyNow(product);
+                    }}
+                    sx={{
+                      backgroundColor: '#ff6f00',
+                      '&:hover': {
+                        backgroundColor: '#e65100'
+                      },
+                      ml: 1
+                    }}
+                  >
+                    Buy Now
                   </Button>
                 </Box>
               </CardActions>
@@ -388,6 +417,12 @@ const FishProductsPage: React.FC = () => {
         </DialogContent>
         <DialogActions>
           <Button
+            variant="outlined"
+            onClick={() => setOpenDialog(false)}
+          >
+            Close
+          </Button>
+          <Button
             variant="contained"
             color="primary"
             disabled={!selectedProduct?.inStock}
@@ -399,6 +434,24 @@ const FishProductsPage: React.FC = () => {
             }}
           >
             Add to Cart
+          </Button>
+          <Button
+            variant="contained"
+            disabled={!selectedProduct?.inStock}
+            onClick={() => {
+              if (selectedProduct) {
+                handleBuyNow(selectedProduct);
+                setOpenDialog(false);
+              }
+            }}
+            sx={{
+              backgroundColor: '#ff6f00',
+              '&:hover': {
+                backgroundColor: '#e65100'
+              }
+            }}
+          >
+            Buy Now
           </Button>
         </DialogActions>
       </Dialog>

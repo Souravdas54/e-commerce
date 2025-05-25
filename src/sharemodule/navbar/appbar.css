@@ -1,42 +1,100 @@
-/* NavigationBar.css */
 .navbar-container {
   width: 100%;
   position: relative;
+  background-color: rgba(255, 255, 255, 0.9); /* Light transparent background */
+  backdrop-filter: blur(5px); /* Optional: Adds a subtle blur effect */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Soft shadow */
 }
 
+/* Desktop Navigation (Default) */
+.desktop-nav-items {
+  display: flex;
+  gap: 8px;
+}
+
+.desktop-nav-items .MuiButton-root {
+  text-transform: none;
+  font-weight: 500;
+  color: #333;
+  padding: 8px 16px;
+  transition: background-color 0.2s;
+}
+
+.desktop-nav-items .MuiButton-root:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Mobile Navigation (Hidden by default) */
 .mobile-menu-button {
-  display: none !important;
+  /* display: none !important; */
 }
 
-@media (max-width: 900px) {
-  .desktop-nav-items {
-    display: none !important;
+/* Mobile Menu Drawer Styling */
+.mobile-menu .MuiPaper-root {
+  width: 280px;
+  max-width: 100%;
+  background-color: rgba(255, 255, 255, 0.98);
+}
+
+.mobile-menu .MuiList-root {
+  padding: 0;
+}
+
+.mobile-menu .MuiButton-root {
+  width: 100%;
+  justify-content: space-between;
+  padding: 12px 16px;
+  color: #333;
+}
+
+.mobile-menu .MuiCollapse-root .MuiList-root {
+  padding-left: 16px;
+  background-color: rgba(245, 245, 245, 0.8);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) { /* xs */
+  .navbar-container {
+    padding: 8px 0;
   }
   
   .mobile-menu-button {
     display: block !important;
   }
   
-  .mobile-menu {
-    width: 100%;
+  .desktop-nav-items {
+    display: none !important;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) { /* sm to md */
+  .desktop-nav-items {
+    gap: 4px;
   }
   
-  .mobile-menu .MuiPaper-root {
-    width: 100%;
-    max-width: 100%;
+  .desktop-nav-items .MuiButton-root {
+    padding: 8px 12px;
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1200px) { /* md to lg */
+  .desktop-nav-items {
+    gap: 8px;
   }
   
-  .mobile-menu .MuiList-root {
-    padding: 0;
+  .desktop-nav-items .MuiButton-root {
+    padding: 8px 16px;
+  }
+}
+
+@media (min-width: 1200px) { /* lg to xl */
+  .desktop-nav-items {
+    gap: 12px;
   }
   
-  .mobile-menu .MuiButton-root {
-    width: 100%;
-    justify-content: space-between;
-  }
-  
-  .mobile-menu .MuiCollapse-root .MuiList-root {
-    padding-left: 16px;
-    background-color: #f5f5f5;
+  .desktop-nav-items .MuiButton-root {
+    padding: 10px 20px;
+    font-size: 1rem;
   }
 }

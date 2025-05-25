@@ -955,3 +955,16 @@
         "image": "/images/toys/obstacle1.jpg",
         "price": 39.99,
         "description": "Modular set with bridges, ramps and platforms for active play.",
+        "rating": 4.9,
+        "inStock": true,
+        "reviewCount": 38,
+        "specifications": {
+          "Pieces": "8",
+          "Material": "Pine wood, non-toxic paint",
+          "Configurations": "Multiple",
+          "Suitable For": "Playpen or cage"
+        }
+      }
+    ]
+  }
+}

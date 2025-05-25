@@ -51,6 +51,7 @@ function isNestedDogProducts(obj: any): obj is NestedDogProducts {
 import rawData from '../../database/dog/dogtoys.json';
 const CART_STORAGE_KEY = 'dog_products_cart';
 const CART_COUNT_KEY = 'dog_products_cart_count';
+const BUY_NOW_KEY = 'dog_products_buy_now';
 
 const DogProductsPage: React.FC = () => {
   const [dogProducts, setDogProducts] = useState<DogProduct[]>([]);
@@ -72,11 +73,22 @@ const DogProductsPage: React.FC = () => {
     { name: 'Beds', value: 'beds' }
   ];
 
+  const handleBuyNow = (product: DogProduct) => {
+    try {
+      // Create a single-item cart for immediate checkout
+      const buyNowItem = [{ ...product, quantity: 1 }];
 
-  const handleViewDetails = (product: DogProduct, e: React.MouseEvent) => {
-    e.stopPropagation();
-    setSelectedProduct(product);
-    setOpenDialog(true);
+      // Save to localStorage
+      localStorage.setItem(BUY_NOW_KEY, JSON.stringify(buyNowItem));
+
+      // Update state
+      setCartItems(buyNowItem);
+
+      // Navigate to checkout page
+      // navigate('/checkout');
+    } catch (error) {
+      console.error('Error processing Buy Now:', error);
+    }
   };
 
   useEffect(() => {
@@ -116,9 +128,7 @@ const DogProductsPage: React.FC = () => {
         }
         const savedCount = localStorage.getItem(CART_COUNT_KEY);
         if (savedCount) {
-          // setCartCount(parseInt(savedCount));
           console.log(savedCount);
-
         }
 
         setDogProducts(fetchedProducts);
@@ -134,7 +144,6 @@ const DogProductsPage: React.FC = () => {
     loadData();
   }, []);
 
-  // ... (keep the rest of your existing useEffect and other functions the same)
   useEffect(() => {
     if (!Array.isArray(dogProducts)) {
       setDogProducts([]);
@@ -184,7 +193,6 @@ const DogProductsPage: React.FC = () => {
       }
 
       const newCount = updatedCart.reduce((total, item) => total + item.quantity, 0);
-      // setCartCount(newCount);
       localStorage.setItem(CART_COUNT_KEY, newCount.toString());
 
       setCartItems(updatedCart);
@@ -192,6 +200,11 @@ const DogProductsPage: React.FC = () => {
     } catch (error) {
       console.error('Error adding to cart:', error);
     }
+  };
+
+  const handleCardClick = (product: DogProduct) => {
+    setSelectedProduct(product);
+    setOpenDialog(true);
   };
 
   if (loading) {
@@ -219,7 +232,6 @@ const DogProductsPage: React.FC = () => {
 
   return (
     <Box className="dog-page">
-      {/* ... (keep the existing header and controls code the same) ... */}
       <Typography variant="h3" component="h1" gutterBottom className="dog-title">
         {currentCategoryName}
       </Typography>
@@ -258,7 +270,12 @@ const DogProductsPage: React.FC = () => {
       <Box className="dog-products-grid">
         {filteredProducts.length > 0 ? (
           filteredProducts.map(product => (
-            <Card key={product.id} className="dog-card">
+            <Card 
+              key={product.id} 
+              className="dog-card"
+              onClick={() => handleCardClick(product)}
+              sx={{ cursor: 'pointer' }}
+            >
               <CardMedia
                 component="img"
                 image={product.image.startsWith('http') ? product.image : product.image.startsWith('/') ? product.image : `/${product.image}`}
@@ -293,24 +310,33 @@ const DogProductsPage: React.FC = () => {
               <CardActions className="dog-card-footer" sx={{ justifyContent: 'space-between' }}>
                 <Button
                   variant="contained"
-                  size="small"
-                  onClick={(e) => handleViewDetails(product, e)}
-                >
-                  View Details
-                </Button>
-                <Button
-                  variant="contained"
                   disabled={!product.inStock}
                   size="small"
                   className='dog-add-btn'
-                  onClick={() => handleAddToCart(product)}
-
-                // onClick={(e) => {
-                //   e.stopPropagation();
-                //   handleAddToCart(product);
-                // }}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleAddToCart(product);
+                  }}
+                  
                 >
                   {product.inStock ? 'Add to Cart' : 'Out of Stock'}
+                </Button>
+                <Button
+                  variant="contained"
+                  size="small"
+                  className='dog-buy-btn'
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleBuyNow(product);
+                  }}
+                  sx={{
+                    backgroundColor: '#ff6f00',
+                    '&:hover': {
+                      backgroundColor: '#e65100'
+                    }
+                  }}
+                >
+                  Buy Now
                 </Button>
               </CardActions>
             </Card>
@@ -331,7 +357,6 @@ const DogProductsPage: React.FC = () => {
         )}
       </Box>
 
-      {/* Product Details Dialog */}
       <Dialog open={openDialog} onClose={() => setOpenDialog(false)} maxWidth="md" fullWidth>
         <DialogTitle>
           {selectedProduct?.name}
@@ -431,6 +456,24 @@ const DogProductsPage: React.FC = () => {
             }}
           >
             Add to Cart
+          </Button>
+          <Button
+            variant="contained"
+            disabled={!selectedProduct?.inStock}
+            onClick={() => {
+              if (selectedProduct) {
+                handleBuyNow(selectedProduct);
+                setOpenDialog(false);
+              }
+            }}
+            sx={{
+              backgroundColor: '#ff6f00',
+              '&:hover': {
+                backgroundColor: '#e65100'
+              }
+            }}
+          >
+            Buy Now
           </Button>
         </DialogActions>
       </Dialog>
